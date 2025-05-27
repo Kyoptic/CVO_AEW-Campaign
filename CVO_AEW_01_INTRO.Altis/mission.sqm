@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={13766.14,31.492985,18941.316};
-		dir[]={0.62027389,-0.45094377,-0.64180231};
-		up[]={0.31338066,0.89255232,-0.32425746};
-		aside[]={-0.719064,0,-0.69494396};
+		pos[]={13773.021,22.950497,18925.244};
+		dir[]={0.54825377,-0.33121774,0.76792747};
+		up[]={0.19245459,0.94355428,0.26956707};
+		aside[]={0.81386662,0,-0.58105159};
 	};
 };
 binarizationWanted=0;
@@ -44,7 +44,6 @@ addons[]=
 	"ace_laserpointer",
 	"A3_Weapons_F",
 	"Weapons_F_JCA_Gen4",
-	"Weapons_F_JCA_M16A4",
 	"ace_ballistics",
 	"acre_main",
 	"A3_Weapons_F_Items",
@@ -284,7 +283,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=127;
+		items=126;
 		class Item0
 		{
 			className="A3_Aegis_Air_F_Aegis";
@@ -347,805 +346,799 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="Weapons_F_JCA_M16A4";
-			name="JCA - Gen 4 Weapons";
-			author="Grave";
-		};
-		class Item10
-		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item11
+		class Item10
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Aegis_Weapons_F_Aegis";
 			name="Arma 3 Aegis - Weapons and Accessories";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item15
+		class Item14
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item16
+		class Item15
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Aegis_Characters_F_Aegis";
 			name="Arma 3 Aegis - Characters and Clothing";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item18
+		class Item17
 		{
 			className="A3_Aegis_Soft_F_Aegis";
 			name="Arma 3 Aegis - Unarmored Land Vehicles";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item19
+		class Item18
 		{
 			className="A3_Structures_F_Kart";
 			name="Arma 3 Karts - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item20
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="A3_Atlas_Characters_F_Atlas";
 			name="Arma 3 Atlas - Characters and Clothing";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=2225873516";
 		};
-		class Item23
+		class Item22
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Characters_F_AoW";
 			name="Arma 3 Art of War - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_expEden_characters";
 			name="O&T Expansion Eden - Characters";
 			author="O&T Expansion Eden";
 			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="AEW_UNT";
 			name="AEW_UNT";
 		};
-		class Item28
+		class Item27
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="AEW_MYR";
 			name="AEW_MYR";
 		};
-		class Item31
+		class Item30
 		{
 			className="AEW_GUR";
 			name="AEW_GUR";
 		};
-		class Item32
+		class Item31
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item32
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item34
+		class Item33
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item35
+		class Item34
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item36
+		class Item35
 		{
 			className="A3_Props_F_Tank";
 			name="Arma 3 Tank - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item37
+		class Item36
 		{
 			className="Weapons_1_F_lxWS";
 			name="Arma 3 Creator DLC: Western Sahara - Weapons and Accessories 1.1";
 			author="Rotators Collective";
 			url="https://sahara.rotators.net/";
 		};
-		class Item38
+		class Item37
 		{
 			className="ace_compat_ws";
 			name="ACE3 - Western Sahara Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item38
 		{
 			className="Weapons_F_JCA_UMP";
 			name="JCA - UMP";
 			author="Grave";
 		};
-		class Item40
+		class Item39
 		{
 			className="A3_Props_F_Oldman";
 			name="Arma 3 Old Man - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item41
+		class Item40
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item42
+		class Item41
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_intelitems";
 			name="ACE3 - Intel Items";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Missions_F_Oldman";
 			name="Arma 3 Old Man - Playable Content";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item47
 		{
 			className="FDF";
 			name="FDF";
 		};
-		class Item49
+		class Item48
 		{
 			className="A3_Opf_Characters_F_Opf";
 			name="Arma 3 Opposing Forces - Characters and Clothing";
 			author="Avery Kaiserin";
 			url="linkOpf";
 		};
-		class Item50
+		class Item49
 		{
 			className="Characters_f_lxWS";
 			name="Arma 3 Creator DLC: Western Sahara - Characters and Clothing";
 			author="Rotators Collective";
 			url="https://sahara.rotators.net/";
 		};
-		class Item51
+		class Item50
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item51
 		{
 			className="Vehicles_F_lxWS";
 			name="Arma 3 Creator DLC: Western Sahara - Vehicles";
 			author="Rotators Collective";
 			url="https://sahara.rotators.net/";
 		};
-		class Item53
+		class Item52
 		{
 			className="WBK_DyingAnimationsMod";
 			name="WBK_DyingAnimationsMod";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item55
+		class Item54
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item56
+		class Item55
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Structures_F_Enoch";
 			name="Arma 3 Contact Platform - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item57
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item59
+		class Item58
 		{
 			className="ace_scopes";
 			name="ACE3 - Scopes";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item60
+		class Item59
 		{
 			className="greenmag_main";
 			name="GreenMag MAIN";
 			author="[W] Miller";
 		};
-		class Item61
+		class Item60
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item61
 		{
 			className="A3_Structures_F_Oldman";
 			name="Arma 3 Old Man - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item62
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item63
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item64
 		{
 			className="A3_Characters_F_Enoch";
 			name="Arma 3 Contact Platform - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item67
+		class Item66
 		{
 			className="ace_arsenal";
 			name="ACE3 - Arsenal";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item68
+		class Item67
 		{
 			className="cba_jam";
 			name="Community Base Addons - Joint Ammo Magazines";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item69
+		class Item68
 		{
 			className="L_ES_ES_sys";
 			name="L_ES_ES_sys";
 			author="LAxemann and jokoho482";
 		};
-		class Item70
+		class Item69
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item71
+		class Item70
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item72
+		class Item71
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item73
+		class Item72
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item74
+		class Item73
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item75
+		class Item74
 		{
 			className="A3_Soft_F_Enoch";
 			name="Arma 3 Contact Platform - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item76
+		class Item75
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item77
+		class Item76
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item78
+		class Item77
 		{
 			className="A3_Aegis_Structures_F_Aegis";
 			name="Arma 3 Aegis - Buildings and Structures";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item79
+		class Item78
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item80
+		class Item79
 		{
 			className="A3_Atlas_Static_F_Atlas";
 			name="Arma 3 Atlas - Turrets";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=2225873516";
 		};
-		class Item81
+		class Item80
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item82
+		class Item81
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item83
+		class Item82
 		{
 			className="Shield_F_lxWS";
 			name="Arma 3 Western Sahara - Portable Shield";
 			author="Rotators Collective";
 			url="https://sahara.rotators.net/";
 		};
-		class Item84
+		class Item83
 		{
 			className="acre_sys_radio";
 			name="ACRE2 - Radio";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item85
+		class Item84
 		{
 			className="A3_Structures_F_Globe";
 			name="O&T Expansion Eden - Buildings and Structures";
 			author="Trager";
 			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
 		};
-		class Item86
+		class Item85
 		{
 			className="ace_overheating";
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item87
+		class Item86
 		{
 			className="RF_Props";
 			name="Arma 3 Creator DLC: Reaction Forces - Decorative and Mission Objects";
 			author="Rotators Collective";
 			url="https://reactionforces.rotators.net/";
 		};
-		class Item88
+		class Item87
 		{
 			className="A3_Vegetation_F_Exp_expEden";
 			name="O&T Expansion Eden - Apex Flora";
 			author="Trager";
 			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
 		};
-		class Item89
+		class Item88
 		{
 			className="A3_expEden";
 			name="O&T Expansion Eden - main configuration";
 			author="Trager";
 			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
 		};
-		class Item90
+		class Item89
 		{
 			className="A3_Weapons_F_Enoch";
 			name="Arma 3 Contact Platform - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item91
+		class Item90
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item92
+		class Item91
 		{
 			className="A3_Props_F_Globe";
 			name="O&T Expansion Eden - Decorative and Mission Objects";
 			author="Trager";
 			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
 		};
-		class Item93
+		class Item92
 		{
 			className="A3_Aegis_Props_F_Aegis";
 			name="Arma 3 Aegis - Decorative and Mission Objects";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item94
+		class Item93
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item95
+		class Item94
 		{
 			className="RF_Data";
 			name="Arma 3 Creator DLC: Reaction Forces - Main Configuration";
 			author="Rotators Collective";
 			url="https://reactionforces.rotators.net/";
 		};
-		class Item96
+		class Item95
 		{
 			className="A3_Aegis_Soft_F_Aegis_RF";
 			name="Arma 3 Aegis - Reaction Forces Unarmored Land Vehicles";
 			author="Ravenholme";
 		};
-		class Item97
+		class Item96
 		{
 			className="RF_Weapons";
 			name="Arma 3 Creator DLC: Reaction Forces - Weapons and Accessories";
 			author="Rotators Collective";
 			url="https://reactionforces.rotators.net/";
 		};
-		class Item98
+		class Item97
 		{
 			className="ace_minedetector";
 			name="ACE3 - Mine Detector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item99
+		class Item98
 		{
 			className="ace_yardage450";
 			name="ACE3 - Yardage 450";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item100
+		class Item99
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item101
+		class Item100
 		{
 			className="A3_Characters_F_Decade";
 			name="CFGPATCHES_A3_Characters_F_Decade";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item102
+		class Item101
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item103
+		class Item102
 		{
 			className="cvo_branding";
 			name="CVO Auxiliary - Branding";
 			author="CVO Team";
 			url="https://github.com/OverlordZorn/CVO-Auxiliary";
 		};
-		class Item104
+		class Item103
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item105
+		class Item104
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item106
+		class Item105
 		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item107
+		class Item106
 		{
 			className="A3_Structures_F_Exp_Cultural";
 			name="Arma 3 Apex - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item108
+		class Item107
 		{
 			className="A3_Structures_F_Tank";
 			name="Arma 3 Tank - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item109
+		class Item108
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item110
+		class Item109
 		{
 			className="A3_Aegis_Supplies_F_Aegis";
 			name="Arma 3 Aegis - Ammoboxes and Supplies";
 			author="Avery Kaiserin";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
-		class Item111
+		class Item110
 		{
 			className="grad_trenches_assets";
 			name="grad_trenches_assets";
 		};
-		class Item112
+		class Item111
 		{
 			className="grad_trenches_functions";
 			name="grad_trenches_functions";
 		};
-		class Item113
+		class Item112
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item114
+		class Item113
 		{
 			className="ace_csw";
 			name="ACE3 - Crew-Served Weapons";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item115
+		class Item114
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item116
+		class Item115
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item117
+		class Item116
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item118
+		class Item117
 		{
 			className="A3_Air_F_Orange";
 			name="Arma 3 Orange - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item119
+		class Item118
 		{
 			className="cba_jr";
 			name="Community Base Addons - Joint Rails";
 			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
-		class Item120
+		class Item119
 		{
 			className="A3_Ui_F_Orange";
 			name="Arma 3 Orange - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item121
+		class Item120
 		{
 			className="A3_Structures_F_Enoch_Cultural";
 			name="Arma 3 Contact Platform - Cultural Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item122
+		class Item121
 		{
 			className="A3_Data_F";
 			name="Arma 3 - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item123
+		class Item122
 		{
 			className="iedd_equipment";
 			name="IEDD Equipment";
 			author="prisoner";
 			url="https://community.bistudio.com/wiki";
 		};
-		class Item124
+		class Item123
 		{
 			className="iedd_ied";
 			name="IEDD ieds";
 			author="prisoner";
 			url="https://community.bistudio.com/wiki";
 		};
-		class Item125
+		class Item124
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item126
+		class Item125
 		{
 			className="cba_modules";
 			name="Community Base Addons - Modules";
@@ -3371,8 +3364,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_enableHeadlights";
-					expression="[_this, _value] remoteExec ['setPilotLight', _this]";
+					property="ENH_doStop";
+					expression="if (!is3DEN && _value) then {doStop _this}";
 					class Value
 					{
 						class data
@@ -3397,8 +3390,8 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="ENH_doStop";
-					expression="if (!is3DEN && _value) then {doStop _this}";
+					property="ENH_enableHeadlights";
+					expression="[_this, _value] remoteExec ['setPilotLight', _this]";
 					class Value
 					{
 						class data
@@ -24900,7 +24893,7 @@ class Mission
 			fillName="DiagGrid";
 			a=21.1206;
 			b=12.790301;
-			angle=27.952948;
+			angle=27.952936;
 			id=583;
 			atlOffset=0.043603897;
 		};
@@ -41630,7 +41623,7 @@ class Mission
 			};
 			id=1118;
 			type="Land_Bandage_F";
-			atlOffset=0.79907608;
+			atlOffset=0.77717209;
 		};
 		class Item710
 		{
@@ -41648,7 +41641,7 @@ class Mission
 			};
 			id=1119;
 			type="Land_Bandage_F";
-			atlOffset=0.79907608;
+			atlOffset=0.77717209;
 		};
 		class Item711
 		{
@@ -42440,7 +42433,7 @@ class Mission
 			};
 			id=1141;
 			type="Land_CzechHedgehog_01_old_F";
-			atlOffset=-9.1552734e-05;
+			atlOffset=-8.7738037e-05;
 		};
 		class Item733
 		{
@@ -42918,6 +42911,7 @@ class Mission
 			};
 			id=1168;
 			type="Land_CncBarrier_F";
+			atlOffset=4.196167e-05;
 		};
 		class Item760
 		{
@@ -42968,6 +42962,7 @@ class Mission
 			};
 			id=1171;
 			type="Land_CncBarrier_F";
+			atlOffset=3.8146973e-06;
 		};
 		class Item763
 		{
@@ -43362,6 +43357,7 @@ class Mission
 					};
 					id=1194;
 					type="Land_Wreck_Offroad2_F";
+					atlOffset=-2.6702881e-05;
 				};
 				class Item14
 				{
@@ -44058,6 +44054,7 @@ class Mission
 					};
 					id=1233;
 					type="Land_Razorwire_F";
+					atlOffset=2.2888184e-05;
 				};
 				class Item17
 				{
@@ -44130,6 +44127,7 @@ class Mission
 					};
 					id=1237;
 					type="Land_Shoot_House_Tunnel_Prone_F";
+					atlOffset=3.8146973e-06;
 				};
 				class Item21
 				{
@@ -45889,7 +45887,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12788.884,51.407051,19685.93};
-				angles[]={-0,5.4097638,-0};
+				angles[]={0,5.4097638,0};
 			};
 			side="Empty";
 			flags=4;
@@ -45905,7 +45903,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12788.795,51.407082,19685.842};
-				angles[]={-0,5.4118319,-0};
+				angles[]={0,5.4118319,0};
 			};
 			side="Empty";
 			flags=4;
@@ -46596,7 +46594,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12783.585,46.793056,19690.49};
-				angles[]={-0,0.72118556,-0};
+				angles[]={0,0.72118556,0};
 			};
 			side="Empty";
 			flags=4;
@@ -47073,7 +47071,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12732.515,46.432362,19711.012};
-				angles[]={-0,5.9575896,0.0012918708};
+				angles[]={0,5.9575896,0.0012918708};
 			};
 			side="Empty";
 			flags=4;
@@ -47175,7 +47173,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12725.186,46.493538,19717.426};
-				angles[]={-0,5.9575896,6.253861};
+				angles[]={0,5.9575896,6.253861};
 			};
 			side="Empty";
 			flags=4;
@@ -47192,7 +47190,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12724.229,46.521629,19715.707};
-				angles[]={-0,1.2349749,6.253861};
+				angles[]={0,1.2349749,6.253861};
 			};
 			side="Empty";
 			flags=4;
@@ -47209,7 +47207,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12725.076,46.496761,19713.217};
-				angles[]={-0,1.2349749,6.253861};
+				angles[]={0,1.2349749,6.253861};
 			};
 			side="Empty";
 			flags=4;
@@ -47253,6 +47251,7 @@ class Mission
 			};
 			id=1370;
 			type="Land_CncBarrier_F";
+			atlOffset=-4.9591064e-05;
 		};
 		class Item843
 		{
@@ -48165,6 +48164,7 @@ class Mission
 			};
 			id=1403;
 			type="AEWP_CamoNet_NAA_Arid_open_F";
+			atlOffset=4.5776367e-05;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -48975,7 +48975,7 @@ class Mission
 			};
 			id=1434;
 			type="I_Quadbike_01_F";
-			atlOffset=2.6109657;
+			atlOffset=2.6109047;
 		};
 		class Item904
 		{
@@ -49069,7 +49069,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12826.235,54.694492,19655.387};
-				angles[]={-0,0.39259261,0};
+				angles[]={0,0.39259261,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49086,7 +49086,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12824.192,54.694492,19656.248};
-				angles[]={-0,0.39259261,0};
+				angles[]={0,0.39259261,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49103,7 +49103,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12828.872,54.694492,19658.344};
-				angles[]={-0,1.9046292,0};
+				angles[]={0,1.9046292,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49120,7 +49120,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12828.136,54.694492,19656.256};
-				angles[]={-0,1.9046292,0};
+				angles[]={0,1.9046292,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49137,7 +49137,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12828.026,54.694492,19659.986};
-				angles[]={-0,0.39259261,0};
+				angles[]={0,0.39259261,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49154,7 +49154,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12825.983,54.694492,19660.848};
-				angles[]={-0,0.39259261,0};
+				angles[]={0,0.39259261,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49749,7 +49749,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12784.864,49.737942,19685.121};
-				angles[]={0,4.2156553,-0};
+				angles[]={0,4.2156553,0};
 			};
 			side="Empty";
 			flags=4;
@@ -49783,7 +49783,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12784.815,49.732956,19685.082};
-				angles[]={0,0.18122007,-0};
+				angles[]={0,0.18122007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -52527,7 +52527,7 @@ class Mission
 			};
 			id=1533;
 			type="C_IDAP_UAV_06_medical_F";
-			atlOffset=-5.1498413e-05;
+			atlOffset=-6.8664551e-05;
 		};
 		class Item969
 		{
@@ -54361,7 +54361,7 @@ class Mission
 					};
 					id=1616;
 					type="MYR_B_Offroad_F";
-					atlOffset=-0.015691757;
+					atlOffset=-0.015752792;
 				};
 				class Item70
 				{
@@ -54531,6 +54531,7 @@ class Mission
 					};
 					id=1626;
 					type="Land_Mil_WiredFence_F";
+					atlOffset=-0.00021743774;
 				};
 				class Item80
 				{
@@ -54988,6 +54989,7 @@ class Mission
 					};
 					id=1651;
 					type="Land_BagFence_Long_F";
+					atlOffset=7.6293945e-05;
 				};
 				class Item105
 				{
@@ -55849,6 +55851,7 @@ class Mission
 							};
 							id=1693;
 							type="MYR_B_soldier_spar_AR_F";
+							atlOffset=1.9073486e-05;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -55892,6 +55895,7 @@ class Mission
 							showWP="NEVER";
 							id=1695;
 							type="Move";
+							atlOffset=3.4332275e-05;
 						};
 						class Item4
 						{
@@ -57276,7 +57280,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12784.297,50.394367,19684.449};
-				angles[]={0,1.1285304,-0};
+				angles[]={0,1.1285304,0};
 			};
 			side="Empty";
 			flags=4;
@@ -57545,6 +57549,7 @@ class Mission
 			};
 			id=1783;
 			type="BombCluster_01_UXO3_F";
+			atlOffset=2.6702881e-05;
 		};
 		class Item999
 		{
@@ -57867,7 +57872,7 @@ class Mission
 			};
 			id=1796;
 			type="iedd_ied_Training_Bucket";
-			atlOffset=-6.1035156e-05;
+			atlOffset=-8.5830688e-05;
 		};
 		class Item1011
 		{
