@@ -620,7 +620,7 @@ cvo_arsenal_base append [
 // #####################################################
 
 
-CVO_A_HASH_RoleKit = createHashMapFromArray [
+CVO_arsenal_roleKit = createHashMapFromArray [
 	["Medic", [[
 		// "arifle_SLR_Para_lxWS",
 		// "arifle_SLR_Para_snake_lxWS",
