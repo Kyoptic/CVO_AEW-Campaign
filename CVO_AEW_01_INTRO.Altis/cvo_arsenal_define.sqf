@@ -294,17 +294,19 @@ cvo_arsenal_base append [
 	"Atlas_U_O_Afghanka_02_grn_F",
 	"Atlas_U_O_Afghanka_01_khk_F",
 	"Atlas_U_O_Afghanka_02_khk_F",
+	"Atlas_U_I_Afghanka_01_ardi_full_F",
 	"Atlas_U_I_Afghanka_01_ardi_half_F",
 	"Atlas_U_I_Afghanka_02_ardi_half_F",
+	"Atlas_U_I_Afghanka_02_ardi_full_F",
 	"MYR_fat_7",
 	"MYR_fat_5",
 	"MYR_fat_6",
 	"MYR_fat_8",
-	"MYR_fat_9",
-	"MYR_fat_3",
-	"MYR_fat_2",
-	"MYR_fat_4",
-	"MYR_fat_1"
+	"MYR_fat_9"
+	//"MYR_fat_3",
+	//"MYR_fat_2",
+	//"MYR_fat_4",
+	//"MYR_fat_1"
 	];
 
 // Vests
@@ -327,7 +329,12 @@ cvo_arsenal_base append [
 	"MYR_vest_nato_mixed_1_1",
 	"MYR_vest_nato_mixed_1_2",
 	"MYR_vest_GA_lite_blk",
-	"MYR_vest_GA_rig_blk"
+	"MYR_vest_GA_rig_blk",
+	"Aegis_V_OCarrierLuchnik_Lite_khk_F",
+	"Aegis_V_OCarrierLuchnik_Lite_grn_F"
+	//"",
+	//"",
+	//""
 ];
 
 // Backpacks
@@ -547,11 +554,12 @@ cvo_arsenal_base append  [
 cvo_arsenal_base append [
 	"acc_flashlight_pistol",
 	"hgun_Rook40_F",
-	"hgun_P07_F",
+	//"hgun_P07_F",
 	"hgun_G17_F",
 	"16Rnd_9x21_Mag_v2",
 	"hgun_Rook40_F",
-	"17Rnd_9x21_Mag"
+	"17Rnd_9x21_Mag",
+	"17Rnd_9x19_Mag_RF"
 	];
 
 // Handgrenades and Throwables
