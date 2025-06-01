@@ -41,3 +41,5 @@ _x is the element of an array.
 */
 
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
+
+[] execVM "MiscInitScripts.sqf";
