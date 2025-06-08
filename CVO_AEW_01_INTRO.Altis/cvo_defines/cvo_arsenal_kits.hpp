@@ -6,42 +6,51 @@
 
 class cvo_arsenal_kits
 {
-    editor_layer_name = "cvo_arsenal_objects";
+    editor_layer_name = "CVO_Arsenal_Boxes";
     object_variable_names[] = {"source"};
 
     // Imports Base from configFile
     import Base from cvo_arsenal_kits;
 
+    //  MISCELLANEOUS
+    class ctab: Base {
+        class items {
+            class ItemAndroid;
+            class ItemcTabHCam;
+        };
+    };
+
     class GreenMagStuff: Base {
         addon_dependency = "greenmag_main";
         class items {
             // @ KYO - IDK if you edited those already or not - just comment out the entries you dont need.
-			class greenmag_ammo_556x45_basic_60Rnd;
-			class greenmag_ammo_556x45_basic_30Rnd;
+			//class greenmag_ammo_556x45_basic_60Rnd;
+			//class greenmag_ammo_556x45_basic_30Rnd;
 
 			class greenmag_ammo_762x51_basic_60Rnd;
 			class greenmag_ammo_762x51_basic_30Rnd;
 
-			class greenmag_ammo_545x39_basic_60Rnd;
-			class greenmag_ammo_545x39_basic_30Rnd;
+			//class greenmag_ammo_545x39_basic_60Rnd;
+			//class greenmag_ammo_545x39_basic_30Rnd;
 
-			class greenmag_ammo_762x39_basic_60Rnd;
-			class greenmag_ammo_762x39_basic_30Rnd;
+			//class greenmag_ammo_762x39_basic_60Rnd;
+			//class greenmag_ammo_762x39_basic_30Rnd;
 
 			class greenmag_ammo_9x21_basic_60Rnd;
 			class greenmag_ammo_9x21_basic_30Rnd;
 
-			class greenmag_ammo_45ACP_basic_30Rnd;
-			class greenmag_ammo_45ACP_basic_60Rnd;
+			//class greenmag_ammo_45ACP_basic_30Rnd;
+			//class greenmag_ammo_45ACP_basic_60Rnd;
 
-			class greenmag_ammo_762x54_basic_60Rnd;
-			class greenmag_ammo_762x54_basic_30Rnd;
+			//class greenmag_ammo_762x54_basic_60Rnd;
+			//class greenmag_ammo_762x54_basic_30Rnd;
 
 			class greenmag_item_speedloader;
         };
     };
     
     class Rations: Base {
+        condition = "missionNamespace getVariable ['ace_field_rations_enabled', true]";
         class items {
 	        class ACE_MRE_BeefStew;
 	        class ACE_MRE_ChickenTikkaMasala;
@@ -56,13 +65,13 @@ class cvo_arsenal_kits
 
     class Binoculars: Base {
         class items {
-            class ace_banana;
-            class ACE_suture;
+            class Binocular;
+
+            class Hate_Smartphone_HUD;
             class Nikon_DSLR_HUD;
             class Nikon_DSLR;
-            class Binocular;
             class Camera_lxWS;
-            class Hate_Smartphone_HUD;
+
             class ACE_Yardage450;
         };
     };
@@ -76,14 +85,11 @@ class cvo_arsenal_kits
             class cigs_craven_cigpack;
             class cigs_eckstein_cigpack;
             class cigs_Kosmos_cigpack;
-            class cigs_lighter;
             class cigs_pops_poppack;
             class cigs_lucky_strike_cigpack;
-            class cigs_matches;
             class cigs_morley_cigpack;
             class cigs_baja_blast_cigpack;
             class cigs_crayons_crayonpack;
-            class cigs_Voron_cigpack;
         };
     };
 
@@ -96,6 +102,7 @@ class cvo_arsenal_kits
         };
     };
 
+    // RADIOS
     class Radios_Base: Base {
         class items {
             class ACRE_PRC343;
@@ -108,18 +115,6 @@ class cvo_arsenal_kits
             class ACRE_PRC148;
         };
     };
-    class Radios_RTO: Base {
-        role = "RTO";
-        class items {
-            class ACRE_PRC148;
-            class ACRE_PRC77;
-            "ACRE_VHF30108SPIKE" 
-            "ACRE_VHF30108" 
-            "ACRE_VHF30108MAST"
-        };
-    };
-
-
 
     // Wearables / Gear
     class Base_Uniforms: Base {
@@ -415,46 +410,48 @@ class cvo_arsenal_kits
     };
 
     // ROLE KITS
-
     class EOD: Base {
         role = "ExplosiveSpecialist";
         class items {
+            class ACE_Clacker;
+
             class tsp_breach_popper_mag;
             class tsp_breach_popper_auto_mag;
-            class ACE_Clacker;
+
+            //class tsp_breach_silhouette_mag;
+            //class tsp_breach_stick_mag;
         };
     };
     class MG: Base {
         role = "Machinegunner";
         class items {
             //RPK
-            "75Rnd_762x39_Mag_F"
-            "Aegis_arifle_RPK74M_F"
-            "arifle_RPK_F"
-            "Aegis_45Rnd_545x39_Mag_F"
-            "Aegis_45Rnd_545x39_Mag_Tracer_F"
+            class 75Rnd_762x39_Mag_F;
+            class Aegis_arifle_RPK74M_F;
+            class arifle_RPK_F;
+            class Aegis_45Rnd_545x39_Mag_F;
+            class Aegis_45Rnd_545x39_Mag_Tracer_F;
         };
     };
 
     class AntiTank: Base {
         role = "Anti-Tank";
         class items {
-		//RPG7
-		"launch_RPG7_F"
-		"RPG7_F"
-		"PSRL1_FRAG_RF"
+            //RPG7
+            class launch_RPG7_F;
+            class RPG7_F;
+            class PSRL1_FRAG_RF;
 
-		//PSRL Fancy RPG
-		"launch_PSRL1_PWS_black_RF"
-		"launch_PSRL1_PWS_olive_RF"
-		"PSRL1_AT_RF"
-		"PSRL1_FRAG_RF"
-		"PSRL1_HE_RF"
-		"PSRL1_HEAT_RF"
+            //PSRL Fancy RPG
+            class launch_PSRL1_PWS_black_RF;
+            class launch_PSRL1_PWS_olive_RF;
+            class PSRL1_AT_RF;
+            class PSRL1_FRAG_RF;
+            class PSRL1_HE_RF;
+            class PSRL1_HEAT_RF;
 
-
-        //For later upgrade
-		//"Aegis_launch_RPG7M_F" 
+            //For later upgrade
+		    //class Aegis_launch_RPG7M_F;
 
         };
     };
@@ -463,20 +460,22 @@ class cvo_arsenal_kits
         role = "Marksman";
         class items {
             // SVD
-    		"Aegis_srifle_SVD_f"
-    		"Aegis_srifle_SVD_blk_f"
-    		"10Rnd_762x54_Mag"
-    		"Aegis_10Rnd_762x54_SVD_Red_Mag_F"
+            class Aegis_srifle_SVD_f;
+            class Aegis_srifle_SVD_blk_f;
+            class 10Rnd_762x54_Mag;
+            class Aegis_10Rnd_762x54_SVD_Red_Mag_F;
 
     		//ammo
-    		"greenmag_ammo_556x45_basic_60Rnd"
-    		"greenmag_ammo_556x45_basic_30Rnd"
-    		"10Rnd_556x45_AP_Stanag_red_RF"
-    		"10Rnd_556x45_AP_Stanag_red_Tan_RF"
+            class 10Rnd_556x45_AP_Stanag_red_RF;
+            class 10Rnd_556x45_AP_Stanag_red_Tan_RF;
+
+            //GreenMag
+            class greenmag_ammo_556x45_basic_60Rnd;
+            class greenmag_ammo_556x45_basic_30Rnd;
 
     		//accessories
-    		"optic_DMS"
-    		"optic_SOS"
+            class optic_DMS;
+            class optic_SOS;
         };
     };
 
@@ -484,71 +483,47 @@ class cvo_arsenal_kits
         role = "UAV";
         class items {
  
-		//AR-2 Darter 
-		"ION_UAV_01_backpack_lxWS"
+		    //AR-2 Darter 
+            class ION_UAV_01_backpack_lxWS;
 
-		//GLX grenade launcher and ammo
-		"glaunch_GLX_snake_lxWS"
-		"glaunch_GLX_lxWS"
-		"glaunch_GLX_tan_lxWS"
+		    //GLX grenade launcher and ammo
+            class glaunch_GLX_snake_lxWS;
+            class glaunch_GLX_lxWS;
+            class glaunch_GLX_tan_lxWS;
 
-		"1Rnd_RC40_HE_shell_RF"
-		"1Rnd_RC40_shell_RF"
+            class 1Rnd_RC40_HE_shell_RF;
+            class 1Rnd_RC40_shell_RF;
 
-		"1Rnd_RC40_SmokeBlue_shell_RF"
-		"1Rnd_RC40_SmokeGreen_shell_RF"
-		"1Rnd_RC40_SmokeOrange_shell_RF"
-		"1Rnd_RC40_SmokeRed_shell_RF"
-		"1Rnd_RC40_SmokeWhite_shell_RF"
-		//spectrum device
-		"hgun_esd_01_F"
-		"acc_esd_01_flashlight"
-		"muzzle_antenna_01_f"
-		"muzzle_antenna_03_f"
-		"muzzle_antenna_02_f"
-		//drone terminal
-		"B_UavTerminal"
+            class 1Rnd_RC40_SmokeBlue_shell_RF;
+            class 1Rnd_RC40_SmokeGreen_shell_RF;
+            class 1Rnd_RC40_SmokeOrange_shell_RF;
+            class 1Rnd_RC40_SmokeRed_shell_RF;
+            class 1Rnd_RC40_SmokeWhite_shell_RF;
+		    
+            //drone terminal
+            class B_UavTerminal;
+            class ACE_UAVBattery;
 		
-		//LR radio
-		"ACRE_PRC148"
+		    //LR radio
+            class ACRE_PRC148;
         };
     };
 
     class Leadership: Base {
         role = "Leadership";
         class items {
+            class optic_VRCO_RF;
+            class optic_Hamr;
+            class ItemcTab;
 
+            //Laser Designator
+            class Rangefinder;
+
+            /*
+            class Laserdesignator;
+            class LaserdesignatorGPS_01;
+            class Laserbatteries;
+            */
         };
     };
 };
-
-"optic_VRCO_RF"
-"optic_Hamr"
-"ItemcTab"
-
-//Laser Designator
-"Rangefinder"
-
-/* 		"Laserdesignator"
-"LaserdesignatorGPS_01"
-"Laserbatteries" */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
