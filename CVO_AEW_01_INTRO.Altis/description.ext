@@ -42,3 +42,6 @@ class CfgFunctions {
     #include "functions.hpp"
 };
 
+// ###### CVO Defines
+#include "cvo_defines/cvo_arsenal_kits.hpp"
+#include "cvo_defines/cvo_csc_presets.hpp"
