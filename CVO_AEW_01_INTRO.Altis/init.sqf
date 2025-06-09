@@ -6,7 +6,7 @@ FFPP_FFPunTellAdmin = true;
 
 [] execVM "antiflubber.sqf";
 
-execVM "cvo_arsenal_define.sqf";
+//execVM "cvo_arsenal_define.sqf";
 
 // Enable friendly fire logging for specific AI
 //[VarName,true] call FFPP_fnc_punishment_FF_addEH;

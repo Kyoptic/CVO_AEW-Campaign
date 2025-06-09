@@ -7,11 +7,11 @@ if (hasInterface) then {
     [] spawn {
 
         waitUntil{!(isNil "BIS_fnc_init")};
-		playMusic "EventTrack01_F_EPA";
+		playMusic "StreetsOfTangier";
         sleep 1;
 
-        "disclaimerLayer_Text" cutText  ["<t size='2'> ALTIS, After the East Wind Incident. New Altis Army, 2-BATT B-COY, Recon Plt</t>", "PLAIN", 5, true, true];
-        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='Images\armahosts_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
+        "disclaimerLayer_Text" cutText  ["<t size='2'> Departure lounge of a third world airport, somewhere in North Africa.</t>", "PLAIN", 5, true, true];
+        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='Images\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
 
         sleep 8;
 

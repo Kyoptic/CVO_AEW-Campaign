@@ -30,20 +30,20 @@ class cvo_arsenal_kits
 			class greenmag_ammo_762x51_basic_60Rnd;
 			class greenmag_ammo_762x51_basic_30Rnd;
 
-			//class greenmag_ammo_545x39_basic_60Rnd;
-			//class greenmag_ammo_545x39_basic_30Rnd;
+			class greenmag_ammo_545x39_basic_60Rnd;
+			class greenmag_ammo_545x39_basic_30Rnd;
 
-			//class greenmag_ammo_762x39_basic_60Rnd;
-			//class greenmag_ammo_762x39_basic_30Rnd;
+			class greenmag_ammo_762x39_basic_60Rnd;
+			class greenmag_ammo_762x39_basic_30Rnd;
 
 			class greenmag_ammo_9x21_basic_60Rnd;
 			class greenmag_ammo_9x21_basic_30Rnd;
 
-			//class greenmag_ammo_45ACP_basic_30Rnd;
-			//class greenmag_ammo_45ACP_basic_60Rnd;
+			class greenmag_ammo_45ACP_basic_30Rnd;
+			class greenmag_ammo_45ACP_basic_60Rnd;
 
-			//class greenmag_ammo_762x54_basic_60Rnd;
-			//class greenmag_ammo_762x54_basic_30Rnd;
+			class greenmag_ammo_762x54_basic_60Rnd;
+			class greenmag_ammo_762x54_basic_30Rnd;
 
 			class greenmag_item_speedloader;
         };
@@ -72,7 +72,7 @@ class cvo_arsenal_kits
             class Nikon_DSLR;
             class Camera_lxWS;
 
-            class ACE_Yardage450;
+            //class ACE_Yardage450;
         };
     };
 
@@ -120,14 +120,14 @@ class cvo_arsenal_kits
     class Base_Uniforms: Base {
         class items {
             //Aegis/Atlas Contractor Uniforms
-            class Aegis_U_lxWS_ION_Flanneltna_F;
-            class U_lxWS_ION_Casual4;
-            class U_lxWS_ION_Casual2;
-            class Aegis_U_lxWS_ION_Casualtna_F;
-            class U_lxWS_ION_Casual6;
+            // class Aegis_U_lxWS_ION_Flanneltna_F;
+            // class U_lxWS_ION_Casual4;
+            // class U_lxWS_ION_Casual2;
+            // class Aegis_U_lxWS_ION_Casualtna_F;
+            // class U_lxWS_ION_Casual6;
             // class U_I_L_Uniform_01_camo_F;
-            class Opf_U_O_S_Uniform_01_sweater_F;
-            class U_lxWS_SFIA_deserter;
+            //class Opf_U_O_S_Uniform_01_sweater_F;
+            //class U_lxWS_SFIA_deserter;
             // class Atlas_U_CombatUniformNCU_01_mcam_F;
             // class Atlas_U_CombatUniformNCU_02_mcam_F;
             class Atlas_U_B_G_CombatUniform_tshirt_arid;
@@ -137,11 +137,11 @@ class cvo_arsenal_kits
             class Atlas_U_O_Afghanka_02_khk_F;
             class Atlas_U_I_Afghanka_01_ardi_half_F;
             class Atlas_U_I_Afghanka_02_ardi_half_F;
-            class MYR_fat_7;
-            class MYR_fat_5;
-            class MYR_fat_6;
-            class MYR_fat_8;
-            class MYR_fat_9;
+            //class MYR_fat_7;
+            //class MYR_fat_5;
+            //class MYR_fat_6;
+            //class MYR_fat_8;
+            //class MYR_fat_9;
             class MYR_fat_3;
             class MYR_fat_2;
             class MYR_fat_4;
@@ -311,9 +311,24 @@ class cvo_arsenal_kits
 
     class Weapons_Primary_AKs: Base {
         class items {
-            class Aegis_arifle_AKM74_F;
+            // AK74s
+			class Aegis_arifle_AK74_F;
+			class Aegis_arifle_AK74_oak_F;
+			class Aegis_arifle_AKM74_F;
+			//AK74s with GL
             class Aegis_arifle_AKM74_GL_F;
+			class Aegis_arifle_AK74_GL_F;
+			class Aegis_arifle_AK74_GL_oak_F;
+			class 1Rnd_HE_Grenade_shell;
+			class 1Rnd_SmokeRed_Grenade_shell;
+			class 1Rnd_SmokePurple_Grenade_shell;
+			class UGL_FlareRed_F;
+			class UGL_FlareGreen_F;
+			class ACE_40mm_Flare_white;
+			class 1Rnd_Pellet_Grenade_shell_lxWS;
+			//AKSUs
             class arifle_AKSM_F;
+			class arifle_AKSM_alt_F;
             class 30Rnd_545x39_Black_Mag_Yellow_F;
             class 30Rnd_545x39_Mag_F;
             class 30Rnd_545x39_Black_Mag_Tracer_Yellow_F;
@@ -335,6 +350,7 @@ class cvo_arsenal_kits
 	        class hgun_P07_F;
 	        class hgun_G17_F;
 	        class 16Rnd_9x21_Mag_v2;
+			class 17Rnd_9x19_Mag_RF;
 
 
 	        class hgun_Pistol_01_F;
@@ -354,8 +370,7 @@ class cvo_arsenal_kits
 	        class optic_Holosight_smg_blk_F;
 	        class optic_ACO_grn_desert_RF;
 	        //class Aegis_optic_ACOG;
-	        class optic_Arco_blk_F;
-	        class Aegis_optic_ICO;
+	        //class optic_Arco_blk_F;
 	        class optic_ACO_grn;
 	        class optic_Aco;
 	        //class optic_Hamr;
@@ -375,7 +390,6 @@ class cvo_arsenal_kits
 	        class saber_light_lxWS;
 	        class bipod_01_F_blk;
 	        class optic_Aco_smg;
-	        class optic_Holosight_smg_blk_F;
 	        class Aegis_optic_ROS_SMG;
         };
     };
@@ -414,21 +428,29 @@ class cvo_arsenal_kits
         role = "ExplosiveSpecialist";
         class items {
             class ACE_Clacker;
-
+			class ACE_wirecutter;
+			class Toolkit;
             class tsp_breach_popper_mag;
             class tsp_breach_popper_auto_mag;
+			class ACE_DefusalKit;
 
             //class tsp_breach_silhouette_mag;
             //class tsp_breach_stick_mag;
+			
+			//Minesweepers
+			class ACE_VMM3;
+			class ACE_VMH3;
+
+			//class ACE_Fortify
         };
     };
     class MG: Base {
         role = "Machinegunner";
         class items {
             //RPK
-            class 75Rnd_762x39_Mag_F;
+            //class 75Rnd_762x39_Mag_F;
             class Aegis_arifle_RPK74M_F;
-            class arifle_RPK_F;
+            //class arifle_RPK_F;
             class Aegis_45Rnd_545x39_Mag_F;
             class Aegis_45Rnd_545x39_Mag_Tracer_F;
         };
@@ -440,7 +462,6 @@ class cvo_arsenal_kits
             //RPG7
             class launch_RPG7_F;
             class RPG7_F;
-            class PSRL1_FRAG_RF;
 
             //PSRL Fancy RPG
             class launch_PSRL1_PWS_black_RF;
@@ -476,6 +497,10 @@ class cvo_arsenal_kits
     		//accessories
             class optic_DMS;
             class optic_SOS;
+			
+			//Utility
+			class ACE_Tripod;
+			class ACE_RangeCard;
         };
     };
 
@@ -483,26 +508,36 @@ class cvo_arsenal_kits
         role = "UAV";
         class items {
  
-		    //AR-2 Darter 
-            class ION_UAV_01_backpack_lxWS;
+			//EWAR Kit
+			class hgun_esd_01_F;
+			class acc_esd_01_flashlight;
+			class muzzle_antenna_01_f;
+			class muzzle_antenna_02_f;
+			class muzzle_antenna_03_f;
 
-		    //GLX grenade launcher and ammo
-            class glaunch_GLX_snake_lxWS;
-            class glaunch_GLX_lxWS;
-            class glaunch_GLX_tan_lxWS;
+			//ACE Groundspike & Mast
+			class ACRE_VHF30108SPIKE;
+			class ACRE_VHF30108;
+			class ACRE_VHF30108MAST;
+			
+		    ////AR-2 Darter 
+            //class ION_UAV_01_backpack_lxWS;
 
-            class 1Rnd_RC40_HE_shell_RF;
-            class 1Rnd_RC40_shell_RF;
-
-            class 1Rnd_RC40_SmokeBlue_shell_RF;
-            class 1Rnd_RC40_SmokeGreen_shell_RF;
-            class 1Rnd_RC40_SmokeOrange_shell_RF;
-            class 1Rnd_RC40_SmokeRed_shell_RF;
-            class 1Rnd_RC40_SmokeWhite_shell_RF;
+		    ////GLX grenade launcher and ammo
+            // class glaunch_GLX_snake_lxWS;
+            // class glaunch_GLX_lxWS;
+            // class glaunch_GLX_tan_lxWS;
+            // class 1Rnd_RC40_HE_shell_RF;
+            // class 1Rnd_RC40_shell_RF;
+            // class 1Rnd_RC40_SmokeBlue_shell_RF;
+            // class 1Rnd_RC40_SmokeGreen_shell_RF;
+            // class 1Rnd_RC40_SmokeOrange_shell_RF;
+            // class 1Rnd_RC40_SmokeRed_shell_RF;
+            // class 1Rnd_RC40_SmokeWhite_shell_RF;
 		    
-            //drone terminal
-            class B_UavTerminal;
-            class ACE_UAVBattery;
+            ////drone terminal
+            // class B_UavTerminal;
+            // class ACE_UAVBattery;
 		
 		    //LR radio
             class ACRE_PRC148;
@@ -517,7 +552,7 @@ class cvo_arsenal_kits
             class ItemcTab;
 
             //Laser Designator
-            class Rangefinder;
+            class ACE_Yardage450;
 
             /*
             class Laserdesignator;
