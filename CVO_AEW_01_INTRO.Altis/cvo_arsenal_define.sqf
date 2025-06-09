@@ -278,33 +278,38 @@ cvo_arsenal_base append [
 	////UNA uniforms
 	// "U_lxWS_UN_Camo3",
 	// "U_lxWS_UN_Camo2"
+	
 	//Aegis/Atlas Contractor Uniforms
-	"Aegis_U_lxWS_ION_Flanneltna_F",
-	"U_lxWS_ION_Casual4",
-	"U_lxWS_ION_Casual2",
-	"Aegis_U_lxWS_ION_Casualtna_F",
-	"U_lxWS_ION_Casual6",
+	// "Aegis_U_lxWS_ION_Flanneltna_F",
+	// "U_lxWS_ION_Casual4",
+	// "U_lxWS_ION_Casual2",
+	// "Aegis_U_lxWS_ION_Casualtna_F",
+	// "U_lxWS_ION_Casual6",
 	//"U_I_L_Uniform_01_camo_F",
-	"Opf_U_O_S_Uniform_01_sweater_F",
-	"U_lxWS_SFIA_deserter",
+	//"Opf_U_O_S_Uniform_01_sweater_F",
+	//"U_lxWS_SFIA_deserter",
 	//"Atlas_U_CombatUniformNCU_01_mcam_F",
 	//"Atlas_U_CombatUniformNCU_02_mcam_F",
+	
+	
 	"Atlas_U_B_G_CombatUniform_tshirt_arid",
 	"Atlas_U_O_Afghanka_01_grn_F",
 	"Atlas_U_O_Afghanka_02_grn_F",
 	"Atlas_U_O_Afghanka_01_khk_F",
 	"Atlas_U_O_Afghanka_02_khk_F",
+	"Atlas_U_I_Afghanka_01_ardi_full_F",
 	"Atlas_U_I_Afghanka_01_ardi_half_F",
 	"Atlas_U_I_Afghanka_02_ardi_half_F",
+	"Atlas_U_I_Afghanka_02_ardi_full_F",
 	"MYR_fat_7",
 	"MYR_fat_5",
 	"MYR_fat_6",
 	"MYR_fat_8",
-	"MYR_fat_9",
-	"MYR_fat_3",
-	"MYR_fat_2",
-	"MYR_fat_4",
-	"MYR_fat_1"
+	"MYR_fat_9"
+	//"MYR_fat_3",
+	//"MYR_fat_2",
+	//"MYR_fat_4",
+	//"MYR_fat_1"
 	];
 
 // Vests
@@ -327,7 +332,12 @@ cvo_arsenal_base append [
 	"MYR_vest_nato_mixed_1_1",
 	"MYR_vest_nato_mixed_1_2",
 	"MYR_vest_GA_lite_blk",
-	"MYR_vest_GA_rig_blk"
+	"MYR_vest_GA_rig_blk",
+	"Aegis_V_OCarrierLuchnik_Lite_khk_F",
+	"Aegis_V_OCarrierLuchnik_Lite_grn_F"
+	//"",
+	//"",
+	//""
 ];
 
 // Backpacks
@@ -518,7 +528,7 @@ cvo_arsenal_base append  [
 	"optic_Holosight_smg_blk_F",
 	"optic_ACO_grn_desert_RF",
 	//"Aegis_optic_ACOG",
-	"optic_Arco_blk_F",
+	//"optic_Arco_blk_F",
 	"Aegis_optic_ICO",
 	"optic_ACO_grn",
 	"optic_Aco",
@@ -547,11 +557,12 @@ cvo_arsenal_base append  [
 cvo_arsenal_base append [
 	"acc_flashlight_pistol",
 	"hgun_Rook40_F",
-	"hgun_P07_F",
+	//"hgun_P07_F",
 	"hgun_G17_F",
 	"16Rnd_9x21_Mag_v2",
 	"hgun_Rook40_F",
-	"17Rnd_9x21_Mag"
+	"17Rnd_9x21_Mag",
+	"17Rnd_9x19_Mag_RF"
 	];
 
 // Handgrenades and Throwables
@@ -781,21 +792,21 @@ CVO_arsenal_roleKit = createHashMapFromArray [
 	["Drone Operator", [
 		[
 		//AR-2 Darter 
-		"ION_UAV_01_backpack_lxWS",
+		//"ION_UAV_01_backpack_lxWS",
 
 		//GLX grenade launcher and ammo
-		"glaunch_GLX_snake_lxWS",
-		"glaunch_GLX_lxWS",
-		"glaunch_GLX_tan_lxWS",
+		//"glaunch_GLX_snake_lxWS",
+		//"glaunch_GLX_lxWS",
+		//"glaunch_GLX_tan_lxWS",
 
-		"1Rnd_RC40_HE_shell_RF",
-		"1Rnd_RC40_shell_RF",
+		//"1Rnd_RC40_HE_shell_RF",
+		//"1Rnd_RC40_shell_RF",
 
-		"1Rnd_RC40_SmokeBlue_shell_RF",
-		"1Rnd_RC40_SmokeGreen_shell_RF",
-		"1Rnd_RC40_SmokeOrange_shell_RF",
-		"1Rnd_RC40_SmokeRed_shell_RF",
-		"1Rnd_RC40_SmokeWhite_shell_RF",
+		// "1Rnd_RC40_SmokeBlue_shell_RF",
+		// "1Rnd_RC40_SmokeGreen_shell_RF",
+		// "1Rnd_RC40_SmokeOrange_shell_RF",
+		// "1Rnd_RC40_SmokeRed_shell_RF",
+		// "1Rnd_RC40_SmokeWhite_shell_RF",
 		//spectrum device
 		"hgun_esd_01_F",
 		"acc_esd_01_flashlight",
