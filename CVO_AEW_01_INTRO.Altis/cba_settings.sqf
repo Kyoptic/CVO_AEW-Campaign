@@ -113,4 +113,3 @@ force ace_nightvision_effectScaling = 1;
 force ace_nightvision_fogScaling = 1.1;
 force ace_nightvision_noiseScaling = 1;
 force ace_nightvision_shutterEffects = true;
-
