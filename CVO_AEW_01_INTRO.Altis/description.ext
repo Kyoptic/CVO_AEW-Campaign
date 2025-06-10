@@ -27,7 +27,8 @@ cba_settings_hasSettingsFile = 1;
 aiKills = 0; // Does not add AI to the scoreboard
 disabledAI = 1;
 
-// ###### Other Stuff
+// ###### Custom CVO Stuff
+// AntiFlubber. 1: enabled - 0 or undefined: disabled
 enableAntiFlubber = 1;
 
 // ###### Respawn Settings - CVO Defaults
