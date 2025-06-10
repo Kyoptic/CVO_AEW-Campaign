@@ -49,6 +49,10 @@ class CfgFunctions {
         class AI{
             class disableLayerAI {};
             class enableLayerAI {};
-        }
+        };
+    };
+
+    class mission {
+        class babel_init { postInit = 1; };
     };
 };
