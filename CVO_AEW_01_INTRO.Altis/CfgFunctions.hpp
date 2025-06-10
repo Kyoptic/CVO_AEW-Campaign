@@ -41,18 +41,21 @@ class CfgFunctions {
 
         class Utility
         {
-            class ValidateObjects {};
+            class ValidateObjects {}; // Could be useful to keep
         };
     };
 
     class A3A{
         class AI{
-            class disableLayerAI {};
-            class enableLayerAI {};
+            class disableLayerAI {}; // e.g. a3a_fnc_disableLayerAI - this is a global variable 'containing' the code that is within the function. Ergo can call this global var to run the function by using e.g.        call a3a_fnc_disableLayerAI // keep
+            class enableLayerAI {};  // kèép
         };
     };
 
     class mission {
-        class babel_init { postInit = 1; };
+		class init {
+			class babel_init { postInit = 1; };
+			class diary {};
+		};
     };
 };
