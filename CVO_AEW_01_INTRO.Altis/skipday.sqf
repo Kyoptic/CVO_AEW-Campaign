@@ -1,6 +1,6 @@
 
 
-
+// This is a cutscene in use for the first mission
 
 if (hasInterface) then {
     0 fadeRadio 0;
