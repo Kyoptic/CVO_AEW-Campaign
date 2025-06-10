@@ -1,7 +1,20 @@
+/*
+* Author: Someone - reworked by Zorn
+* 
+*	Enables AntiFlubber Script
+*	Checks (missionConfigFile >> "enableAntiFlubber") == 1 to enable it.
+* 	Attention: Scheduled Code!
+*
+*/
 
+// Run on all clients with an interface. Not the server(if dedicated) and not on headless clients.
 
-if (hasInterface) then	// Run on all clients with an interface. Not the server(if dedicated) and not on headless clients.
-{
+if (getNumber (missionConfigFile >> "enableAntiFlubber") != 1) exitWith {};
+
+diag_log "[CVO](debug)(fn_antiFlubber) Enabled!";
+
+if (hasInterface) then {
+
 	waitUntil {!isNull player && isplayer player};
 	if (isNil "DM_Debug") then {DM_Debug = false;};
 	if (DM_Debug) then {(format["%1 has joined and is running antiFlubber.sqf", (name player)]) remoteExec ["systemChat", -2];};

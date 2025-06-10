@@ -27,6 +27,8 @@ cba_settings_hasSettingsFile = 1;
 aiKills = 0; // Does not add AI to the scoreboard
 disabledAI = 1;
 
+// ###### Other Stuff
+enableAntiFlubber = 1;
 
 // ###### Respawn Settings - CVO Defaults
 // https://community.bistudio.com/wiki/Description.ext#Respawn/Revive

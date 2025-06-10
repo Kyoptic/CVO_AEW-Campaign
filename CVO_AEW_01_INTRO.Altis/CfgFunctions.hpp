@@ -13,6 +13,8 @@ class CfgFunctions {
 			
             class diary { postInit = 1; };
 			class babel_init { postInit = 1; };
+			
+            class antiFlubber { postInit = 1; };
 		};
     };
 };
