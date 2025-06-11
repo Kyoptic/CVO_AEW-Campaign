@@ -18,6 +18,7 @@ params [
     [ "_unit",     ACE_player, [objNull] ]
 ];
 
+// [ace_player] call CBA_fnc_getLoadout;
 
 private _loadout = switch (_character) do {
     case "spike_gillian": { [[[],[],[],["MYR_fat_9",[["iedd_item_notebook",1],["ACE_DefusalKit",1]]],["V_Rangemaster_belt_blk",[]],[],"MYR_cap","G_Shemag_white",["Hate_Smartphone_HUD","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ACE_Altimeter",""]],[]] };
