@@ -12,7 +12,7 @@ Parameter(s):
 1: NUMBER (Optional)- Range of the jammer in Meters. Default is 1000.
 2: NUMBER (Optional)- Strength of the jammer. Default is 50.
 3: BOOL (Optional)- Enable Debug. Default is False.
-Example: jamRadios = [[JAMMER],500] execVM "TFARjamRadios.sqf";
+Example: jamRadios = [[JAMMER],500] spawn common_fnc_TFARjamRadios;
 */
 
 if (!hasInterface) exitwith {};

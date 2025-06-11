@@ -12,8 +12,8 @@ class Header
 author= "Kyoptic [CVO]"; // Name of the creator(s)
 OnLoadName = "AEW01 - INTRODUCTIONS"; // Mission name in the loading screen, keep it short without operation
 OnLoadMission = "Acta, non Verba"; // Bottom of the loading screen, don't change
-loadScreen = "Images\image.jpg"; // The picture displayed during loading screen
-overviewPicture = "Images\image.jpg"; // The picture displayed in the mission selection screen
+loadScreen = "data\loadscreen.jpg"; // The picture displayed during loading screen
+overviewPicture = "data\loadscreen.jpg"; // The picture displayed in the mission selection screen
 briefingName = "AEW01 - INTRODUCTIONS"; // The Mission name displayed in the mission selection menu
 overviewText = "The 24th CVO is deployed to Altis as a subcontractor to Myrmidon Inc, in the aftermath of the East Wind Campaign."; // The text above the picture in the mission selection menu
 
@@ -60,7 +60,7 @@ class CfgSounds
  class	riot
  {
   name = "riot";
-  sound[] = {"sound\riot.ogg", db+30.0,1.0};
+  sound[] = {"data\riot.ogg", db+30.0,1.0};
   titles[] = {};
  };
 };

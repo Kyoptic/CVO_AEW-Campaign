@@ -11,7 +11,7 @@ if (hasInterface) then {
         sleep 1;
 
         "disclaimerLayer_Text" cutText  ["<t size='2'> Departure lounge of a third world airport, somewhere in North Africa.</t>", "PLAIN", 5, true, true];
-        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='Images\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
+        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='data\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
 
         sleep 8;
 

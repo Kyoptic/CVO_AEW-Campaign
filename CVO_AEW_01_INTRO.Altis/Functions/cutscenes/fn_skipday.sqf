@@ -16,7 +16,7 @@ if (hasInterface) then {
         sleep 8;
 
         "disclaimerLayer_Text" cutText  ["<t size='2'> Later that day...</t>", "PLAIN", 5, true, true];
-        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='Images\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
+        "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='data\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
 		skiptime 3;
 		ZGM setPos (getPos TPpos);
         sleep 8;
