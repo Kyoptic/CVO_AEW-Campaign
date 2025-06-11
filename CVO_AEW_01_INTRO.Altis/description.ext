@@ -55,3 +55,4 @@ respawnButton = 1;
 
 // ###### Other Includes
 #include "CfgSounds.hpp"
+#include "CfgIdentities.hpp"

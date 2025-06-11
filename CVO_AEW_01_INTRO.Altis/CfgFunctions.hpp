@@ -6,6 +6,8 @@ class CfgFunctions {
 
             class toggleLayerAI {};
             class TFARjamRadios {};
+
+            class setCharacter {};
         };
     };
 
