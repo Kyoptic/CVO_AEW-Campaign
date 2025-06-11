@@ -21,8 +21,10 @@ class CfgFunctions {
 
     class init {
 		class init {
-			
-            class diary { postInit = 1; };
+			class diary { postInit = 1; };
+			class personalities { postInit = 1; };
+
+
 			class babel_init { postInit = 1; };
 			
             class antiFlubber { postInit = 1; };    // Antiflubber, controlled by description.ext: enableAntiFlubber = 1;
