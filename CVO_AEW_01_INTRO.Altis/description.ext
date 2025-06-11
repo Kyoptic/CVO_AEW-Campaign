@@ -64,3 +64,6 @@ class CfgSounds
   titles[] = {};
  };
 };
+
+
+#include "CfgIdentities.hpp"
