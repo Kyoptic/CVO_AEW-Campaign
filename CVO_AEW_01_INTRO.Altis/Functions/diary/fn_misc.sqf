@@ -23,7 +23,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 */
 
 [
@@ -36,7 +36,7 @@
 - All the creator's of the mods that were used in this mission.<br/>
 - Anyone who have contributed to the creation of this mission.<br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 /* 
 [
@@ -47,5 +47,5 @@
 ,"
 <br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 */

@@ -24,7 +24,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 */
 
@@ -43,7 +43,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 [
@@ -58,7 +58,7 @@ Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 [
@@ -71,6 +71,6 @@ Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 

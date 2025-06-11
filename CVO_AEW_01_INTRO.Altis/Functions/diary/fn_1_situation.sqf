@@ -24,7 +24,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 */
 
@@ -42,7 +42,7 @@ The 24th Chorni Vorn has been hired as a subcontractor to Myrmidones Inc, a PMC 
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     "Situation"        
@@ -61,5 +61,5 @@ As the Second Altis Republic begins to train its own armed forces, the New Altis
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 

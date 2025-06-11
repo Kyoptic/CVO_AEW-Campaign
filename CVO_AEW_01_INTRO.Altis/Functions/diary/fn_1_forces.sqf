@@ -24,7 +24,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 */
 
@@ -43,7 +43,7 @@ private _emyForces_DisplayName = "Enemy Forces";
     ,""
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     _emyForces_DisplayName        
@@ -54,7 +54,7 @@ private _emyForces_DisplayName = "Enemy Forces";
     ,""
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     _emyForces_DisplayName        
@@ -65,7 +65,7 @@ private _emyForces_DisplayName = "Enemy Forces";
     ,""
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 
@@ -81,7 +81,7 @@ private _alliedForces_DisplayName = "Allied Forces";
     ,""           // Icon (small Flag for examlpe)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 [
@@ -93,7 +93,7 @@ private _alliedForces_DisplayName = "Allied Forces";
     ,""           // Icon (small Flag for examlpe)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 [
@@ -105,7 +105,7 @@ private _alliedForces_DisplayName = "Allied Forces";
     ,""           // Icon (small Flag for examlpe)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     _alliedForces_DisplayName        
@@ -116,4 +116,4 @@ private _alliedForces_DisplayName = "Allied Forces";
     ,""           // Icon (small Flag for examlpe)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;

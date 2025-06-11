@@ -24,7 +24,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 */
 
@@ -43,4 +43,4 @@ The 24th Arrives on Altis and conducts some basic EOD work.
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;

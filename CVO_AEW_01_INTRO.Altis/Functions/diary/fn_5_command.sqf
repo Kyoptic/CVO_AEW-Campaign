@@ -24,7 +24,7 @@
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
     // ,_target
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 */
 
@@ -42,7 +42,7 @@ Medic is double trained as a Marksman, and has access to DMRs.<br/><br/>
 2IC is also a trained linguist/interpreter. The island of Altis has many refugees. Not everyone speaks English.<br/><br/>
 These smaller 6 man units are highly flexible and can easily be augmented by combining three or four people from another unit to form an 8, 9 or 10 man squad for extra firepower. Alternatively, they can be split off or reduced to a 4 man team while still maintaining much of their capabilities (e.g. 2IC, Medic, EOD, AT spec).<br/><br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     "ORBAT"
@@ -57,7 +57,7 @@ These smaller 6 man units are highly flexible and can easily be augmented by com
     Anti-Tank Specialist<br/>
     Explosive Ordnance Disposal Specialist<br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 [
     "ORBAT"
     ,"Raven 1-2 - Infantry"
@@ -71,7 +71,7 @@ These smaller 6 man units are highly flexible and can easily be augmented by com
     Anti-Tank Specialist<br/>
     Explosive Ordnance Disposal Specialist<br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 [
     "ORBAT"
     ,"Raven 1-1 - Infantry"
@@ -85,7 +85,7 @@ These smaller 6 man units are highly flexible and can easily be augmented by com
     Anti-Tank Specialist<br/>
     Explosive Ordnance Disposal Specialist<br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 [
     "ORBAT"
@@ -98,4 +98,4 @@ XO  Platoon Second In Command<br/>
     Doctor<br/>
     Electronic Warfare Officer<br/>
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;

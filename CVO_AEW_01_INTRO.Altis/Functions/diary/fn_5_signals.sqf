@@ -25,7 +25,7 @@ Block 1 Channel  1: Raven 1-1 - Infantry
 <br/>
 <br/>Block 1 Channel  6: Raven 1-6 - Platoon Command
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 [
@@ -36,7 +36,7 @@ Block 1 Channel  1: Raven 1-1 - Infantry
     ,"
 Group 01 Channel 1: Ground Command
 "
-] call cvo_intel_fnc_setEntry;
+] call cvo_diary_fnc_setEntry;
 
 
 // <br/> Group 01 Channel 8: JTAC NET
