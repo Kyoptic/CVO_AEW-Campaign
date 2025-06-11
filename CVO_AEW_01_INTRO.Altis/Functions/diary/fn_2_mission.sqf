@@ -31,13 +31,10 @@
 // Important: New entries get inserted on top of the list.
 // This means: In this file, you need to reverse the desired order. 
 
-Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
-Treat the Altians with respect and concern.<br/>
-
 
 [
     "Mission"        
-    ,"SECONDARY OBJECTIVES"
+    ,"Secondary Objectives"
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
@@ -51,11 +48,12 @@ Treat the Altians with respect and concern.<br/>
 
 [
     "Mission"        
-    ,"PRIMARY OBJECTIVES"
+    ,"Primary Objectives"
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
-*** Insert required Mission objectives here.***<br/><br/>
+Treat the Altians with respect and concern.<br/>
+Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName

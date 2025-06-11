@@ -31,7 +31,7 @@
 
 [
     "Execution"        
-    ,"SPECIAL TASKS"
+    ,"Special Tasks"
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
@@ -59,7 +59,7 @@
 
 [
     "Execution"        
-    ,"MOVEMENT PLAN"
+    ,"Movement Plan"
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"

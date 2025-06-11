@@ -22,7 +22,7 @@ class CfgFunctions {
     class init {
 		class init {
 
-			class babel_init { postInit = 1; };
+			class babel { postInit = 1; };
             class antiFlubber { postInit = 1; };    // Antiflubber, controlled by description.ext: enableAntiFlubber = 1;
 
 		};
@@ -30,18 +30,21 @@ class CfgFunctions {
 
     class diary {
         class diary {
-            class misc {};
-            
+
             class 0_init { postInit = 1; };
 
             class 1_forces {};
             class 1_personalities {};
             class 1_situation {};
+            class 2_mission {};
+            class 3_execution {};
             class 4_administration {};
             class 4_missionLog {};
             class 4_additionals {};
             class 5_signals {};
             class 5_command {};
+
+            class misc {};
         };
     };
 

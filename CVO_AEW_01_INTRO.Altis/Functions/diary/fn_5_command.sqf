@@ -37,11 +37,10 @@
     ,""                     // subtitle
     ,""                     // Image
     ,"
- - EWAR Officer has access to the spectrum analyser, which may be used to identify units transmitting on radio.<br/>
- - Medic is double trained as a Marksman, and has access to DMRs.<br/>
- - 2IC is also a trained linguist/interpreter. The island of Altis has many refugees. Not everyone speaks English.<br/>
- <br/>
- These smaller 6 man units are highly flexible and can easily be augmented by combining three or four people from another unit to form an 8, 9 or 10 man squad for extra firepower. Alternatively, they can be split off or reduced to a 4 man team while still maintaining much of their capabilities (e.g. 2IC, Medic, EOD, AT spec).
+EWAR Officer has access to the spectrum analyser, which may be used to identify units transmitting on radio.<br/><br/>
+Medic is double trained as a Marksman, and has access to DMRs.<br/><br/>
+2IC is also a trained linguist/interpreter. The island of Altis has many refugees. Not everyone speaks English.<br/><br/>
+These smaller 6 man units are highly flexible and can easily be augmented by combining three or four people from another unit to form an 8, 9 or 10 man squad for extra firepower. Alternatively, they can be split off or reduced to a 4 man team while still maintaining much of their capabilities (e.g. 2IC, Medic, EOD, AT spec).<br/><br/>
 "
 ] call cvo_intel_fnc_setEntry;
 

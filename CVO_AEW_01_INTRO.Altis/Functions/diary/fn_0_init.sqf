@@ -36,13 +36,13 @@ player removeDiarySubject "Diary";
 [] call diary_fnc_3_execution;
 
 
-["IV. Admin/Logistics", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
+["IV. Admin", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
 [] call diary_fnc_4_Administration;
 [] call diary_fnc_4_missionLog;
 [] call diary_fnc_4_additionals;
 
 
-["V. Command/Signal", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
+["V. Command", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
 [] call diary_fnc_5_signals;
 [] call diary_fnc_5_command;
 
