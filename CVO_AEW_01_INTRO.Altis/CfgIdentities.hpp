@@ -5,8 +5,8 @@ class CfgIdentities
 		face = "Aegis_HispanicHead_02";
 		glasses = "G_Tactical_Clear";
 		name = "'Spike' Gillian";
-		nameSound = "Adams";
+		nameSound = "NoVoice";
 		pitch = 1.0;
-		speaker = "Male01ENG";
+		speaker = "NoVoice";
 	};
 };
