@@ -36,9 +36,9 @@
 - All the creator's of the mods that were used in this mission.<br/>
 - Anyone who have contributed to the creation of this mission.<br/>
 "
-] call cvo_intel_fnc_createDiaryEntry;
+] call cvo_intel_fnc_setEntry;
 
-/*
+/* 
 [
     "Misc"
     ,""
@@ -47,5 +47,5 @@
 ,"
 <br/>
 "
-] call cvo_intel_fnc_createDiaryEntry;
+] call cvo_intel_fnc_setEntry;
 */
