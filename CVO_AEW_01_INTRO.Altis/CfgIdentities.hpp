@@ -1,10 +1,10 @@
 class CfgIdentities
 {
-	class SomeGuy
+	class spike_gillian
 	{
-		face = "WhiteHead_10";
+		face = "Aegis_HispanicHead_02";
 		glasses = "G_Tactical_Clear";
-		name = "Adams";
+		name = "'Spike' Gillian";
 		nameSound = "Adams";
 		pitch = 1.0;
 		speaker = "Male01ENG";
