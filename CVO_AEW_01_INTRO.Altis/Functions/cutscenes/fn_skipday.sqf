@@ -18,11 +18,21 @@ if (hasInterface) then {
         "disclaimerLayer_Text" cutText  ["<t size='2'> Later that day...</t>", "PLAIN", 5, true, true];
         "disclaimerLayer_Sponsor" cutText ["<img size='10' shadow='0' image='data\voron_sponsor.paa'/>", "PLAIN DOWN", 5, true, true];
 		skiptime 3;
+		
+		// Could really do with hiding/deleting entire layer called 'AthiraRiotsLayer' here, too, for performance. No time to work out how rn.
+		
 		ZGM setPos (getPos TPpos);
+		CoZGM setPos (getPos TPpos);
         sleep 8;
 		
+		// Add map markers ahead of brief
+		"CVO_Patrol_Base" setMarkerAlpha 1;
+		"NAA_Patrol_Base" setMarkerAlpha 1;
 		"minefield1" setMarkerAlpha 1;
-		"minefield2" setMarkerAlpha 1;
+		"minefield2" setMarkerAlpha 0.6;
+		"AbandonedBaseMarker" setMarkerAlpha 1;
+		"Infestiona_IDAPCamp" setMarkerAlpha 1;
+		"Infestiona_WAMilitiaCamp" setMarkerAlpha 1;
 
         "disclaimerLayer_Background" cutFadeout 3;
         "disclaimerLayer_Text" cutFadeout 1;
