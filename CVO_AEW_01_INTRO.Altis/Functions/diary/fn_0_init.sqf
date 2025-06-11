@@ -19,14 +19,20 @@
 player removeDiarySubject "Diary";
 // Add credits to the CBA Entry.
 
-
+[] call diary_fnc_misc;
 
 // Briefing Category
 // https://www.wikiwand.com/en/articles/Five_paragraph_order
+[] call cvo_intel_fnc_createDiaryCategory;
+
 ["I. Situation", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
-[] call diary_fnc_1_forces;
-[] call diary_fnc_1_personalities;
 [] call diary_fnc_1_situation;
+
+[] call cvo_intel_fnc_createDiaryCategory;
+[] call diary_fnc_1_forces;
+
+[] call cvo_intel_fnc_createDiaryCategory;
+[] call diary_fnc_1_personalities;
 
 ["II. Mission", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
 [] call diary_fnc_2_mission;
@@ -38,6 +44,8 @@ player removeDiarySubject "Diary";
 
 ["IV. Admin", "CVO", " "] call cvo_intel_fnc_createDiaryCategory;
 [] call diary_fnc_4_Administration;
+
+[] call cvo_intel_fnc_createDiaryCategory;
 [] call diary_fnc_4_missionLog;
 [] call diary_fnc_4_additionals;
 
@@ -47,6 +55,5 @@ player removeDiarySubject "Diary";
 [] call diary_fnc_5_command;
 
 
-
 // Empty Trailing Spacer
-[""] call cvo_intel_fnc_createDiaryCategory;
+[] call cvo_intel_fnc_createDiaryCategory;
