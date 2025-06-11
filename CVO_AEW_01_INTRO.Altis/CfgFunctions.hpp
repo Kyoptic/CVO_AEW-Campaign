@@ -31,9 +31,9 @@ class CfgFunctions {
 		};
     };
 
-    class custom {
-        class custom {
-            class misc { /* postInit = 1; */ };          // This is Kyo's InitMiscScripts.sqf - ether run via postInit = 1; or simply execute code `[] call custom_fnc_misc;`
+    class kyo {
+        class kyo {
+            class misc { /* postInit = 1; */ };          // This is Kyo's InitMiscScripts.sqf - ether run via postInit = 1; or simply execute code `[] call kyo_fnc_misc;`
         };
     };
 };

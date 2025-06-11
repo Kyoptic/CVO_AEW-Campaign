@@ -66,7 +66,7 @@ private _recursiveCodeCatalog = {
 	private _keys = keys _catalog call BIS_fnc_sortNum;
 	private _units = _catalog deleteAt _keys#0;
 
-
+	diag_log format ['[CVO](debug)(fn_toggleLayerAI) Sending Package: %1 to owner: %1', [count _units, _mode, _features], _units#0];
 	["common_eh_toggleAIfeature", [_units, _mode, _features], _units#0] call CBA_fnc_targetEvent;
 
 	if (count _catalog == 0) exitWith {};
