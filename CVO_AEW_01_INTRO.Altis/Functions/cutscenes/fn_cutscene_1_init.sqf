@@ -17,25 +17,25 @@
 // 1. Trigger: some random civ ai gets killed/deleted
 
 
-private _triggerCiv_scene1 = objNull;  // <- place objNull with the variable of that civilian.
-
-
+private _triggerCiv_scene1 = missionNamespace getVariable ["civ_trigger_1", objNull];  // <- replace "civ_trigger_1" with the actual variable;
 
 if (isServer) then {
+    [
+        {
+            // condition - Needs to return bool
+            params ["_obj", "", [objNull]];
 
-
-    _condition = {
-        params ["_obj", "", [objNull]];
-
-        !alive _obj // obj ded
-        ||
-        isNull _obj // obj deleted
-    };                // condition - Needs to return bool
-    _statement = {
-        missionNamespace setVariable ["kyo_trigger_cutscene_1", true];
-    };                // Code to be executed once condition true
-    _parameter = [_triggerCiv_scene1];                // arguments to be passed on -> _this
-    [_condition, _statement, _parameter] call CBA_fnc_waitUntilAndExecute;
+            !alive _obj // obj ded
+            ||
+            isNull _obj // obj deleted
+        },                
+        {
+            // Code to be executed once condition true
+            missionNamespace setVariable ["kyo_trigger_cutscene_1", true];
+            [] call cutscenes_fnc_cutscene_1;
+        },                
+        [_triggerCiv_scene1] // parameters
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
 if (hasInterface) then {
@@ -60,11 +60,35 @@ if (hasInterface) then {
     [
         "CUTSCENE_PLAYER_INTO_HELI",
         {
-            params [ ["_heli", objNull, [objNull] ] ];
+            params [ "_helis" ];
+
+
+            _helis = _helis select { !isNull _x };
 
             moveOut player;
-            player moveInCargo _heli;
 
+            if (player moveInCargo (_helis#0)) then {
+                player assignAsCargo (_helis#0)
+            } else {
+                if (count _helis > 1) then {
+                    player moveInCargo (_helis#1);
+                    player assignAsCargo (_helis#1)
+                } else {
+                    player allowDamage false;
+                    player attachTo [_helis#0, [0,5,0]];
+
+                    _condition = {
+                        params ["_heli"];
+                        ! alive _heli || { getPos _heli select 3 < 3 };
+                    };            
+                    _statement = {
+                        detach player;
+                        [ { player allowDamage true } , [], 5] call CBA_fnc_waitAndExecute;
+                    };                // Code to be executed once condition true
+                    _parameter = [_helis#0];                // arguments to be passed on -> _this
+                    [_condition, _statement, _parameter] call CBA_fnc_waitUntilAndExecute;
+                };
+            };
         }
     ] call CBA_fnc_addEventHandler;
 }; 

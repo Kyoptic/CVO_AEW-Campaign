@@ -18,6 +18,9 @@ class CfgFunctions {
             class skipday {};
 
             class disclaimer {};
+
+            class cutscene_1 {};
+            class cutscene_1_init {};
         };
     };
 
