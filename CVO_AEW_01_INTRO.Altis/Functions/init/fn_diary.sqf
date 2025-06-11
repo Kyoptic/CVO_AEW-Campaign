@@ -17,8 +17,10 @@ params [["_player", player, [objNull]]];
 
 _player createDiaryRecord ["Diary", ["Credits","
 <font size=12 face='EtelkaMonospacePro'>
-*** Insert Credits Here ***
-</font>
+Thanks and credits goes to: <br/>
+Dmitry Yuri from the Zeus Community for his antiFlubber script - smoke GL sticks (to kids)!<br/>
+All the creator's of the mods that were used in this mission.<br/>
+Anyone who have contributed to the creation of this mission.<br/></font>
 "]]; 
 
 _player createDiaryRecord ["Diary", ["Additional","
