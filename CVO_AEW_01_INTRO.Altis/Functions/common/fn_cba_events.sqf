@@ -22,7 +22,7 @@
 
         // Recursive Function:
         // On individual Owner: toggle ai features per units - one unit per frame
-
+        diag_log format ['[CVO](debug)(fn_toggleLayerAI) Recieving Package: %1', [count _units, _mode, _features]];
         private _recursiveCode = {
             params ["_units", "_mode", "_features", "_recursiveCode"];
 
