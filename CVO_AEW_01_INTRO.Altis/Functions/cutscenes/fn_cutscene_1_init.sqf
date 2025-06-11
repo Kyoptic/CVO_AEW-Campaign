@@ -17,9 +17,12 @@
 // 1. Trigger: some random civ ai gets killed/deleted
 
 
-private _triggerCiv_scene1 = missionNamespace getVariable ["civ_trigger_1", objNull];  // <- replace "civ_trigger_1" with the actual variable;
 
+// ONLY ON THE SERVER
 if (isServer) then {
+    // REPLACES THE TRIGGER
+    // WAIT UNTIL CIV IS DEAD/DELETED, THEN EXECUTES THE CUTSCENE 1 MAIN FUCNTION ON THE SERVER
+    private _triggerCiv_scene1 = missionNamespace getVariable ["civ_trigger_1", objNull];  // <- replace "civ_trigger_1" with the correct variable <- TODO
     [
         {
             // condition - Needs to return bool
@@ -38,9 +41,11 @@ if (isServer) then {
     ] call CBA_fnc_waitUntilAndExecute;
 };
 
+// EVENTS ON PLAYERS
 if (hasInterface) then {
+    // TRANSITION FADE INTO BLACK / FADE FROM BLACK
     [
-        "CUTSCENE_BLACK",
+        "CUTSCENE_BLACK", // eventname
         {
             params ["_mode", "_duration", ["_muteSounds", true, [true]]];
             // TODO: The actual fading of the screen...
@@ -57,8 +62,9 @@ if (hasInterface) then {
     ] call CBA_fnc_addEventHandler;
 
 
+    // TELEPORTS EACH PLAYER INDIVIDUALLY, LOCALLY ON THEIR MASHINE, INTO THE HELI
     [
-        "CUTSCENE_PLAYER_INTO_HELI",
+        "CUTSCENE_PLAYER_INTO_HELI", // eventname
         {
             params [ "_helis" ];
 
