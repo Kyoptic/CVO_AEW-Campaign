@@ -19,9 +19,12 @@
 * Return Value:
 * None
 *
+* Note: Must be executed on the server!
+*
 * Example:
-* ["ambush1", true, "all"] call common_fnc_toggleLayerAI;
-* ["ambush1", false, ["path", "fireweapon"]] call common_fnc_toggleLayerAI;
+* ["ambush1", true, "all"] call common_fnc_toggleLayerAI; // enable units of the layer
+* ["ambush1", false, "all"] call common_fnc_toggleLayerAI; // disables units of the layer
+* ["ambush1", false, ["path", "fireweapon"]] call common_fnc_toggleLayerAI; // disables pathing and firingweapon
 *
 * Public: yes
 */

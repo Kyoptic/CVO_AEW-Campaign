@@ -17,7 +17,10 @@ class CfgFunctions {
 
             class skipday {};
 
-            class disclaimer { postInit = 1; }; 
+            class disclaimer {};
+
+            class cutscene_1 {};
+            class cutscene_1_init {};
         };
     };
 

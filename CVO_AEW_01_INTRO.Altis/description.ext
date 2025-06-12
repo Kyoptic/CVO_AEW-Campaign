@@ -54,16 +54,5 @@ respawnButton = 1;
 
 
 // ###### Other Includes
-class CfgSounds
-{
- sounds[] = {};
- class	riot
- {
-  name = "riot";
-  sound[] = {"data\riot.ogg", db+30.0,1.0};
-  titles[] = {};
- };
-};
-
-
+#include "CfgSounds.hpp"
 #include "CfgIdentities.hpp"
