@@ -25,20 +25,16 @@ if (isServer) then {
     private _triggerCiv_scene1 = missionNamespace getVariable ["civ_trigger_1", objNull];  // <- replace "civ_trigger_1" with the correct variable <- TODO
     [
         {
-            // condition - Needs to return bool
-            params ["_obj", "", [objNull]];
-
-            !alive _obj // obj ded
-            ||
-            isNull _obj // obj deleted
+            params [["_obj", "", [objNull]]];
+            !alive _obj || isNull _obj
         },                
-        {
-            // Code to be executed once condition true
-            missionNamespace setVariable ["kyo_trigger_cutscene_1", true];
-            [] call cutscenes_fnc_cutscene_1;
-        },                
-        [_triggerCiv_scene1] // parameters
+        { missionNamespace setVariable ["kyo_trigger_cutscene_1", true, true]; },                
+        [_triggerCiv_scene1]
     ] call CBA_fnc_waitUntilAndExecute;
+
+    // Starts the cutscene
+    [{ missionNamespace setVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
+
 };
 
 // EVENTS ON PLAYERS
@@ -48,8 +44,11 @@ if (hasInterface) then {
         "CUTSCENE_BLACK", // eventname
         {
             params ["_mode", "_duration", ["_muteSounds", true, [true]]];
-            // TODO: The actual fading of the screen...
 
+            switch (_mode) do {
+                case "TOBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackOut; };
+                case "FROMBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackIn; };
+            };
 
             if (_muteSounds) then {
                 private _tgt_soundVolume = switch (_mode) do {

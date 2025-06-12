@@ -8,6 +8,8 @@ class CfgFunctions {
             class TFARjamRadios {};
 
             class setCharacter {};
+
+            class speedlimiter {};
         };
     };
 
@@ -20,7 +22,7 @@ class CfgFunctions {
             class disclaimer {};
 
             class cutscene_1 {};
-            class cutscene_1_init {};
+            class cutscene_1_init { postInit = 1; };
         };
     };
 
