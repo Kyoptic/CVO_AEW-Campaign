@@ -15,23 +15,80 @@
 
 if !(isServer) exitWith {};
 
+// pos heli transport spawn [13161.7,11006.3,100]
+
 // Defines // TODO: asign the right heli variables
 private _durationTransition = 5;
-private _heli_engineSounds    = missionNamespace getVariable ["heli_eng",  objNull];
-private _heli_teleportTarget  = missionNamespace getVariable ["heli_tp_1", objNull];
-private _heli_teleportTarget2 = missionNamespace getVariable ["heli_tp_2", objNull];
 
+
+// Create Transport Helicopters and attachTo them to their starting point
+private _allPlayers = call BIS_fnc_listPlayers - [ZGM, CoZGM];
+helis_transport = [];
+private _helis = [];
+private _heli_className = "Aegis_C_Heli_Transport_02_VIP_F"; // 12 passenger seats
+
+
+for "_i" from 1 to (ceil (count _allPlayers / 12) ) do {
+	private _heli = createVehicle [_heli_className, [0,0,0], [], 0, "FLY"];
+	helis_transport pushBack _heli;
+	_heli attachTo [ lz_start, [0,-100*_i,200]];
+    _heli flyInHeight [200, true];
+    
+};
+
+
+// spawn heli on lz_engine and turn on engine (delayed)
+private _heliEngine = createVehicle  [_heli_className, getPos lz_engine vectorAdd [0,0,1]];
+[ { _this#0 engineOn true } , [_heliEngine], 1] call CBA_fnc_waitAndExecute;
+
+// secure each heli
 {
     private _heli = _x;
-    if (isNull _heli) then { continue };
-
-    { _x allowDamage false } forEach (crew vehicle + [_heli]);
-
+    private _crew = west createVehicleCrew _heli;
     _heli lockDriver true;
+    { _heli lockTurret [_x, true] } forEach allTurrets [_heli, false];
+    { _x allowDamage false } forEach (units _crew + [_heli]);
+} forEach (helis_transport + [_heliEngine]);
 
-    { _heli lockTurret [_x, true] } forEach (allTurrets [_heli, false]);
 
-} forEach [_heli_engineSounds, _heli_teleportTarget, _heli_teleportTarget2];
+// Create Waypoints for Transport Helicopters
+{
+    private _heli = _x;
+    private _grp = group driver _heli;
+
+    // Use Objects as waypoint references + use stored data for flyinheight
+    {
+        private _wp = _grp addWaypoint [getPos _x, -1];
+
+        // set flyInHeight based on object variable
+        private _alt = _x getVariable ["flyInHeight", -1];
+        if (_alt != -1) then { _heli setVariable ["flyInHeight", _alt]};
+        _wp setWaypointStatements [
+            "true",
+            format ["vehicle this flyInHeight [%1, true]", _heli getVariable ["flyInHeight", 200]]
+        ];
+
+    } forEach [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, obj_wp_6, obj_wp_7];
+
+    // get relative LZ @ Airport
+    private _lz = missionNamespace getVariable ["lz_airport_" + str _forEachIndex, objNull];
+    if (isNull _lz) exitWith {};
+
+    // add Final WP on helipad
+    private _wp = _grp addWaypoint [getPos _lz, -1];
+
+    // establish Speedlimiter for each helicopter
+    [_heli, _lz] call common_fnc_speedlimiter;
+    
+    // establish order to land once the heli arrived at airport
+    [
+        { (_this#0) distance2D (_this#1) < 150 },
+        {
+            [ { (_this#0) landAt [_this#1, "LAND", 999]; } , _this, 10] call CBA_fnc_waitAndExecute;
+        },
+        [_heli, _lz]
+    ] call CBA_fnc_waitUntilAndExecute;
+} forEach helis_transport;
 
 
 
@@ -93,9 +150,12 @@ _delay = _delay + 10;
 _delay = _delay + _durationTransition + 0.5;
 [
     {
-        // Recursive Function: teleport 1 player per iteration(~every5 frames) into the helicopter so multiple players dont try to take the same spot.
         params ["_helis"];
-        private _allPlayers = call BIS_fnc_listPlayers - [ZGM, CoZGM];
+        
+        // free the helicopters
+        {detach _x} foreach attachedObjects lz_start;
+
+        // Recursive Function: teleport 1 player per iteration(~every5 frames) into the helicopter so multiple players dont try to take the same spot.
         private _codeRecursive = {
             params ["_players", "_helis", "_codeRecursive"];
 
