@@ -33,68 +33,45 @@ if (isServer) then {
     ] call CBA_fnc_waitUntilAndExecute;
 
     // Starts the cutscene
-    [{ missionNamespace setVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
+    [{ missionNamespace getVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
 
 };
 
 // EVENTS ON PLAYERS
-if (hasInterface) then {
-    // TRANSITION FADE INTO BLACK / FADE FROM BLACK
-    [
-        "CUTSCENE_BLACK", // eventname
-        {
-            params ["_mode", "_duration", ["_muteSounds", true, [true]]];
+if !(hasInterface) exitWith {};
 
-            switch (_mode) do {
-                case "TOBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackOut; };
-                case "FROMBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackIn; };
+// TRANSITION FADE TO/FROM BLACK
+[
+    "CUTSCENE_BLACK", // eventname
+    {
+        params ["_mode", "_duration", ["_muteSounds", true, [true]]];
+
+        switch (_mode) do {
+            case "TOBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackOut; };
+            case "FROMBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackIn; };
+        };
+
+        if (_muteSounds) then {
+            private _tgt_soundVolume = switch (_mode) do {
+                case "TOBLACK": { 0 };
+                case "FROMBLACK": { 1 };
             };
-
-            if (_muteSounds) then {
-                private _tgt_soundVolume = switch (_mode) do {
-                    case "TOBLACK": { 0 };
-                    case "FROMBLACK": { 1 };
-                };
-                _duration fadeSound _tgt_soundVolume;
-            };
-        }
-    ] call CBA_fnc_addEventHandler;
+            (_duration * 0.66) fadeSound _tgt_soundVolume;
+        };
+    }
+] call CBA_fnc_addEventHandler;
 
 
-    // TELEPORTS EACH PLAYER INDIVIDUALLY, LOCALLY ON THEIR MASHINE, INTO THE HELI
-    [
-        "CUTSCENE_PLAYER_INTO_HELI", // eventname
-        {
-            params [ "_helis" ];
+// TELEPORTS EACH PLAYER INDIVIDUALLY, LOCALLY ON THEIR MASHINE, INTO THE HELI
+[
+    "CUTSCENE_PLAYER_INTO_HELI", // eventname
+    {
+        params ["_vic", "_index"];
+        moveOut player;
 
+        player moveInCargo [_vic, _index, false];
+        player assignAsCargoIndex [_vic, _index];
+    }
 
-            _helis = _helis select { !isNull _x };
-
-            moveOut player;
-
-            if (player moveInCargo (_helis#0)) then {
-                player assignAsCargo (_helis#0)
-            } else {
-                if (count _helis > 1) then {
-                    player moveInCargo (_helis#1);
-                    player assignAsCargo (_helis#1)
-                } else {
-                    player allowDamage false;
-                    player attachTo [_helis#0, [0,5,0]];
-
-                    _condition = {
-                        params ["_heli"];
-                        ! alive _heli || { getPos _heli select 3 < 3 };
-                    };            
-                    _statement = {
-                        detach player;
-                        [ { player allowDamage true } , [], 5] call CBA_fnc_waitAndExecute;
-                    };                // Code to be executed once condition true
-                    _parameter = [_helis#0];                // arguments to be passed on -> _this
-                    [_condition, _statement, _parameter] call CBA_fnc_waitUntilAndExecute;
-                };
-            };
-        }
-    ] call CBA_fnc_addEventHandler;
-}; 
+] call CBA_fnc_addEventHandler;
 

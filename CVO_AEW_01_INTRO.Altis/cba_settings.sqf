@@ -87,7 +87,7 @@ force AET_UVO_CIV_LANGUAGE = "NONE";
 force ace_advanced_ballistics_enabled = true;
 // ACE Artillery -> Artillery Computer Disabled = true or false //
 force ace_artillerytables_disableArtilleryComputer = false;
-// ACE Headless -> Enabled = true or false //
+// ACE Headless -> Enabled = true or false
 force acex_headless_enabled = false;
 // ACE Logistics -> Rearm Amount = 0, 1, or 2 [0 = Entire Vehicle, 1 = Entire Magazine, 2 = Amount based on caliber] //
 force ace_rearm_level = 1;

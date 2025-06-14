@@ -38,10 +38,10 @@ private _condition = {
 
 private _codeToRun = {
     params ["_heli", "_tgt"];
-    private _limit = linearConversion [3000, 800, _heli distance2D _tgt, 200, 50, true];
+    private _limit = linearConversion [3000, 500, _heli distance2D _tgt, 200, 50, true];
     _heli limitSpeed _limit;
     driver _heli limitSpeed _limit;
-    systemChat str _limit;
+    if ( is3DENPreview && { player in _heli } ) then { systemChat format ["Speed: %1/%2 - Alt: %3/%4",floor speed _heli, floor _limit, floor (getPos _heli select 2), _heli getVariable "flyInHeight"] };
 };
 
 private _exitCode = {};
