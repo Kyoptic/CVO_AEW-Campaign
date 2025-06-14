@@ -130,22 +130,21 @@ class cvo_arsenal_kits
             //class U_lxWS_SFIA_deserter {};
             // class Atlas_U_CombatUniformNCU_01_mcam_F {};
             // class Atlas_U_CombatUniformNCU_02_mcam_F {};
-            class Atlas_U_B_G_CombatUniform_tshirt_arid {};
             class Atlas_U_O_Afghanka_01_grn_F {};
             class Atlas_U_O_Afghanka_02_grn_F {};
             class Atlas_U_O_Afghanka_01_khk_F {};
             class Atlas_U_O_Afghanka_02_khk_F {};
             class Atlas_U_I_Afghanka_01_ardi_half_F {};
             class Atlas_U_I_Afghanka_02_ardi_half_F {};
-            //class MYR_fat_7 {};
-            //class MYR_fat_5 {};
-            //class MYR_fat_6 {};
-            //class MYR_fat_8 {};
+            class MYR_fat_7 {};
+            class MYR_fat_5 {};
+            class MYR_fat_6 {};
+            class MYR_fat_8 {};
             //class MYR_fat_9 {};
-            class MYR_fat_3 {};
-            class MYR_fat_2 {};
-            class MYR_fat_4 {};
-            class MYR_fat_1 {};
+            // class MYR_fat_3 {};
+            // class MYR_fat_2 {};
+            // class MYR_fat_4 {};
+            // class MYR_fat_1 {};
         };
     };
 
@@ -159,6 +158,7 @@ class cvo_arsenal_kits
             class V_Chestrig_blk {};
             class V_HarnessOSpec_blk {};
             class Aegis_V_SmershVest_01_blk_F {};
+			class V_SmershVest_01_khaki_F {};
             class V_SmershVest_01_F {};
             class V_SmershVest_01_olive_F {};
             class V_HarnessO_blk {};
@@ -174,20 +174,26 @@ class cvo_arsenal_kits
 
     class Base_Backpacks: Base {
         class items {
-        	class ace_gunbag_Tan {};
+        	class cvo_LegStrapBag_black {};
+			class cvo_Kitbag_blk {};
+			class ace_gunbag_Tan {};
         	class B_LegStrapBag_coyote_F {};
         	class B_AssaultPack_cbr {};
         	class B_AssaultPackSpec_cbr {};
         	class B_Carryall_cbr {};
+			class B_Carryall_blk {};
+			class B_Carryall_green_F {};
         	class B_FieldPack_cbr {};
+			class B_FieldPack_blk {};
         	class B_Kitbag_cbr {};
-        	class Aegis_B_patrolBackpack_cbr_F {};
+        	//class Aegis_B_patrolBackpack_cbr_F {};
         };
     };
 
     class Base_Headgear: Base {
         class items {
-            class H_HelmetHBK_arid_F {};
+            class lxWS_H_PASGT_goggles_black_F {};
+			class H_HelmetHBK_arid_F {};
             class H_HelmetHBK_olive_headset_F {};
             class H_HelmetHBK_arid_headset_F {};
             class H_HelmetHBK_olive_F {};
@@ -197,10 +203,17 @@ class cvo_arsenal_kits
             class Aegis_H_Helmet_Virtus_snd_F {};
             class Atlas_H_PASGT_Cover_Olive_F {};
             class Atlas_H_PASGT_Cover_Tan_F {};
+			class H_Beret_blk {};
             class H_Beret_Headset_lxWS {};
             class H_Booniehat_blk {};
             class H_Booniehat_mgrn_hs {};
             class H_Cap_blk_CMMG {};
+			class H_Watchcap_blk_hs {};
+			class H_Watchcap_blk {};
+			class H_Watchcap_cbr_hs {};
+			class H_Watchcap_cbr {};
+			class H_Watchcap_khk_hs {};
+			class H_Watchcap_khk {};
             // Myrmidones Stuff
             class MYR_basic_helmet_gray {};
             class MYR_basic_helmet_khaki {};
@@ -299,6 +312,7 @@ class cvo_arsenal_kits
             class JCA_smg_UMP_AFG_black_F {};
             class JCA_smg_UMP_VFG_black_F {};
             class Aegis_SMG_Gepard_blk_F {};
+			class SMG_02_F {}; // Scorpion Evo 3
             //SMG Mags
             class Aegis_40Rnd_9x21_Gepard_Mag_F {};
             class Aegis_40Rnd_9x21_Gepard_Green_Mag_F {};
@@ -306,6 +320,8 @@ class cvo_arsenal_kits
             class JCA_25Rnd_45ACP_UMP_Mag {};
             class JCA_25Rnd_45ACP_UMP_Yellow_Mag {};
             class JCA_25Rnd_45ACP_UMP_Tracer_Yellow_Mag {};
+			class 30Rnd_9x21_Mag_SMG_02 {};
+			class 30Rnd_9x21_Mag_SMG_02_Tracer_Yellow {};
         };
     };
 
