@@ -38,7 +38,7 @@
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
-*** Insert optional Mission objectives here.***.<br/><br/>
+Find your footing. Meet your Myrmidon handler and get settled in with your kit, your base and your first task.<br/><br/>
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
@@ -53,7 +53,7 @@
     ,""
     ,"
 Treat the Altians with respect and concern.<br/>
-Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
+Help rebuild Altis by fulfilling contracts for the Myrmidones.<br/><br/>
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName

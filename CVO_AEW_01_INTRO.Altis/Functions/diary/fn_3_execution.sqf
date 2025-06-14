@@ -35,7 +35,7 @@
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
-*** Insert instructions for specific units here.***
+None.
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
@@ -63,7 +63,7 @@
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
-*** Insert movement instructions here..***
+At the commander's discretion.
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
@@ -77,7 +77,7 @@
     ,""
     ,"
 Help rebuild Altis by fulfilling contracts for Myrmidones.<br/><br/>
-Treat the Altians with respect and concern.<br/>
+Treat the Altians with respect.<br/>
 "
     // ,_icon       // Image next to the entry Title (small flags for example)
     // ,_newName
