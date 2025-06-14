@@ -41,8 +41,9 @@
 
 [
     "'Spike' Gillian",
-    getMissionPath "/data/img_people/spike.jpg", // default Image - use getMissionPath "/folder/file.jpg" for image from the mission folder - idk if paa is required or jpg works here.
+    getMissionPath "\data\img_people\spike.jpg", // default Image - use getMissionPath "/folder/file.jpg" for image from the mission folder - idk if paa is required or jpg works here.
     "Senior Operations Lead<br/>Myrmidones Altis Branch",
     "Mr Gillian has had a long career in the British armed forces, serving for over 20 years in the Royal Marines before his deployment to Altis under the NATO banner. On the cusp of retirement from the military, a fellow ex-Altis war veteran reached out to him with a proposal - leave the Marines, and join the Myrmidones. Now, a year later, Mr Gillian is a senior operations lead on Altis, delegating tasks to various Myrmidon units in the centre of the island.",
     "AEWP\AEWP\data\Flags\flag_MYR.paa"  // icon
 ] call cvo_diary_fnc_setPersonality;
+

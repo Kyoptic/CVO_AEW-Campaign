@@ -76,7 +76,7 @@ private _alliedForces_DisplayName = "Allied Forces";
     _alliedForces_DisplayName        
     ,"HAF"
     ,"AEWP\AEWP\data\Flags\flag_HAF.paa"           // getMissionPath "\data\personalities.paa"
-    ,"HELLENIC ARMED FORCES"           // _subtitle
+    ,"Hellenic Armed Forces"           // _subtitle
     ,"A contingent of the Hellenic Armed Forces was invited to Altis during the formation of the interim government - Task Force NIKE. This contingent, primarily comprised of a mechanised battalion, has been tasked by the Altian government with providing security across Altis and training the nascent NAA. Well equipped and highly professional, Task Force NIKE is the most significant miltiary force on Altis at this time."           // _text
     ,"AEWP\AEWP\data\Flags\flag_HAF.paa"           // Icon (small Flag for examlpe)
     // ,_newName

@@ -60,6 +60,8 @@ for "_i" from 1 to _heli_count do {
 // ############### ################ ###############
 // ############### CREATE WAYPOINTS ###############
 // ############### ################ ###############
+private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, obj_wp_6, obj_wp_7];
+
 {
     private _heli = _x;
 
@@ -82,7 +84,7 @@ for "_i" from 1 to _heli_count do {
         ];
         _waypoints pushBack _wp;
 
-    } forEach [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, obj_wp_6, obj_wp_7];
+    } forEach _waypointObjects;
 
 
 
@@ -108,6 +110,8 @@ for "_i" from 1 to _heli_count do {
     // establish order to land once the heli arrived at airport
 } forEach helis_transport;
 
+// Delete the Waypoint Objectives cause the helicopters try to "avoid" them.
+{ deleteVehicle _x } forEach _waypointObjects;
 
 // ############### ################# ###############
 // ############### DELAYED EXECUTION ###############
