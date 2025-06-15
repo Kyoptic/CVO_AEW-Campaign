@@ -21,7 +21,7 @@ private _heli_className = "Aegis_C_Heli_Transport_02_VIP_F"; // 12 passenger sea
 
 
 private _allPlayers = call BIS_fnc_listPlayers - [ZGM, CoZGM];
-private _heli_count = ceil count _allPlayers / 12; // 12 passenger seats
+private _heli_count = ceil (count _allPlayers / 12); // 12 passenger seats
 
 // Editor Debug Mode
 _heli_count = [_heli_count, 2       ] select is3DENPreview;
@@ -114,7 +114,7 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
 
 // ############### ################# ###############
 // ############### DELAYED EXECUTION ###############
-// ############### ################# ###############
+// ############### ################# ############### 
 private _delay = 0;
 // PHASE 1: helicopter engine sound turn on
 _delay = _delay + 1;
@@ -156,7 +156,7 @@ _delay = _delay + _durationTransition + 1;
             // get all cargo seats, select only the empty ones, then create the individual [vic,index] slot, append the full list to the main array
             _slots append ( fullCrew [_heli, "cargo", true] select { isNull (_x select 0) } apply { [_heli, _x select 2] } );
         } forEach _helis;
-        diag_log format ['[CVO](debug)(fn_cutscene_1) _slots: %1', _slots];
+
         {
             // take random slot, remove it from the main array and apply it to a player.
             private _slot = _slots deleteAt ( floor random count _slots );
@@ -181,4 +181,10 @@ _delay = _delay + _durationTransition + 1;
 
 // TODO: Text overlays
 
+// ATC Traffic?
 
+// AEW Summary? and Hint to the map briefing
+// Read the documents or at least stfu when our client is around
+
+
+// TODO Zorn: Force Dismount on landing
