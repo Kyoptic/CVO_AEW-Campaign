@@ -35,6 +35,29 @@ if (isServer) then {
     // Starts the cutscene
     [{ missionNamespace getVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
 
+
+
+    
+    private _codeToRun = {
+        [airport_crowd_soundsource, "airport_crowd", 300] call CBA_fnc_globalSay3D;
+    };
+
+    private _parameters = [  /*parameters*/  ];
+    private _exitCode = { /* exit code */ };
+    private _condition = { ! (missionNamespace getVariable ["kyo_trigger_cutscene_1", false]) };
+    private _delay = 70;
+    
+    [{
+        params ["_args", "_handle"];
+        _args params ["_codeToRun", "_parameters", "_exitCode", "_condition"];
+    
+        if (_parameters call _condition) then {
+            _parameters call _codeToRun;
+        } else {
+            _handle call CBA_fnc_removePerFrameHandler;
+            _parameters call _exitCode;
+        };
+    }, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
 };
 
 // EVENTS ON PLAYERS
@@ -74,4 +97,5 @@ if !(hasInterface) exitWith {};
     }
 
 ] call CBA_fnc_addEventHandler;
+
 
