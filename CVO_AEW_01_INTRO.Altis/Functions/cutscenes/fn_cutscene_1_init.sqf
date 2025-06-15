@@ -35,8 +35,6 @@ if (isServer) then {
     // Starts the cutscene
     [{ missionNamespace getVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
 
-
-
     
     private _codeToRun = {
         [airport_crowd_soundsource, "airport_crowd", 300] call CBA_fnc_globalSay3D;
@@ -45,7 +43,7 @@ if (isServer) then {
     private _parameters = [  /*parameters*/  ];
     private _exitCode = { /* exit code */ };
     private _condition = { ! (missionNamespace getVariable ["kyo_trigger_cutscene_1", false]) };
-    private _delay = 70;
+    private _delay = 75;
     
     [{
         params ["_args", "_handle"];
@@ -60,6 +58,7 @@ if (isServer) then {
     }, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
 };
 
+
 // EVENTS ON PLAYERS
 if !(hasInterface) exitWith {};
 
@@ -70,16 +69,15 @@ if !(hasInterface) exitWith {};
         params ["_mode", "_duration", ["_muteSounds", true, [true]]];
 
         switch (_mode) do {
-            case "TOBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackOut; };
+            case "TOBLACK": {   ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackOut; };
             case "FROMBLACK": { ["CVO_cutscene_fading", true, _duration] call BIS_fnc_blackIn; };
         };
 
         if (_muteSounds) then {
-            private _tgt_soundVolume = switch (_mode) do {
-                case "TOBLACK": { 0 };
-                case "FROMBLACK": { 1 };
+            switch (_mode) do {
+                case "TOBLACK": {  [false] call ace_common_fnc_setVolume; };
+                case "FROMBLACK": { [true] call ace_common_fnc_setVolume; };
             };
-            (_duration * 0.66) fadeSound _tgt_soundVolume;
         };
     }
 ] call CBA_fnc_addEventHandler;
