@@ -113,3 +113,7 @@ force ace_nightvision_effectScaling = 1;
 force ace_nightvision_fogScaling = 1.1;
 force ace_nightvision_noiseScaling = 1;
 force ace_nightvision_shutterEffects = true;
+
+// TSP Breach
+force tsp_cba_breach_lock_house = 0;
+force tsp_cba_breach_lock_door = 0;
