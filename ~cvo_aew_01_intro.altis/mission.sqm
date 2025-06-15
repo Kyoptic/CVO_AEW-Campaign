@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=319;
+		nextID=398;
 	};
 	class Camera
 	{
 		pos[]={14677.543,78.466988,16561.58};
-		dir[]={-0.47959429,-0.45243859,0.75186747};
-		up[]={-0.24331309,0.8917948,0.3814458};
-		aside[]={0.84309214,8.335337e-08,0.53778428};
+		dir[]={-0.25312996,-0.35636717,0.89941311};
+		up[]={-0.096545614,0.93434495,0.34304273};
+		aside[]={0.96261066,1.215958e-07,0.27091682};
 	};
 };
 binarizationWanted=0;
-sourceName="cvo_aew_01_intro";
+sourceName="~cvo_aew_01_intro";
 addons[]=
 {
 	"WBK_DyingAnimationsMod",
@@ -26469,7 +26469,7 @@ class Mission
 					fillName="DiagGrid";
 					a=21.121;
 					b=12.79;
-					angle=27.952942;
+					angle=27.95294;
 					id=583;
 					atlOffset=0.043466568;
 					class CustomAttributes

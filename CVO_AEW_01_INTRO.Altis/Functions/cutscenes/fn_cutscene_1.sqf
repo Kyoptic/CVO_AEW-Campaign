@@ -21,10 +21,10 @@ private _heli_className = "Aegis_C_Heli_Transport_02_VIP_F"; // 12 passenger sea
 
 
 private _allPlayers = call BIS_fnc_listPlayers - [ZGM, CoZGM];
-private _heli_count = count _allPlayers / 12;
+private _heli_count = ceil count _allPlayers / 12; // 12 passenger seats
 
 // Editor Debug Mode
-_heli_count = [_heli_count, 4       ] select is3DENPreview;
+_heli_count = [_heli_count, 2       ] select is3DENPreview;
 _allPlayers = [_allPlayers, [player]] select is3DENPreview;
 
 
@@ -100,8 +100,7 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
 
     _wp setWaypointStatements [
         "true",
-        format ["[group this, %1, %2] spawn BIS_fnc_wpLand;", getPos _lz, _lzVarName ]
-        // format ["vehicle this landAt [%1, 'LAND', 999];", _lzVarName]
+        format ["[vehicle this, %1] call common_fnc_landOrElse;", _lzVarName ]
     ];
 
     // establish Speedlimiter for each helicopter

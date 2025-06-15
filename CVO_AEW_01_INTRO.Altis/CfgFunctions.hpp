@@ -10,6 +10,8 @@ class CfgFunctions {
             class setCharacter {};
 
             class speedlimiter {};
+
+            class landOrElse {};
         };
     };
 
