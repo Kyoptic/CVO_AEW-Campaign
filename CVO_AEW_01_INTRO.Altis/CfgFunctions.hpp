@@ -2,24 +2,16 @@ class CfgFunctions {
 
     class common {
         class common {
-            class cba_events { preInit = 1;};
 
-            class toggleLayerAI {};
             class TFARjamRadios {};
 
             class setCharacter {};
-
-            class speedlimiter {};
-
-            class landOrElse {};
         };
     };
 
     class cutscenes {
         class cutscenes {
             class cba_events { preInit = 1;};
-
-            class skipday {};
 
             class disclaimer {};
 
@@ -30,10 +22,7 @@ class CfgFunctions {
 
     class init {
 		class init {
-
 			class babel { postInit = 1; };
-            class antiFlubber { postInit = 1; };    // Antiflubber, controlled by description.ext: enableAntiFlubber = 1;
-
 		};
     };
 
