@@ -17,6 +17,9 @@ class CfgFunctions {
 
             class cutscene_1 {};
             class cutscene_1_init { postInit = 1; };
+
+            class cutscene_2 {};
+            class cutscene_2_init { postInit = 1; };
         };
     };
 

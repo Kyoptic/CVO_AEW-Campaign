@@ -100,11 +100,11 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
 
     _wp setWaypointStatements [
         "true",
-        format ["[vehicle this, %1] call common_fnc_landOrElse;", _lzVarName ]
+        format ["[vehicle this, %1] call cvo_common_fnc_landOnRails;", _lzVarName ]
     ];
 
     // establish Speedlimiter for each helicopter
-    [_heli, _lz] call common_fnc_speedlimiter;
+    [_heli, _lz] call cvo_common_fnc_speedlimiter;
     
     // establish order to land once the heli arrived at airport
 } forEach helis_transport;
