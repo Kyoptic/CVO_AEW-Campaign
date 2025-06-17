@@ -11,7 +11,6 @@ class CfgFunctions {
 
     class cutscenes {
         class cutscenes {
-            class cba_events { preInit = 1;};
 
             class disclaimer {};
 
