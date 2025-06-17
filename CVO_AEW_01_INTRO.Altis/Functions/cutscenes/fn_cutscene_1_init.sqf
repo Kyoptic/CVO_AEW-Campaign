@@ -75,12 +75,14 @@ if !(hasInterface) exitWith {};
 
         if (_muteSounds) then {
             switch (_mode) do {
-                case "TOBLACK": {  [false] call ace_common_fnc_setVolume; };
-                case "FROMBLACK": { [true] call ace_common_fnc_setVolume; };
+                case "TOBLACK": {  ["cvo_cutscene", 0, true, _duration] call ace_common_fnc_setHearingCapability };
+                case "FROMBLACK": { ["cvo_cutscene", 1, false, _duration] call ace_common_fnc_setHearingCapability };
             };
         };
     }
 ] call CBA_fnc_addEventHandler;
+
+
 
 
 // TELEPORTS EACH PLAYER INDIVIDUALLY, LOCALLY ON THEIR MASHINE, INTO THE HELI

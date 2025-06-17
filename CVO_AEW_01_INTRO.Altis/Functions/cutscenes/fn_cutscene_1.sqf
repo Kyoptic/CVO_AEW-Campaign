@@ -56,6 +56,9 @@ for "_i" from 1 to _heli_count do {
     { _x allowDamage false } forEach (units _crew + [_heli]);
 } forEach (helis_transport + [_heliEngine]);
 
+// Cleanup engine heli
+[{ deleteVehicleCrew _this; deleteVehicle _this; }, _heliEngine, 60] call CBA_fnc_waitAndExecute;
+
 
 // ############### ################ ###############
 // ############### CREATE WAYPOINTS ###############
@@ -96,21 +99,40 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
     // add Final WP on helipad
     private _wp = _grp addWaypoint [getPos _lz, -1];
     
-    // _wp setWaypointScript "";
-
     _wp setWaypointStatements [
         "true",
         format ["[vehicle this, %1] call cvo_common_fnc_landOnRails;", _lzVarName ]
     ];
 
     // establish Speedlimiter for each helicopter
-    [_heli, _lz] call cvo_common_fnc_speedlimiter;
+    [_heli, _lz] call CVO_COMMON_fnc_speedLimiter;
     
     // establish order to land once the heli arrived at airport
+
+    // _heli
+
+    _condition = { _this#0 distance2D _this#1 < 25};                // condition - Needs to return bool
+    _statement = {
+        [
+            {
+                _this engineOn false;
+                [{ deleteVehicleCrew _this; deleteVehicle _this; }, _this, 600] call CBA_fnc_waitAndExecute;
+            },
+            _this#0
+            15
+        ] call CBA_fnc_waitAndExecute;
+    };                                          // Code to be executed once condition true
+    _parameter = [_heli, _lz];                // arguments to be passed on -> _this
+    [_condition, _statement, _parameter] call CBA_fnc_waitUntilAndExecute;
+
 } forEach helis_transport;
 
 // Delete the Waypoint Objectives cause the helicopters try to "avoid" them.
 { deleteVehicle _x } forEach _waypointObjects;
+
+
+[QGVAR(EH_remote), [[], { playMusic "LeadTrack01_F_EPA"; }]] call CBA_fnc_globalEvent;
+
 
 // ############### ################# ###############
 // ############### DELAYED EXECUTION ###############
@@ -178,13 +200,27 @@ _delay = _delay + _durationTransition;
 // PHASE 6: Fade Back from Black 
 _delay = _delay + _durationTransition + 1;
 
-
-// TODO: Text overlays
-
-// ATC Traffic?
-
-// AEW Summary? and Hint to the map briefing
-// Read the documents or at least stfu when our client is around
+[cvo_common_fnc_layerObjects, ["Starting Airport", "DELETE"], _delay] call CBA_fnc_waitAndExecute;
 
 
-// TODO Zorn: Force Dismount on landing
+// Wednesday - Crashconditions
+// Investigate CVO Arsenal on the Dedicated server :thonk:
+// TODO Zorn: Force Dismount on landing !!!!
+
+
+// Player Airport Vehicles -> Kamaz
+
+// make shotgun cosmetic
+// Todo Zorn: Claim the kiosk man
+
+// Jeep Flag
+
+// Script explosives?
+
+// teleport sign for Late Joiners to get to the base
+
+// TODO ZORN: Riot fade out end in audacity
+// PMC Camp: Gates
+
+// Units at IDAP Camp (mercs) 1x no animation for remote control access
+

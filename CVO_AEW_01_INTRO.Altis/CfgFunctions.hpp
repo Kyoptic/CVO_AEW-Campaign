@@ -12,7 +12,7 @@ class CfgFunctions {
     class cutscenes {
         class cutscenes {
 
-            class disclaimer {};
+            class disclaimer { postInit = 1; };
 
             class cutscene_1 {};
             class cutscene_1_init { postInit = 1; };

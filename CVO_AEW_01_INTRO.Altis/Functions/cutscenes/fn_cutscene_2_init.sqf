@@ -22,10 +22,10 @@ if (isServer) then {
     [
         {
             params [["_obj", "", [objNull]]];
-            !alive _obj || isNull _obj
+            isNull _obj || { !alive _obj }
         },                
         { missionNamespace setVariable ["kyo_trigger_cutscene_2", true, true]; },                
-        [_triggerCiv_scene1]
+        [_triggerCiv_scene2]
     ] call CBA_fnc_waitUntilAndExecute;
 
     // Starts the cutscene
@@ -35,6 +35,13 @@ if (isServer) then {
 
 // Only Players
 if (hasInterface) then {
+    [
+        "cut2_scene0",
+        {
+            playMusic "LeadTrack01_F_EPA";
+        }
+    ] call CBA_fnc_addEventHandler;
+
     [
         "cut2_scene1",
         {

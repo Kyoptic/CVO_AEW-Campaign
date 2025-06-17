@@ -101,9 +101,9 @@ force ace_overheating_suppressorCoef = 1;
 // ACE Pylons -> Enable Pylons Menu from Ammo Trucks = true or false //
 force ace_pylons_enabledFromAmmoTrucks = true;
 
-// ACE Hearing
-force ace_hearing_enableCombatDeafness = true;
-force ace_hearing_disableEarRinging = false;
+// ACE Hearing  // Todo post first session: switch back to true and false
+force ace_hearing_enableCombatDeafness = false;
+force ace_hearing_disableEarRinging = true;
 
 
 // ACE Nightvision
