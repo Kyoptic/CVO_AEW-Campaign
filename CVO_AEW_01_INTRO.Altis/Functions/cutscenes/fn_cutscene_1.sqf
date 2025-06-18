@@ -205,13 +205,6 @@ _delay = _delay + _durationTransition + 1;
 [cvo_common_fnc_layerObjects, ["Starting Airport", "DELETE"], _delay] call CBA_fnc_waitAndExecute;
 
 
-// Wednesday - Crashconditions
-// TODO Zorn: Force Dismount on landing !!!!
 
-// Script explosives?
 
-// TODO ZORN: Riot fade out end in audacity
-// PMC Camp: Gates
-
-// Units at IDAP Camp (mercs) 1x no a nimation for remote control access
 
