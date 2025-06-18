@@ -118,7 +118,7 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
                 _this engineOn false;
                 [{ deleteVehicleCrew _this; deleteVehicle _this; }, _this, 600] call CBA_fnc_waitAndExecute;
             },
-            _this#0
+            _this#0,
             15
         ] call CBA_fnc_waitAndExecute;
     };                                          // Code to be executed once condition true
@@ -131,7 +131,7 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
 { deleteVehicle _x } forEach _waypointObjects;
 
 
-[QGVAR(EH_remote), [[], { playMusic "LeadTrack01_F_EPA"; }]] call CBA_fnc_globalEvent;
+["cvo_common_eh_remote", [ [], { playMusic "LeadTrack01_F_EPA"; } ] ] call CBA_fnc_globalEvent;
 
 
 // ############### ################# ###############
@@ -204,23 +204,12 @@ _delay = _delay + _durationTransition + 1;
 
 
 // Wednesday - Crashconditions
-// Investigate CVO Arsenal on the Dedicated server :thonk:
 // TODO Zorn: Force Dismount on landing !!!!
 
-
-// Player Airport Vehicles -> Kamaz
-
-// make shotgun cosmetic
-// Todo Zorn: Claim the kiosk man
-
-// Jeep Flag
-
 // Script explosives?
-
-// teleport sign for Late Joiners to get to the base
 
 // TODO ZORN: Riot fade out end in audacity
 // PMC Camp: Gates
 
-// Units at IDAP Camp (mercs) 1x no animation for remote control access
+// Units at IDAP Camp (mercs) 1x no a nimation for remote control access
 

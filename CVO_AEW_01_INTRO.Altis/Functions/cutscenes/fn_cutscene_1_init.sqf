@@ -75,8 +75,16 @@ if !(hasInterface) exitWith {};
 
         if (_muteSounds) then {
             switch (_mode) do {
-                case "TOBLACK": {  ["cvo_cutscene", 0, true, _duration] call ace_common_fnc_setHearingCapability };
-                case "FROMBLACK": { ["cvo_cutscene", 1, false, _duration] call ace_common_fnc_setHearingCapability };
+                case "TOBLACK": {
+                    ["cvo_cutscene", 0, true, _duration] call ace_common_fnc_setHearingCapability;
+                    _duration fadeSound 0;
+                    _duration fadeRadio 0;
+                };
+                case "FROMBLACK": {
+                    ["cvo_cutscene", 1, false, _duration] call ace_common_fnc_setHearingCapability;
+                    _duration fadeSound 1;
+                    _duration fadeRadio 1;
+                };
             };
         };
     }

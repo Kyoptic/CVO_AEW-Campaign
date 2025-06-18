@@ -6,7 +6,7 @@
 
 class cvo_arsenal_kits
 {
-    editor_layer_name = "CVO_Arsenal_Boxes";
+    editor_layer_name = "cvo_arsenal_boxes";
     object_variable_names[] = {"source"};
 
     // Imports Base from configFile
