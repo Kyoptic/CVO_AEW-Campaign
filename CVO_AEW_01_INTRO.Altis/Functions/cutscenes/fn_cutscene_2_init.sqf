@@ -13,6 +13,7 @@
 * Public: No
 */
 
+diag_log format ['[CVO](debug)(fn_cutscene_2_init) _this: %1', _this];
 
 // ONLY ON THE SERVER
 if (isServer) then {

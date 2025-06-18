@@ -16,7 +16,7 @@
 
 // 1. Trigger: some random civ ai gets killed/deleted
 
-
+diag_log format ['[CVO](debug)(fn_cutscene_1_init) _this: %1', _this];
 
 // ONLY ON THE SERVER
 if (isServer) then {
@@ -81,6 +81,7 @@ if !(hasInterface) exitWith {};
                     _duration fadeRadio 0;
                 };
                 case "FROMBLACK": {
+                    _duration = _duration * 2;
                     ["cvo_cutscene", 1, false, _duration] call ace_common_fnc_setHearingCapability;
                     _duration fadeSound 1;
                     _duration fadeRadio 1;

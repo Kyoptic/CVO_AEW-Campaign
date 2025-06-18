@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3722;
+		nextID=3724;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=872;
+		nextID=1109;
 	};
 	class Camera
 	{
-		pos[]={14696.677,59.734505,16676.719};
-		dir[]={-0.42087677,-0.70091754,0.57603413};
-		up[]={-0.41348949,0.71322232,0.56592244};
-		aside[]={0.80750906,2.4400651e-06,0.59000123};
+		pos[]={15135.134,74.723511,16719.123};
+		dir[]={-0.21437505,-0.54137486,0.81299233};
+		up[]={-0.13803501,0.84078133,0.52348167};
+		aside[]={0.96694857,0,0.25497124};
 	};
 };
 binarizationWanted=0;
@@ -1406,7 +1406,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -1488,7 +1488,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14116.736,21.483881,18488.297};
-			angle=5.9737558;
+			angle=5.9737554;
 			class Attributes
 			{
 				name="RiotAmbienceTrig";
@@ -3406,7 +3406,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13773.872,21.245569,18943.865};
-						angles[]={0,3.4569583,-0};
+						angles[]={0,3.4569583,0};
 					};
 					side="Empty";
 					class Attributes
@@ -3500,7 +3500,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13774.97,21.212046,18942.822};
-						angles[]={0,0.97528011,-0};
+						angles[]={0,0.97528011,0};
 					};
 					side="Empty";
 					class Attributes
@@ -3547,7 +3547,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13770.392,21.247814,18947.484};
-						angles[]={0,0.71781677,-0};
+						angles[]={0,0.71781677,0};
 					};
 					side="Empty";
 					class Attributes
@@ -3594,7 +3594,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13705.136,20.328636,18882.229};
-						angles[]={0,3.8062313,-0};
+						angles[]={0,3.8062313,0};
 					};
 					side="Empty";
 					class Attributes
@@ -26770,7 +26770,7 @@ class Mission
 			angle=5.4823403;
 			class Attributes
 			{
-				onActivation="missionNamespace setVariable [""trigger_landed"", true, true];";
+				onActivation="missionNamespace setVariable [""trigger_landed"", true, true];" \n "" \n "if (isServer) then { detach c130; };";
 				sizeA=37.056999;
 				sizeB=5;
 				sizeC=5;
@@ -72983,7 +72983,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={13012.377,30.960945,19425.611};
-												angles[]={0,1.7669357,-0};
+												angles[]={0,1.7669357,0};
 											};
 											side="West";
 											flags=5;
@@ -73077,7 +73077,6 @@ class Mission
 										dynamicSimulation=1;
 									};
 									id=1500;
-									atlOffset=185.97;
 								};
 								class Item1
 								{
@@ -73518,7 +73517,6 @@ class Mission
 										dynamicSimulation=1;
 									};
 									id=1502;
-									atlOffset=185.97;
 								};
 								class Item2
 								{
@@ -73891,7 +73889,6 @@ class Mission
 										dynamicSimulation=1;
 									};
 									id=1691;
-									atlOffset=185.97;
 								};
 								class Item3
 								{
@@ -75261,7 +75258,6 @@ class Mission
 										dynamicSimulation=1;
 									};
 									id=1516;
-									atlOffset=185.97;
 								};
 								class Item4
 								{
@@ -75376,7 +75372,7 @@ class Mission
 								};
 							};
 							id=3445;
-							atlOffset=-13.767651;
+							atlOffset=0.1536026;
 						};
 						class Item2
 						{
@@ -84190,7 +84186,7 @@ class Mission
 						};
 					};
 					id=3444;
-					atlOffset=1.7141762;
+					atlOffset=0.27413368;
 				};
 				class Item3
 				{
@@ -94061,7 +94057,7 @@ class Mission
 				};
 			};
 			id=3442;
-			atlOffset=6.5123672;
+			atlOffset=6.5108604;
 		};
 		class Item38
 		{
@@ -141673,7 +141669,7 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={15674.692,0.00010681152,14098.684};
+							position[]={14031.41,0,13729.861};
 							expCond="missionNamespace getVariable [""kyo_trigger_cutscene_1"", false]";
 							class Effects
 							{
@@ -141681,33 +141677,33 @@ class Mission
 							showWP="NEVER";
 							id=3617;
 							type="Move";
-							atlOffset=78.394989;
+							atlOffset=30.113775;
 						};
 						class Item3
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={13085.807,0.098598085,13869.26};
+							position[]={13370.723,0,14035.285};
 							class Effects
 							{
 							};
 							showWP="NEVER";
 							id=3618;
 							type="Move";
-							atlOffset=11.214487;
+							atlOffset=29.370934;
 						};
 						class Item4
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={13134.744,-0.060962703,14183.481};
+							position[]={13960.902,0,14703.563};
 							class Effects
 							{
 							};
 							showWP="NEVER";
 							id=3619;
 							type="Move";
-							atlOffset=20.823101;
+							atlOffset=45.239765;
 						};
 						class Item5
 						{
@@ -142131,7 +142127,7 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={13446.304,-0.019241333,10165.223};
+							position[]={14419.729,0,11803.231};
 							speed="FULL";
 							expCond="missionNamespace getVariable [""kyo_trigger_cutscene_1"", false]";
 							class Effects
@@ -142140,13 +142136,13 @@ class Mission
 							showWP="NEVER";
 							id=3598;
 							type="Move";
-							atlOffset=114.763;
+							atlOffset=52.477406;
 						};
 						class Item3
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={13651.407,-0.067626953,11284.825};
+							position[]={14569.355,0,12147.924};
 							expCond="missionnamespace getVariable [""kyo_trigger_cutscene_1"", false]";
 							class Effects
 							{
@@ -142154,7 +142150,7 @@ class Mission
 							showWP="NEVER";
 							id=3599;
 							type="Move";
-							atlOffset=71.660004;
+							atlOffset=72.74556;
 						};
 						class Item4
 						{
@@ -142173,14 +142169,14 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={14844.757,-0.03515625,13419.009};
+							position[]={14812.218,0,13484.479};
 							class Effects
 							{
 							};
 							showWP="NEVER";
 							id=3601;
 							type="Move";
-							atlOffset=73.643761;
+							atlOffset=74.393768;
 						};
 						class Item6
 						{
@@ -142339,14 +142335,14 @@ class Mission
 						};
 					};
 					id=3592;
-					atlOffset=99.38578;
+					atlOffset=37.100182;
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13446.711,1.2970161,10062.6};
+						position[]={14420.136,-23.556808,11700.608};
 					};
 					side="Civilian";
 					flags=2;
@@ -142355,7 +142351,7 @@ class Mission
 					};
 					id=3593;
 					type="C_Boat_Civil_01_F";
-					atlOffset=99.38578;
+					atlOffset=37.100182;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -142379,7 +142375,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={13470.607,5.2183266,10009.402};
+						position[]={14444.032,-21.816219,11647.411};
 					};
 					side="Civilian";
 					class Attributes
@@ -142387,7 +142383,7 @@ class Mission
 					};
 					id=3597;
 					type="C_Boat_Civil_01_F";
-					atlOffset=96.713226;
+					atlOffset=34.427624;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -142411,16 +142407,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14948.073,23.974901,16656.178};
-						angles[]={0,3.9057162,0};
+						position[]={15135.1,23.994902,16845.639};
+						angles[]={0,3.9057152,0};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
+						name="c130";
 					};
 					id=3625;
 					type="Aegis_C_Plane_Transport_01_civil_F_LXWS";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ObjectCollision";
+							expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="iedd_vbied_edit";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item9
 				{
@@ -142435,12 +142462,13 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14811.996,17.911438,16792.031};
-								angles[]={0,3.9057162,0};
+								angles[]={0,3.9057152,0};
 							};
 							side="Civilian";
 							flags=6;
 							class Attributes
 							{
+								name="c130D";
 							};
 							id=3626;
 							type="Aegis_C_Man_CargoPilot_lxWS_F";
@@ -142451,7 +142479,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14811.996,23.99634,16792.281};
-								angles[]={0,3.9057162,0};
+								angles[]={0,3.9057152,0};
 							};
 							side="Civilian";
 							class Attributes
@@ -142467,7 +142495,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={14811.996,23.99634,16792.281};
-								angles[]={0,3.9057162,0};
+								angles[]={0,3.9057152,0};
 							};
 							side="Civilian";
 							class Attributes
@@ -142481,7 +142509,7 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={14944.899,18.389999,16651.107};
+							position[]={15134.404,18.41,16843.82};
 							expCond="missionNamespace getVariable [""trigger_landed"", false]";
 							class Effects
 							{
@@ -142495,13 +142523,14 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
-							position[]={14932.825,17.9,16639.125};
+							position[]={15126.746,18.588213,16835.615};
 							class Effects
 							{
 							};
 							showWP="NEVER";
 							id=3640;
 							type="Move";
+							atlOffset=0.67821312;
 						};
 						class Item5
 						{
@@ -142772,7 +142801,7 @@ class Mission
 					side="Civilian";
 					class Entities
 					{
-						items=11;
+						items=12;
 						class Item0
 						{
 							dataType="Object";
@@ -142788,7 +142817,7 @@ class Mission
 							};
 							id=3645;
 							type="C_IDAP_Man_AidWorker_02_F";
-							atlOffset=-8.392334e-05;
+							atlOffset=-3.8146973e-06;
 						};
 						class Item1
 						{
@@ -142805,7 +142834,7 @@ class Mission
 							};
 							id=3650;
 							type="C_IDAP_Man_AidWorker_02_F";
-							atlOffset=1.9073486e-06;
+							atlOffset=3.8146973e-06;
 						};
 						class Item2
 						{
@@ -142822,6 +142851,7 @@ class Mission
 							};
 							id=3653;
 							type="C_IDAP_Man_AidWorker_02_F";
+							atlOffset=-4.9591064e-05;
 						};
 						class Item3
 						{
@@ -142832,14 +142862,29 @@ class Mission
 							class Effects
 							{
 							};
-							timeoutMin=15;
-							timeoutMid=15;
-							timeoutMax=15;
+							timeoutMin=45;
+							timeoutMid=45;
+							timeoutMax=45;
 							showWP="NEVER";
 							id=3646;
 							type="Move";
 						};
 						class Item4
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={13128.007,16.16433,15181.268};
+							class Effects
+							{
+							};
+							timeoutMin=15;
+							timeoutMid=15;
+							timeoutMax=15;
+							showWP="NEVER";
+							id=3722;
+							type="Move";
+						};
+						class Item5
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142852,7 +142897,7 @@ class Mission
 							type="Move";
 							atlOffset=-3.8146973e-06;
 						};
-						class Item5
+						class Item6
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142865,7 +142910,7 @@ class Mission
 							type="Move";
 							atlOffset=5.7220459e-06;
 						};
-						class Item6
+						class Item7
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142878,7 +142923,7 @@ class Mission
 							type="Move";
 							atlOffset=-1.335144e-05;
 						};
-						class Item7
+						class Item8
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142890,7 +142935,7 @@ class Mission
 							id=3718;
 							type="Move";
 						};
-						class Item8
+						class Item9
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142903,7 +142948,7 @@ class Mission
 							type="Move";
 							atlOffset=-4.7683716e-06;
 						};
-						class Item9
+						class Item10
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142916,7 +142961,7 @@ class Mission
 							type="Move";
 							atlOffset=9.5367432e-06;
 						};
-						class Item10
+						class Item11
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
@@ -142994,6 +143039,7 @@ class Mission
 					};
 					id=3698;
 					type="UNT_B_Offroad_2_F";
+					atlOffset=0.00021076202;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -143147,6 +143193,7 @@ class Mission
 					};
 					id=3703;
 					type="UNT_B_Offroad_2_F";
+					atlOffset=0.00021743774;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -143300,6 +143347,7 @@ class Mission
 					};
 					id=3707;
 					type="UNT_B_Offroad_2_F";
+					atlOffset=5.7220459e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -143460,6 +143508,7 @@ class Mission
 							};
 							id=3699;
 							type="UNT_B_observer_Finland_F";
+							atlOffset=-4.3869019e-05;
 						};
 						class Item1
 						{
@@ -143476,6 +143525,7 @@ class Mission
 							};
 							id=3704;
 							type="UNT_B_observer_Finland_F";
+							atlOffset=-2.8610229e-05;
 						};
 						class Item2
 						{
@@ -143492,6 +143542,7 @@ class Mission
 							};
 							id=3706;
 							type="UNT_B_observer_Finland_F";
+							atlOffset=1.1444092e-05;
 						};
 						class Item3
 						{
@@ -143580,10 +143631,11 @@ class Mission
 						};
 					};
 					id=3697;
+					atlOffset=0.00021076202;
 				};
 			};
 			id=3642;
-			atlOffset=-0.94841099;
+			atlOffset=-2.7623768;
 		};
 		class Item80
 		{
@@ -143603,16 +143655,6 @@ class Mission
 		};
 		class Item81
 		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=3682;
-			atlOffset=185.97;
-		};
-		class Item82
-		{
 			dataType="Trigger";
 			position[]={14555.494,17.121136,16924.002};
 			angle=5.4823403;
@@ -143629,6 +143671,39 @@ class Mission
 			id=3700;
 			type="EmptyDetectorArea10x10";
 			atlOffset=-0.11546516;
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15135.102,17.91,16845.125};
+				angles[]={0,3.9189384,-0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="c130 attachTo [this];";
+			};
+			id=3723;
+			type="Land_HelipadEmpty_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectCollision";
+					expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

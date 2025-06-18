@@ -15,6 +15,7 @@
 
 if (!isServer) exitWith {};
 
+diag_log format ['[CVO](debug)(fn_cutscene_2) _this: %1', _this];
 
 //// 1. Phase
 // Clients

@@ -15,6 +15,8 @@
 
 if !(isServer) exitWith {};
 
+diag_log format ['[CVO](debug)(fn_cutscene_1) _this: %1', _this];
+
 helis_transport = [];
 private _durationTransition = 10;
 private _heli_className = "Aegis_C_Heli_Transport_02_VIP_F"; // 12 passenger seats
@@ -192,12 +194,12 @@ _delay = _delay + _durationTransition + 1;
 
 
 // PHASE 5: Fade Back from Black 
-_delay = _delay + 3;
+_delay = _delay + 5;
 [CBA_fnc_globalEvent, ["CUTSCENE_BLACK", ["FROMBLACK", _durationTransition]], _delay] call CBA_fnc_waitAndExecute;
 _delay = _delay + _durationTransition;
 
 
-// PHASE 6: Fade Back from Black 
+// PHASE 6: Delete Stuff at the starting area
 _delay = _delay + _durationTransition + 1;
 
 [cvo_common_fnc_layerObjects, ["Starting Airport", "DELETE"], _delay] call CBA_fnc_waitAndExecute;

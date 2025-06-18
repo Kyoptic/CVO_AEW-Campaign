@@ -1,5 +1,7 @@
 if (is3DENPreview || { !hasInterface }) exitWith {};
 
+diag_log format ['[CVO](debug)(fn_disclaimer) _this: %1', _this];
+
 0 fadeRadio 0;
 0 fadeSound 0;
 
