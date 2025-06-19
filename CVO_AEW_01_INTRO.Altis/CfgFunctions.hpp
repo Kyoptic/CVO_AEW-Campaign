@@ -15,10 +15,10 @@ class CfgFunctions {
             class disclaimer { postInit = 1; };
 
             class cutscene_1 {};
-            class cutscene_1_init { postInit = 1; };
-
             class cutscene_2 {};
-            class cutscene_2_init { postInit = 1; };
+
+            class init_server { postInit = 1; };
+            class init_players { postInit = 1; };
         };
     };
 

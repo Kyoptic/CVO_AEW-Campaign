@@ -17,7 +17,8 @@ diag_log format ['[CVO](debug)(fn_init_server) _this: %1', _this];
 
 if !(isServer) exitWith {};
 
-// kyo_trigger_cutscene_1
+
+// Trigger for 1. Cutscene
 [
     {
         params [["_obj", "", [objNull]]];
@@ -29,6 +30,20 @@ if !(isServer) exitWith {};
 
 // Starts the cutscene
 [{ missionNamespace getVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
+
+
+// Trigger for 2. Cutscene
+[
+    {
+        params [["_obj", "", [objNull]]];
+        isNull _obj || { !alive _obj }
+    },                
+    { missionNamespace setVariable ["kyo_trigger_cutscene_2", true, true]; },                
+    [missionNamespace getVariable ["trigger_man_skipDay", objNull]]
+] call CBA_fnc_waitUntilAndExecute;
+
+// Starts the cutscene
+[{ missionNamespace getVariable ["kyo_trigger_cutscene_2", false] }, { [] call cutscenes_fnc_cutscene_2; }] call CBA_fnc_waitUntilAndExecute;
 
 
 // Airport Crowd Sound Loop
@@ -57,3 +72,4 @@ private _delay = 75;
     { missionNamespace getVariable ["trigger_landed", false] },
     { detach c130; deleteVehicle lz_c130; }
 ] call CBA_fnc_waitUntilAndExecute;
+
