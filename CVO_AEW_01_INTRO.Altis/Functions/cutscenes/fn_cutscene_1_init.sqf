@@ -56,6 +56,16 @@ if (isServer) then {
             _parameters call _exitCode;
         };
     }, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
+
+    [
+            {
+        missionNamespace getVariable ["trigger_landed", false]
+    },
+    {
+        detach c130;
+        deleteVehicle lz_c130;
+    }
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
 
