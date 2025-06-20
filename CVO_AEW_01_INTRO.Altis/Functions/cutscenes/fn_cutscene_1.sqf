@@ -103,7 +103,7 @@ private _waypointObjects = [obj_wp_1, obj_wp_2, obj_wp_3, obj_wp_4, obj_wp_5, ob
     
     _wp setWaypointStatements [
         "true",
-        format ["[vehicle this, %1, 15, 5] call cvo_common_fnc_landOnRails;", _lzVarName ]
+        format ["[vehicle this, %1, 15, 5, true, [7,90]] call cvo_common_fnc_landOnRails;", _lzVarName ]
     ];
 
     // establish Speedlimiter for each helicopter
@@ -203,8 +203,4 @@ _delay = _delay + _durationTransition;
 _delay = _delay + _durationTransition + 1;
 
 [cvo_common_fnc_layerObjects, ["Starting Airport", "DELETE"], _delay] call CBA_fnc_waitAndExecute;
-
-
-
-
 
