@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14361.01,66.85215,13167.931};
-		dir[]={-0.24561147,-0.3739168,-0.8943634};
-		up[]={-0.099021606,0.92746276,-0.36057428};
-		aside[]={-0.96431458,-4.2044849e-07,0.26482084};
+		pos[]={15137.441,58.147583,16801.719};
+		dir[]={-0.51748282,-0.49421856,0.69854397};
+		up[]={-0.2941893,0.86933666,0.39712223};
+		aside[]={0.80353463,4.1909516e-08,0.5952605};
 	};
 };
 binarizationWanted=0;
@@ -1488,7 +1488,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14116.736,21.483881,18488.297};
-			angle=5.9737558;
+			angle=5.9737554;
 			class Attributes
 			{
 				name="RiotAmbienceTrig";
@@ -26966,7 +26966,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={14667.734,17.91,16723.252};
-					angle=5.469861;
+					angle=5.4698606;
 					class Attributes
 					{
 						text="GroundCrewMemesTrigger";
@@ -142470,6 +142470,110 @@ class Mission
 							};
 							id=3626;
 							type="Aegis_C_Man_CargoPilot_lxWS_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male01FRE";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=0.94999999;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="acre_sys_radio_edenSetup";
+									expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="iedd_ied_sides";
+									expression="_this setVariable ['iedd_ied_sides',_value];";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=4;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=2;
+													};
+												};
+												class Item3
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=-1;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=5;
+							};
 						};
 						class Item1
 						{
@@ -142480,12 +142584,12 @@ class Mission
 								angles[]={0,3.9057152,0};
 							};
 							side="Civilian";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=3627;
 							type="Aegis_C_Man_CargoPilot_lxWS_F";
-							atlOffset=6.0849018;
 						};
 						class Item2
 						{
@@ -142496,12 +142600,12 @@ class Mission
 								angles[]={0,3.9057152,0};
 							};
 							side="Civilian";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=3628;
 							type="Aegis_C_Man_CargoPilot_lxWS_F";
-							atlOffset=6.0849018;
 						};
 						class Item3
 						{
@@ -142535,7 +142639,7 @@ class Mission
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+38;
 							position[]={1598.6021,0,1890.311};
-							expActiv="deleteVehicleCrew vehicle this;" \n "deleteVehicle vehicle this;";
+							expActiv="deleteVehicleCrew vehicle this;" \n "deleteVehicle c130;";
 							class Effects
 							{
 							};
@@ -143789,7 +143893,7 @@ class Mission
 					};
 					id=3840;
 					type="Land_BagFence_Round_F";
-					atlOffset=0.37920856;
+					atlOffset=0.37920809;
 				};
 				class Item21
 				{
