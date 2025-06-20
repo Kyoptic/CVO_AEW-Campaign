@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3896;
+		nextID=3897;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1507;
+		nextID=1665;
 	};
 	class Camera
 	{
-		pos[]={14809.685,79.373466,16328.347};
-		dir[]={0.41074243,-0.32587433,0.85157472};
-		up[]={0.14158286,0.94540012,0.29353869};
-		aside[]={0.90074182,1.1608936e-06,-0.4344556};
+		pos[]={14112.134,64.784225,18405.23};
+		dir[]={0.53864741,-0.63890195,0.5492388};
+		up[]={0.44735238,0.76928818,0.45614862};
+		aside[]={0.71395719,0,-0.70018941};
 	};
 };
 binarizationWanted=0;
@@ -1487,13 +1487,12 @@ class Mission
 			class Attributes
 			{
 				name="RiotAmbienceTrig";
-				onActivation="[riotvoice, [""riot"", 1000, 1, 0, 0]] remoteExec [""say3D""];" \n "" \n "if (isServer) then {" \n "" \n "[""Altis Airport Decoration"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""Altis Airport Parking"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""Altis Airport Sim On"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""CivBoats"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""NAA Boat Base"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "};" \n "" \n "";
+				onActivation="playSound ""riot_faded"";" \n "riotvoice say3d [""riot"", 1500, 0.7];" \n "" \n "if (isServer) then {" \n "" \n "[""Altis Airport Decoration"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""Altis Airport Parking"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""Altis Airport Sim On"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""CivBoats"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "[""NAA Boat Base"", ""DELETE""] call cvo_common_fnc_layerObjects; " \n "};" \n "" \n "";
 				sizeA=12.588;
 				sizeB=24.743;
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 				triggerInterval=1;
 			};
 			id=483;
