@@ -1,0 +1,58 @@
+// #### Mission Information
+// https://community.bistudio.com/wiki/Description.ext
+
+class Header
+{
+	gameType = "Zeus";	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 64;	// maximum number of players the mission supports
+};
+
+// Section 1
+author= "Kyoptic [CVO]"; // Name of the creator(s)
+OnLoadName = "AEW02 - First Patrol"; // Mission name in the loading screen, keep it short without operation
+OnLoadMission = "Acta, non Verba"; // Bottom of the loading screen, don't change
+loadScreen = "data\loadscreen.jpg"; // The picture displayed during loading screen
+overviewPicture = "data\loadscreen.jpg"; // The picture displayed in the mission selection screen
+briefingName = "AEW02 - First Patrol"; // The Mission name displayed in the mission selection menu
+overviewText = "The 24th CVO is deployed to Altis as a subcontractor to Myrmidon Inc, in the aftermath of the East Wind Campaign."; // The text above the picture in the mission selection menu
+
+
+// ###### Default Stuff - Dont Touch unless really needed
+allowFunctionsLog = 1;
+enableDebugConsole = 1;
+cba_settings_hasSettingsFile = 1;
+
+// ###### AI Stuff 
+aiKills = 0; // Does not add AI to the scoreboard
+disabledAI = 1;
+
+// ###### Custom CVO Stuff
+// AntiFlubber. 1: enabled - 0 or undefined: disabled
+enableAntiFlubber = 1;
+
+// ###### Respawn Settings - CVO Defaults
+// https://community.bistudio.com/wiki/Description.ext#Respawn/Revive
+respawn = 3;
+respawnTemplates[] = {"Counter", "Wave", "ace_spectator"}; // "Tickets"
+
+respawnDelay = 120;
+respawnVehicleDelay = 99999;
+
+respawnOnStart = 0;
+respawnDialog = 0;
+respawnButton = 1;
+
+
+// ###### Cfg Functions - https://community.bistudio.com/wiki/CfgFunctions
+#include "CfgFunctions.hpp"
+
+
+// ###### CVO Defines
+#include "cvo_defines\cvo_arsenal_kits.hpp"
+#include "cvo_defines\cvo_csc_presets.hpp" // still WIP
+
+
+// ###### Other Includes
+#include "CfgSounds.hpp"
+#include "CfgIdentities.hpp"

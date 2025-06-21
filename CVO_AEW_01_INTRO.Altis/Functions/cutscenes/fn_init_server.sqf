@@ -17,7 +17,7 @@ diag_log format ['[CVO](debug)(fn_init_server) _this: %1', _this];
 
 if !(isServer) exitWith {};
 
-
+/*
 // Trigger for 1. Cutscene
 [
     {
@@ -30,7 +30,7 @@ if !(isServer) exitWith {};
 
 // Starts the cutscene
 [{ missionNamespace getVariable ["kyo_trigger_cutscene_1", false] }, { [] call cutscenes_fnc_cutscene_1; }] call CBA_fnc_waitUntilAndExecute;
-
+*/
 
 // Trigger for 2. Cutscene
 [

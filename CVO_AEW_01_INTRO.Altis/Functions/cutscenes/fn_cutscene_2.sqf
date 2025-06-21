@@ -37,7 +37,7 @@ _delay = _delay + 8;
 [
     {
         private _targetDaytime = 5 + 5/6;
-		private _timeToSkip = [_targetDayTime + 24 - dayTime, _targetTime - daytime] select _targetDaytime > dayTime;
+		private _timeToSkip = [_targetDayTime + 24 - dayTime, _targetDaytime - daytime] select _targetDaytime > dayTime;
 		skiptime _timeToSkip;
 
 		0 setRain 0;
