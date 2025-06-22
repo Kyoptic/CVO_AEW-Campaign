@@ -36,7 +36,7 @@ enableAntiFlubber = 1;
 respawn = 3;
 respawnTemplates[] = {"Counter", "Wave", "ace_spectator"}; // "Tickets"
 
-respawnDelay = 120;
+respawnDelay = 90;
 respawnVehicleDelay = 99999;
 
 respawnOnStart = 0;
