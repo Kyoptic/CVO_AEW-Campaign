@@ -422,8 +422,8 @@ class cvo_arsenal_kits
             class SmokeShellRed {};
             class SmokeShellYellow {};
             class MiniGrenade {};
-            class Aegis_HandFlare_Green {};
-            class Aegis_HandFlare_Red {};
+            //class Aegis_HandFlare_Green {};
+            //class Aegis_HandFlare_Red {};
             class ACE_HandFlare_Green {};
             class ACE_HandFlare_Yellow {};
             class ACE_HandFlare_Red {};
