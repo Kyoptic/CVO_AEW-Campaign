@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=522;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=4038;
+		nextID=4122;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2052;
+		nextID=2217;
 	};
 	class Camera
 	{
-		pos[]={13830.946,37.602043,18907.494};
-		dir[]={-0.85295784,-0.47721335,0.21197622};
-		up[]={-0.46316212,0.87875885,0.11510381};
-		aside[]={0.24121155,-9.2089613e-07,0.97057188};
+		pos[]={9708.6807,138.92206,18718.977};
+		dir[]={0.76981962,-0.5286954,-0.35782066};
+		up[]={0.47943857,0.8487978,-0.22284897};
+		aside[]={-0.42154002,7.7229924e-07,-0.90690333};
 	};
 };
 binarizationWanted=0;
@@ -309,7 +309,11 @@ addons[]=
 	"RF_Weapons_Pistols_DEagle",
 	"ace_compat_rf_realisticnames",
 	"A3_Weapons_F_Pistols_Pistol_Heavy_02",
-	"ace_overheating"
+	"ace_overheating",
+	"A3_Props_F_Orange_Items_Decorative",
+	"A3_Structures_F_Items_Documents",
+	"walls_f_lxWS",
+	"A3_Structures_F_Orange_Signs_Mines"
 };
 class AddonsMetaData
 {
@@ -1365,7 +1369,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=43;
+		items=47;
 		class Item0
 		{
 			dataType="Marker";
@@ -61327,12 +61331,11 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={13687.222,20.944979,18953.051};
+						position[]={13687.642,21.001713,18961.23};
 						angles[]={0.031991884,0,6.249867};
 					};
 					id=3477;
 					type="ModuleCurator_F";
-					atlOffset=0.038000107;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -61344,7 +61347,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="76561197970306509";
+									value="CoZGM";
 								};
 							};
 						};
@@ -61395,12 +61398,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={13687.21,20.957249,18959.957};
+						position[]={13687.21,20.957054,18959.957};
 						angles[]={0.031991884,0,6.249867};
 					};
 					id=3557;
 					type="ModuleCurator_F";
-					atlOffset=-0.041805267;
+					atlOffset=-0.041999817;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -61412,7 +61415,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="76561198032266970";
+									value="ZGM";
 								};
 							};
 						};
@@ -61460,7 +61463,7 @@ class Mission
 				};
 			};
 			id=3485;
-			atlOffset=0.90319252;
+			atlOffset=0.88807678;
 		};
 		class Item13
 		{
@@ -82722,7 +82725,7 @@ class Mission
 			state=1;
 			class Entities
 			{
-				items=9;
+				items=8;
 				class Item0
 				{
 					dataType="Object";
@@ -83877,7 +83880,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						name="commsOffroad";
+						name="cvo_deploy_commsOffroad";
 						textures="Black";
 					};
 					id=600;
@@ -85356,44 +85359,9 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={13783.097,20.259062,18913.096};
-					};
-					side="Empty";
-					flags=1;
-					class Attributes
-					{
-						init="if (isServer) then {" \n "this attachTo [commsOffroad, [-3,-3,0]];" \n "};";
-						name="lz_comms";
-					};
-					id=3556;
-					type="Land_HelipadEmpty_F";
-					atlOffset=0.0001335144;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ObjectCollision";
-							expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
 			};
 			id=3518;
-			atlOffset=0.070272446;
+			atlOffset=0.20198441;
 		};
 		class Item35
 		{
@@ -92998,8 +92966,7 @@ class Mission
 							flags=1;
 							class Attributes
 							{
-								init="[this, lz_comms, ""Go to the Comms Offroad""] call cvo_common_fnc_holdaction_tp;" \n "";
-								name="cvo_ft_point";
+								name="cvo_deploy_whiteboard";
 							};
 							id=3555;
 							type="Land_MapBoard_01_Wall_Altis_F";
@@ -95020,7 +94987,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13788.824,22.315094,18946.166};
-						angles[]={0,3.9988344,-0};
+						angles[]={0,3.9988344,0};
 					};
 					side="Empty";
 					flags=1;
@@ -99011,10 +98978,11 @@ class Mission
 							{
 							};
 							id=1963;
+							atlOffset=185.97;
 						};
 					};
 					id=3465;
-					atlOffset=0.89790344;
+					atlOffset=149.87903;
 				};
 				class Item8
 				{
@@ -104941,7 +104909,7 @@ class Mission
 								formation="LINE";
 							};
 							id=618;
-							atlOffset=7.0571899e-05;
+							atlOffset=185.97;
 						};
 						class Item1
 						{
@@ -105123,7 +105091,7 @@ class Mission
 							{
 							};
 							id=652;
-							atlOffset=1.9073486e-06;
+							atlOffset=185.97;
 						};
 						class Item2
 						{
@@ -105346,6 +105314,7 @@ class Mission
 							{
 							};
 							id=627;
+							atlOffset=185.97;
 						};
 						class Item3
 						{
@@ -105566,15 +105535,1115 @@ class Mission
 							{
 							};
 							id=614;
-							atlOffset=0.0026855469;
+							atlOffset=185.97;
 						};
 					};
 					id=4035;
-					atlOffset=0.71508789;
+					atlOffset=185.97;
 				};
 			};
 			id=4021;
-			atlOffset=0.52024269;
+			atlOffset=144.75917;
+		};
+		class Item43
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={10128.116,83.952179,20514.771};
+			};
+			title="Sniper Guy - Vehicle Hiding Spot";
+			id=4038;
+			atlOffset=0.50222015;
+		};
+		class Item44
+		{
+			dataType="Layer";
+			name="Sniper Guy";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Layer";
+					name="Home";
+					state=1;
+					class Entities
+					{
+						items=25;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9609.6602,118.65099,18517.502};
+								angles[]={0,2.0545242,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4047;
+							type="Land_Basket_F";
+							atlOffset=0.24975586;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9608.3047,119.15858,18518.193};
+								angles[]={0,3.6602273,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4054;
+							type="Land_Matches_F";
+							atlOffset=0.0056686401;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9614.2988,119.17954,18511.922};
+								angles[]={0,2.0370708,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4058;
+							type="Land_Can_V2_F";
+							atlOffset=0.82137299;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9614.5596,118.31286,18514.877};
+								angles[]={0,6.2433143,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4049;
+							type="Land_ChairWood_F";
+							atlOffset=0.0047988892;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9613.7529,118.31246,18515.305};
+								angles[]={0,4.4107189,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4050;
+							type="Land_ChairWood_F";
+							atlOffset=0.37949371;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9608.2861,118.31952,18517.596};
+								angles[]={0,3.7300403,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4051;
+							type="Land_ChairWood_F";
+							atlOffset=0.22171021;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9615.2529,118.32304,18511.049};
+								angles[]={0,2.839922,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4060;
+							type="Land_ChairWood_F";
+							atlOffset=0.0046005249;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9602.751,118.30073,18515.875};
+								angles[]={0,0.2219283,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4063;
+							type="Land_ChairWood_F";
+							atlOffset=0.22434998;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9603.9375,118.29919,18514.59};
+								angles[]={0,1.8450842,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4064;
+							type="Land_ChairWood_F";
+							atlOffset=0.24364471;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9611.1533,119.0717,18510.826};
+								angles[]={0,3.6253209,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=4061;
+							type="Land_CratesWooden_F";
+							atlOffset=0.38109589;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9608.4756,118.72697,18517.994};
+								angles[]={0,3.6253209,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4059;
+							type="Land_TableDesk_F";
+							atlOffset=0.22058105;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item11
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9618.502,119.08617,18507.934};
+								angles[]={0,5.7197161,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4044;
+							type="Land_FlowerPot_01_Flower_F";
+							atlOffset=0.44177246;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item12
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9621.3477,117.95462,18513.82};
+								angles[]={0,2.0545242,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4042;
+							type="Land_FlowerPot_01_F";
+							atlOffset=0.049919128;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item13
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9607.8418,119.20965,18518.164};
+								angles[]={0,2.5083094,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4045;
+							type="Land_FMradio_F";
+							atlOffset=0.78633118;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item14
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9604.1221,118.88011,18518.531};
+								angles[]={0,5.4579163,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=4056;
+							type="Land_LuggageHeap_03_F";
+							atlOffset=0.18894196;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item15
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9608.1953,119.15549,18518.516};
+								angles[]={0,4.9517708,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4057;
+							type="Land_PenRed_F";
+							atlOffset=0.0051727295;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item16
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9614.8457,119.13873,18511.943};
+								angles[]={0,3.2238948,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4046;
+							type="Land_Photos_V3_F";
+							atlOffset=0.82474518;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item17
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9618.292,118.51611,18507.277};
+								angles[]={0,2.0545242,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4043;
+							type="Land_PlasticBucket_01_open_F";
+							atlOffset=0.44727325;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9604.7529,118.85257,18519.668};
+								angles[]={0,0.48372784,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=4053;
+							type="Land_Sacks_goods_F";
+							atlOffset=0.097869873;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item19
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9609.1855,119.27722,18517.875};
+								angles[]={0,2.0370708,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4055;
+							type="Land_WaterBottle_01_empty_F";
+							atlOffset=0.0045928955;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item20
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9614.8359,119.15112,18511.58};
+								angles[]={0,5.4579163,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4048;
+							type="Land_WaterPurificationTablets_F";
+							atlOffset=0.82079315;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item21
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9603.1582,119.16901,18515.277};
+								angles[]={0,4.1663733,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4065;
+							type="Land_WaterPurificationTablets_F";
+							atlOffset=0.78617859;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item22
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9602.7715,118.73364,18515.141};
+								angles[]={1.3759324e-11,5.1961169,6.2818937};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4062;
+							type="Land_WoodenTable_large_F";
+							atlOffset=0.2379837;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item23
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9614.9521,118.71539,18511.639};
+								angles[]={0,4.6725183,6.2818937};
+							};
+							side="Empty";
+							class Attributes
+							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
+							};
+							id=4052;
+							type="Land_WoodenTable_small_F";
+							atlOffset=0.3894577;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ObjectCollision";
+									expression="[_this, if (_value isEqualType []) then {	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	}] remoteExec ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item24
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9617.1104,118.34528,18508.221};
+								angles[]={0,2.0392804,-0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4098;
+							type="postel_panelak1";
+							atlOffset=0.0031509399;
+						};
+					};
+					id=4068;
+					atlOffset=0.076690674;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="Safehouse";
+					state=1;
+					class Entities
+					{
+						items=10;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9733.7861,117.46045,18705.705};
+								angles[]={0,0.34333047,-0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4109;
+							type="Wall_L1_2m5_EP1_lxWS";
+							atlOffset=-0.19506836;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9733.8975,119.43497,18705.561};
+								angles[]={0,0.37033188,-0};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+							};
+							id=4111;
+							type="WallSign_Cardboard";
+							atlOffset=1.3147202;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9733.7119,117.47339,18705.244};
+								angles[]={0,0.28428429,-0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4112;
+							type="PlankBarricade_01_v2_decal";
+							atlOffset=0.018669128;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9730.4082,117.75121,18712.059};
+								angles[]={1.5132369,6.2027144,1.2237064};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4113;
+							type="Land_Plank_01_4m_F";
+							atlOffset=0.06211853;
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9730.5723,117.74541,18712.523};
+								angles[]={4.6669025,6.2830267,5.1169214};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4114;
+							type="Land_Plank_01_4m_F";
+							atlOffset=0.062103271;
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9730.4014,117.58697,18712.338};
+								angles[]={0,5.117197,-0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4115;
+							type="PlankBarricade_01_v2_decal";
+							atlOffset=0.0092315674;
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9729.8691,117.54338,18710.838};
+								angles[]={0.0050109182,1.9608699,0.011197133};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=4116;
+							type="Land_Sign_MinesDanger_Greek_F";
+							atlOffset=-1.0048523;
+						};
+						class Item7
+						{
+							dataType="Comment";
+							class PositionInfo
+							{
+								position[]={9741.5,117.21,18710.998};
+							};
+							title="Sniper Guy Safehouse";
+							id=4117;
+							atlOffset=2.2888184e-05;
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9736.8398,120.90222,18707.863};
+								angles[]={0,5.0837736,-0};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+							};
+							id=4118;
+							type="WallSign_Cardboard";
+							atlOffset=2.7865067;
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={9736.875,121.71752,18707.855};
+								angles[]={3.1036673,4.3413124,6.2684422};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+							};
+							id=4119;
+							type="WallSign_Cardboard";
+							atlOffset=0.74324036;
+						};
+					};
+					id=4120;
+					atlOffset=2.3703613;
+				};
+			};
+			id=4067;
+			atlOffset=10.332214;
+		};
+		class Item45
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={9606.2178,118.258,18522.17};
+			};
+			title="Sniper Guy House";
+			id=4069;
+			atlOffset=3.8146973e-05;
+		};
+		class Item46
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={9587.1689,119.113,18563.498};
+			};
+			title="Safe House Tunnel Entrance";
+			id=4121;
+			atlOffset=0.00022125244;
 		};
 	};
 };

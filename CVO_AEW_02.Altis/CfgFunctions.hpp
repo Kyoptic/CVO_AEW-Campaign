@@ -12,6 +12,7 @@ class CfgFunctions {
     class init {
 		class init {
 			class babel { postInit = 1; };
+            class cvo_deploy { postInit = 1; };
 		};
     };
 

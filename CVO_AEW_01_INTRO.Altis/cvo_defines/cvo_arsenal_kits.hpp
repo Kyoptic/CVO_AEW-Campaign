@@ -17,6 +17,13 @@ class cvo_arsenal_kits
         class items {
             class ItemAndroid {};
             class ItemcTabHCam {};
+
+            // ctab advanced
+            class ItemAndroidMisc {};
+            class ItemcTabMisc {};
+
+            // class ItemMicroDAGRMisc {};
+            // class ItemcTabHCam {};
         };
     };
 
