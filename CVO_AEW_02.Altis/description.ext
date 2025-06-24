@@ -50,7 +50,7 @@ respawnButton = 1;
 
 // ###### CVO Defines
 #include "cvo_defines\cvo_arsenal_kits.hpp"
-#include "cvo_defines\cvo_csc_kits.hpp" // still WIP
+// #include "cvo_defines\cvo_csc_kits.hpp" // still WIP
 
 
 // ###### Other Includes

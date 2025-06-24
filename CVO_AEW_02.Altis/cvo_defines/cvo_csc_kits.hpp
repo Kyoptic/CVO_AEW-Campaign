@@ -92,7 +92,7 @@ class cvo_csc_kits
         parachute_strobe_class = "ACE_IR_Strobe_Effect";
     };
 
-    class myMedicalCrate
+    class myMedicalCrate: DefaultEntry
     {
         name = "Medical Supply Crate";
         box_class = "ACE_medicalSupplyCrate_advanced";
@@ -117,7 +117,7 @@ class cvo_csc_kits
         };
     };
 
-    class AntiTankAmmunation
+    class AntiTankAmmunation: DefaultEntry
     {
         name = "Anti Tank Ammunation Crate";
         box_class = "Box_RUS_WpsSpecial_arid_F";
@@ -134,7 +134,7 @@ class cvo_csc_kits
         };
     };
 
-    class BasicAmmunation
+    class BasicAmmunation: DefaultEntry
     {
         name = "General Ammunation Crate";
         box_class = "Box_RUS_Support_arid_F";
@@ -166,7 +166,7 @@ class cvo_csc_kits
         };
     };
 
-    class EODCrate
+    class EODCrate: DefaultEntry
     {
         name = "Explosive Ordenance Disposal Kit";
         box_class = "Box_RUS_Equip_arid_F";
@@ -180,9 +180,10 @@ class cvo_csc_kits
             { "V_EOD_olive_F", 1 },
             { "ACE_wirecutter", 1 },
             { "ACE_MapTools", 1 },
-            { "ace_marker_flags_red", 5},
+            { "ace_marker_flags_red", 10},
+            { "ace_marker_flags_orange", 10},
+            { "ace_marker_flags_green", 10},
             { "ace_marker_flags_blue", 5},
-            { "ace_marker_flags_orange", 5},
             { "ACE_EntrenchingTool", 1},
             { "ACE_Clacker", 1},
             { "ACE_DefusalKit", 2},
@@ -192,5 +193,3 @@ class cvo_csc_kits
         };
     };
 };
-
-
