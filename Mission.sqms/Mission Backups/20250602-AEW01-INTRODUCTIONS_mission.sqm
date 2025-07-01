@@ -62635,7 +62635,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="Raven11SL_2";
 						description="SL || RAVEN 1-2 @RAVEN 1-2";
 						disableSimulation=1;
@@ -62883,7 +62883,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Machinegunner""]];";
+						init="[this, [""Machinegunner""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AUTORIFLEMAN || RAVEN 1-2";
 						disableSimulation=1;
 						class Inventory
@@ -63007,7 +63007,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Marksman""]];";
+						init="[this, [""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="MARKSMAN || RAVEN 1-2";
 						disableSimulation=1;
 						class Inventory
@@ -63132,7 +63132,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="TL || RAVEN 1-2";
 						disableSimulation=1;
 						class Inventory
@@ -63379,7 +63379,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Anti-Tank""]];";
+						init="[this, [""Anti-Tank""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AT SPECIALIST || RAVEN 1-2";
 						disableSimulation=1;
 						class Inventory
@@ -63503,7 +63503,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
+						init="[this, [""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="RIFLEMAN || RAVEN 1-2";
 						disableSimulation=1;
 						class Inventory
@@ -63914,7 +63914,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="ZGM";
 						description="Myrmidon Handler (ZGM) || RAVEN 1-0 @RAVEN 1-0";
 						isPlayable=1;
@@ -64251,7 +64251,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="PL";
 						description="Plt CO || RAVEN 1-6 @RAVEN 1-6";
 						isPlayer=1;
@@ -64378,7 +64378,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="PltSgt";
 						description="Plt XO || RAVEN 1-6";
 						isPlayable=1;
@@ -64630,7 +64630,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Drone Operator"", ""Interpreter""]];";
+						init="[this, [""Drone Operator"", ""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="EWAR OFFICER || RAVEN 1-6";
 						isPlayable=1;
 						class Inventory
@@ -64787,7 +64787,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="Raven11SL";
 						description="SL || RAVEN 1-1 @RAVEN 1-1";
 						isPlayable=1;
@@ -64913,7 +64913,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Marksman""]];";
+						init="[this, [""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="MEDIC || RAVEN 1-1";
 						isPlayable=1;
 						class Inventory
@@ -65037,7 +65037,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Machinegunner"", ""Marksman""]];";
+						init="[this, [""Machinegunner"", ""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AUTORIFLEMAN || RAVEN 1-1";
 						isPlayable=1;
 						class Inventory
@@ -65162,7 +65162,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setVariable [""CVO_A_Roles"",[""Officer"", ""Interpreter""]];";
+						init="[this, [""Officer"", ""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="2IC || RAVEN 1-2";
 						isPlayable=1;
 						class Inventory
@@ -65410,7 +65410,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Anti-Tank""]];";
+						init="[this, [""Anti-Tank""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AT SPECIALIST || RAVEN 1-1";
 						isPlayable=1;
 						class Inventory
@@ -65567,7 +65567,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="Raven12SL";
 						description="SL || RAVEN 1-2 @RAVEN 1-2";
 						isPlayable=1;
@@ -65692,7 +65692,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Marksman""]];";
+						init="[this, [""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="MEDIC || RAVEN 1-2";
 						isPlayable=1;
 						class Inventory
@@ -65817,7 +65817,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Machinegunner"", ""Marksman""]];";
+						init="[this, [""Machinegunner"", ""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AUTORIFLEMAN || RAVEN 1-2";
 						isPlayable=1;
 						class Inventory
@@ -65942,7 +65942,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setVariable [""CVO_A_Roles"",[""Officer"", ""Interpreter""]];";
+						init="[this, [""Officer"", ""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="2IC || RAVEN 1-2";
 						isPlayable=1;
 						class Inventory
@@ -66067,7 +66067,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Anti-Tank""]];";
+						init="[this, [""Anti-Tank""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AT SPECIALIST || RAVEN 1-2";
 						isPlayable=1;
 						class Inventory
@@ -66345,7 +66345,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+						init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 						name="Raven13SL";
 						description="SL || RAVEN 1-3 @RAVEN 1-3";
 						isPlayable=1;
@@ -66470,7 +66470,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Marksman""]];";
+						init="[this, [""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="MEDIC || RAVEN 1-3";
 						isPlayable=1;
 						class Inventory
@@ -66594,7 +66594,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Machinegunner"", ""Marksman""]];";
+						init="[this, [""Machinegunner"", ""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AUTORIFLEMAN || RAVEN 1-3";
 						isPlayable=1;
 						class Inventory
@@ -66719,7 +66719,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="this setVariable [""CVO_A_Roles"",[""Officer"", ""Interpreter""]];";
+						init="[this, [""Officer"", ""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="2IC || RAVEN 1-3";
 						isPlayable=1;
 						class Inventory
@@ -66844,7 +66844,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this setVariable [""CVO_A_Roles"",[""Anti-Tank""]];";
+						init="[this, [""Anti-Tank""]] call cvo_arsenal_fnc_addUnitRoles;";
 						description="AT SPECIALIST || RAVEN 1-3";
 						isPlayable=1;
 						class Inventory

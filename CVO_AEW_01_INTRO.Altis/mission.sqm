@@ -29252,7 +29252,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Machinegunner"", ""Marksman""]];";
+								init="[this, [""Machinegunner"", ""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="AUTORIFLEMAN || RAVEN 1-2";
 								isPlayable=1;
 								class Inventory
@@ -30035,7 +30035,7 @@ class Mission
 							flags=1;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Machinegunner"", ""Marksman""]];";
+								init="[this, [""Machinegunner"", ""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="AUTORIFLEMAN || RAVEN 1-3";
 								isPlayable=1;
 								class Inventory
@@ -31103,7 +31103,7 @@ class Mission
 							class Attributes
 							{
 								rank="CAPTAIN";
-								init="this setVariable [""CVO_A_Roles"",[""Officer""]]; ACE_player setIdentity spike_gillian;";
+								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles; ACE_player setIdentity spike_gillian;";
 								name="ZGM";
 								description="Myrmidon Handler (ZGM) || RAVEN 1-0 @RAVEN 1-0";
 								isPlayable=1;
@@ -31408,7 +31408,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 								name="CoZGM";
 								description="CVO Liason Officer (ZGM) || RAVEN 1-0 @RAVEN 1-0";
 								isPlayable=1;
@@ -137605,7 +137605,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 								name="Raven11SL_2";
 								description="SL || RAVEN 1-2 @RAVEN 1-2";
 								disableSimulation=1;
@@ -137854,7 +137854,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Machinegunner""]];";
+								init="[this, [""Machinegunner""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="AUTORIFLEMAN || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
@@ -137979,7 +137979,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Marksman""]];";
+								init="[this, [""Marksman""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="MARKSMAN || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
@@ -138105,7 +138105,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="this setVariable [""CVO_A_Roles"",[""Officer""]];";
+								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="TL || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
@@ -138353,7 +138353,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Anti-Tank""]];";
+								init="[this, [""Anti-Tank""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="AT SPECIALIST || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
@@ -138477,7 +138477,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
+								init="[this, [""Interpreter""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="RIFLEMAN || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
