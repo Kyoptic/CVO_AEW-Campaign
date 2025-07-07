@@ -1090,6 +1090,7 @@ iedd_ied_vehCheck = true;
 iedd_ied_wireCutTime = 10;
 iedd_ied_wireCutTimeEOD = 5;
 
+
 // IEDD Notebook VBIED
 iedd_vbied_defaultDud = 0.2;
 iedd_vbied_defaultEngineOn = 0;
@@ -1109,6 +1110,7 @@ iedd_vbied_minRange = 10;
 iedd_vbied_plrCheck = true;
 iedd_vbied_vehCheck = true;
 
+
 // Immersive Cigs
 cigs_core_set_ace_arsenal_tab = true;
 cigs_core_set_sp_addCigpack = true;
@@ -1118,6 +1120,7 @@ cigs_core_set_sp_addLighter = true;
 cigs_core_set_sp_addLighter_type = "cigs_matches";
 cigs_legacy_set_loudout_replacer_enable_mission = true;
 cigs_legacy_set_loudout_replacer_enable_personal = true;
+
 
 // Immersive Cigs - Cigs On AI
 cigs_core_set_cigsonai_chance = 0.15;
@@ -1172,15 +1175,18 @@ cigs_core_set_cigsonai_custom_#_WEST_cigs_Voron_cigpack = false;
 cigs_core_set_cigsonai_delay = 5;
 cigs_core_set_cigsonai_enable = false;
 
+
 // Laxemann Align
 L_Align_enabled = true;
 L_Align_steadyShake_enabled = true;
+
 
 // Laxemann Immerse
 L_Immerse_exShake = true;
 L_Immerse_force = true;
 L_Immerse_recoil = true;
 L_Immerse_twitch = true;
+
 
 // LAxemann's Suppress
 L_Suppress_buildup = 1;
@@ -1191,6 +1197,7 @@ L_Suppress_halting = true;
 L_Suppress_intensity = 1;
 L_Suppress_playerSwabEnabled = true;
 L_Suppress_recovery = 1;
+
 
 // TSP Animate
 tsp_cba_animate_Abort = true;
@@ -1269,6 +1276,7 @@ tsp_cba_animate_watch = true;
 tsp_cba_animate_Wedge = true;
 tsp_cba_animate_Zozo = true;
 
+
 // TSP Animate - Radio
 tsp_cba_radio = true;
 tsp_cba_radio_aiming = true;
@@ -1294,6 +1302,7 @@ tsp_cba_radio_preference_TFAR_rf7800str = "Vest";
 tsp_cba_radio_vehicle = true;
 tsp_cba_radio_vest_armor = true;
 tsp_cba_radio_vests = "[]";
+
 
 // TSP Breach
 tsp_cba_breach = true;
@@ -1413,6 +1422,7 @@ tsp_cba_breach_walls = "[
 [""AHHH"", ""Land_Mil_WallBig_corner_battered_F"",""Land_Mil_WallBig_debris_F""]
 ]";
 
+
 // TSP Breach - Flashbang
 tsp_cba_flashbang_brightness = 1;
 tsp_cba_flashbang_distance = 10;
@@ -1425,6 +1435,7 @@ tsp_cba_flashbang_spray = 0.4;
 tsp_cba_flashbang_surrender = 0.1;
 tsp_cba_flashbang_volume = 5;
 
+
 // TSP Core
 tsp_cba_angle = -0.1;
 tsp_cba_compat = false;
@@ -1434,12 +1445,14 @@ tsp_cba_hint = "None";
 tsp_cba_hint_distance = 20;
 tsp_param_faction = false;
 
+
 // TSP Melee
 tsp_cba_melee = true;
 tsp_cba_melee_damage = 1;
 tsp_cba_melee_disarm = 1;
 tsp_cba_melee_speed = 15;
 tsp_cba_melee_stamina = 1;
+
 
 // VET_Unflipping
 vet_unflipping_require_serviceVehicle = false;
@@ -1448,6 +1461,7 @@ vet_unflipping_time = 5;
 vet_unflipping_unit_man_limit = 7;
 vet_unflipping_unit_mass_limit = 3000;
 vet_unflipping_vehicle_mass_limit = 100000;
+
 
 // Zeus Enhanced
 zen_area_markers_editableMarkers = 0;
@@ -1488,6 +1502,7 @@ zen_vision_enableRedGreenThermal = false;
 zen_vision_enableRedHotCold = false;
 zen_vision_enableWhiteHot = true;
 zen_vision_enableWhiteHotRedCold = false;
+
 
 // Zeus Enhanced - Attributes
 zen_attributes_enableAbilities = true;
@@ -1538,6 +1553,7 @@ zen_attributes_enableWaypointLoiterRadius = true;
 zen_attributes_enableWaypointSpeed = true;
 zen_attributes_enableWaypointTimeout = true;
 zen_attributes_enableWaypointType = true;
+
 
 // Zeus Enhanced - Faction Filter
 zen_faction_filter_0_ALSIR_F = true;
