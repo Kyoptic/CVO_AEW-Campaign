@@ -150,20 +150,23 @@ class cvo_arsenal_kits
 
     class Base_Vests: Base {
         class items {
-            class Aegis_V_OCarrierLuchnik_Lite_blk_F {};
             class V_PlateCarrier1_blk {};
             class V_PlateCarrier1_cbr {};
             class V_PlateCarrier2_blk {};
             class V_PlateCarrier2_cbr {};
             class V_Chestrig_blk {};
             class V_HarnessOSpec_blk {};
+            class V_HarnessO_blk {};
             class Aegis_V_SmershVest_01_blk_F {};
-			class V_SmershVest_01_khaki_F {};
+            class V_SmershVest_01_khaki_F {};
             class V_SmershVest_01_F {};
             class V_SmershVest_01_olive_F {};
-            class V_HarnessO_blk {};
             class Aegis_V_CarrierRigKBT_01_cqb_black_F {};
             class Aegis_V_CarrierRigKBT_01_cqb_cbr_F {};
+            class Aegis_V_CarrierRigKBT_01_cqb_olive_F {};
+            class Aegis_V_OCarrierLuchnik_Lite_blk_F {};
+            class Aegis_V_OCarrierLuchnik_Lite_grn_F {}; 
+            class Aegis_V_OCarrierLuchnik_Lite_khk_F {}; 
             // Myrmidones Inc Ves;
             class MYR_vest_nato_mixed_1_1 {};
             class MYR_vest_nato_mixed_1_2 {};
@@ -174,10 +177,10 @@ class cvo_arsenal_kits
 
     class Base_Backpacks: Base {
         class items {
-        	class cvo_LegStrapBag_black {};
 			class cvo_Kitbag_blk {};
-			class ace_gunbag_Tan {};
+        	class cvo_LegStrapBag_black {};
         	class B_LegStrapBag_coyote_F {};
+			class ace_gunbag_Tan {};
         	class B_AssaultPack_cbr {};
         	class B_AssaultPackSpec_cbr {};
         	class B_Carryall_cbr {};
@@ -185,22 +188,27 @@ class cvo_arsenal_kits
 			class B_Carryall_green_F {};
         	class B_FieldPack_cbr {};
 			class B_FieldPack_blk {};
+			class B_FieldPack_oli {};
+			class B_FieldPack_khk {};
         	class B_Kitbag_cbr {};
+        	class B_Kitbag_rgr {};
         	//class Aegis_B_patrolBackpack_cbr_F {};
         };
     };
 
     class Base_Headgear: Base {
         class items {
+            class H_Cap_headphones_ion_lxws {};
+            class lxWS_H_CapB_rvs_blk_ION {};
             class lxWS_H_PASGT_goggles_black_F {};
-			class H_HelmetHBK_arid_F {};
+            class H_HelmetHBK_arid_F {};
             class H_HelmetHBK_olive_headset_F {};
             class H_HelmetHBK_arid_headset_F {};
             class H_HelmetHBK_olive_F {};
-            class H_Cap_headphones_ion_lxws {};
-            class lxWS_H_CapB_rvs_blk_ION {};
             class Aegis_H_Helmet_Virtus_Headset_rgr_F {};
+            class Aegis_H_Helmet_Virtus_Headset_snd_F {};
             class Aegis_H_Helmet_Virtus_snd_F {};
+            class Aegis_H_Helmet_Virtus_rgr_F {};
             class Atlas_H_PASGT_Cover_Olive_F {};
             class Atlas_H_PASGT_Cover_Tan_F {};
 			class H_Beret_blk {};
