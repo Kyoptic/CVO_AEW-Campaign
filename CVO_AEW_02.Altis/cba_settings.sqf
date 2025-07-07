@@ -125,3 +125,14 @@ force ace_nightvision_shutterEffects = true;
 // TSP Breach
 force tsp_cba_breach_lock_house = 0;
 force tsp_cba_breach_lock_door = 0;
+
+
+
+// IEDD Handbook
+
+force iedd_ied_failChance = 0.25;
+force iedd_ied_failChanceEOD = 0.05;
+force iedd_ied_failExploseChance = 0.05;
+
+force iedd_ied_maxRange = 10;
+force iedd_ied_minRange = 5;
