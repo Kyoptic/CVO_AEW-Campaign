@@ -47,3 +47,11 @@
     "AEWP\AEWP\data\Flags\flag_MYR.paa"  // icon
 ] call cvo_diary_fnc_setPersonality;
 
+[
+    "Sgt 'Mic' Deacon",
+    getMissionPath "\data\img_people\micdeacon.jpg", // default Image - use getMissionPath "/folder/file.jpg" for image from the mission folder - idk if paa is required or jpg works here.
+    "IDAP Camp Protection, Infestiona<br/>Myrmidones Altis Branch",
+    "Myrmidon NCO in charge of defence of IDAP camp south of Infestiona.",
+    "AEWP\AEWP\data\Flags\flag_MYR.paa"  // icon
+] call cvo_diary_fnc_setPersonality;
+

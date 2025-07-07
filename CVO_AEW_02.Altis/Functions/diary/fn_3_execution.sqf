@@ -72,7 +72,7 @@ At the commander's discretion.
 
 [
     "Execution"        
-    ,"Commanders Intend"
+    ,"Commanders Intent"
     ,""         // Image inside the Entry. getMissionPath "\data\personalities.paa"
     ,""
     ,"
