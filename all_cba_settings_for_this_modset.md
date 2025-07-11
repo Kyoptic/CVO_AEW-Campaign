@@ -1,6 +1,18 @@
 ## This file is only to use as a rerference for all the settings available
 
+// ACE Field Rations
+force acex_field_rations_enabled = true;
 
+force acex_field_rations_affectAdvancedFatigue = true;
+force acex_field_rations_terrainObjectActions = true;
+
+force acex_field_rations_hungerSatiated = 3;
+force acex_field_rations_thirstQuenched = 2.5;
+
+force acex_field_rations_timeWithoutFood = 6;
+force acex_field_rations_timeWithoutWater = 2.5;
+
+force acex_field_rations_waterSourceActions = 2;
 
 // A3TI
 A3TI_ACE_JAVELIN = false;
