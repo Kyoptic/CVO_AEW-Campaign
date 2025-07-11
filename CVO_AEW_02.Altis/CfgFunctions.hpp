@@ -13,6 +13,7 @@ class CfgFunctions {
 		class init {
 			class babel { postInit = 1; };
             class cvo_deploy { postInit = 1; };
+            class disableMineDetectorRadar { postInit = 1; };
 		};
     };
 

@@ -462,6 +462,7 @@ class cvo_arsenal_kits
             //class tsp_breach_stick_mag {};
 			
 			//Minesweepers
+            class MineDetector {}; // Vanilla
 			class ACE_VMM3 {};
 			class ACE_VMH3 {};
 
