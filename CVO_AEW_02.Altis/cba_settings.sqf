@@ -87,6 +87,18 @@ force AET_UVO_CIV_LANGUAGE = "NONE";
 // ACE Field Rations
 force acex_field_rations_enabled = true;
 
+force acex_field_rations_affectAdvancedFatigue = true;
+force acex_field_rations_terrainObjectActions = true;
+
+force acex_field_rations_hungerSatiated = 3;
+force acex_field_rations_thirstQuenched = 2.5;
+
+force acex_field_rations_timeWithoutFood = 6;
+force acex_field_rations_timeWithoutWater = 2.5;
+
+force acex_field_rations_waterSourceActions = 2;
+
+
 // ACE Advanced Balistics -> Advanced Ballistics = true or false //
 force ace_advanced_ballistics_enabled = true;
 
