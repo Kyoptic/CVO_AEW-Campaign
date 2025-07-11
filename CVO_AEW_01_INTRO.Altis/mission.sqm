@@ -28218,7 +28218,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								name="Raven11SL";
 								description="SL || RAVEN 1-1 @RAVEN 1-1";
 								isPlayable=1;
@@ -28595,7 +28595,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								description="2IC || RAVEN 1-2";
 								isPlayable=1;
 								class Inventory
@@ -29001,7 +29001,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								name="Raven12SL";
 								description="SL || RAVEN 1-2 @RAVEN 1-2";
 								isPlayable=1;
@@ -29378,7 +29378,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								description="2IC || RAVEN 1-2";
 								isPlayable=1;
 								class Inventory
@@ -29784,7 +29784,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								name="Raven13SL";
 								description="SL || RAVEN 1-3 @RAVEN 1-3";
 								isPlayable=1;
@@ -30161,7 +30161,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								description="2IC || RAVEN 1-3";
 								isPlayable=1;
 								class Inventory
@@ -30567,7 +30567,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								name="PL";
 								description="Plt CO || RAVEN 1-6 @RAVEN 1-6";
 								isPlayer=1;
@@ -30694,7 +30694,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, ""leadership""] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, ""Leadership""] call cvo_arsenal_fnc_addUnitRoles;";
 								name="PltSgt";
 								description="Plt XO || RAVEN 1-6";
 								isPlayable=1;
@@ -31103,7 +31103,7 @@ class Mission
 							class Attributes
 							{
 								rank="CAPTAIN";
-								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles; ACE_player setIdentity spike_gillian;";
+								init="[this, [""Leadership""]] call cvo_arsenal_fnc_addUnitRoles; ACE_player setIdentity spike_gillian;";
 								name="ZGM";
 								description="Myrmidon Handler (ZGM) || RAVEN 1-0 @RAVEN 1-0";
 								isPlayable=1;
@@ -31408,7 +31408,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, [""Leadership""]] call cvo_arsenal_fnc_addUnitRoles;";
 								name="CoZGM";
 								description="CVO Liason Officer (ZGM) || RAVEN 1-0 @RAVEN 1-0";
 								isPlayable=1;
@@ -137605,7 +137605,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, [""Leadership""]] call cvo_arsenal_fnc_addUnitRoles;";
 								name="Raven11SL_2";
 								description="SL || RAVEN 1-2 @RAVEN 1-2";
 								disableSimulation=1;
@@ -138105,7 +138105,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="[this, [""Officer""]] call cvo_arsenal_fnc_addUnitRoles;";
+								init="[this, [""Leadership""]] call cvo_arsenal_fnc_addUnitRoles;";
 								description="TL || RAVEN 1-2";
 								disableSimulation=1;
 								class Inventory
