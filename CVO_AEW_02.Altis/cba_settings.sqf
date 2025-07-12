@@ -148,3 +148,8 @@ force iedd_ied_failExploseChance = 0.05;
 
 force iedd_ied_maxRange = 10;
 force iedd_ied_minRange = 5;
+
+
+// Diwako
+force diwako_dui_nametags_enabled = false;
+force diwako_dui_nametags_useSideIsFriendly = false;
