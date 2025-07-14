@@ -16,5 +16,9 @@
 
 if !(hasInterface) exitWith {};
 
-[cvo_deploy_whiteboard] call cvo_deploy_fnc_departure;
+//// Departures
+[cvo_deploy_hq_tent] call cvo_deploy_fnc_departure;
+[cvo_deploy_food_tent] call cvo_deploy_fnc_departure;
+
+//// Destinations
 [cvo_deploy_commsOffroad] call cvo_deploy_fnc_destination;
