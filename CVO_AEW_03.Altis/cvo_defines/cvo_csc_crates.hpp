@@ -4,9 +4,9 @@
 */
 
 class cvo_csc_crates {
-    import base from cvo_csc_crates;
+    import base_crate from cvo_csc_crates;
 
-    class AEW_MedicalCrate: Base {
+    class AEW_MedicalCrate: base_crate {
 
         displayName = "Medical Supplies";
         scope = 2;
@@ -32,7 +32,7 @@ class cvo_csc_crates {
         };
     };
 
-    class AEW_AntiTank: base {
+    class AEW_AntiTank: base_crate {
 
         name = "Anti Tank Ammunation Crate";
         scope = 2;
@@ -49,7 +49,7 @@ class cvo_csc_crates {
         };
     };
 
-    class AEW_BasicAmmunation: base {
+    class AEW_BasicAmmunation: base_crate {
 
         name = "General Ammunation Crate";
         scope = 2;
@@ -81,7 +81,7 @@ class cvo_csc_crates {
         };
     };
 
-    class AEW_IEDD_Crate: base {
+    class AEW_IEDD_Crate: base_crate {
 
         name = "Explosive Ordenance Disposal Kit";
         scope = 2;

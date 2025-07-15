@@ -10,17 +10,17 @@ class cvo_arsenal_kits
     object_variable_names[] = {"source"};
 
     // Imports Base from configFile
-    import Base from cvo_arsenal_kits;
+    import base_kit from cvo_arsenal_kits;
 
     //  MISCELLANEOUS
-    class ctab: Base {
+    class ctab: base_kit {
         class items {
             class ItemAndroid {};
             class ItemcTabHCam {};
         };
     };
 
-    class GreenMagStuff: Base {
+    class GreenMagStuff: base_kit {
         addon_dependency = "greenmag_main";
         class items {
             // @ KYO - IDK if you edited those already or not - just comment out the entries you dont need.
@@ -49,7 +49,7 @@ class cvo_arsenal_kits
         };
     };
     
-    class Rations: Base {
+    class Rations: base_kit {
         condition = "missionNamespace getVariable ['ace_field_rations_enabled', true]";
         class items {
 	        class ACE_MRE_BeefStew {};
@@ -63,7 +63,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Binoculars: Base {
+    class Binoculars: base_kit {
         class items {
             class Binocular {};
 
@@ -76,7 +76,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Immersion_Cigs: Base {
+    class Immersion_Cigs: base_kit {
         addon_dependency = "cigs_core";
         class items {
             class cigs_Apollo_cigpack {};
@@ -93,7 +93,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Aegis_Armbands: Base {
+    class Aegis_Armbands: base_kit {
         class items {
             class Aegis_G_Armband_BLU_F {};
             class Aegis_G_Armband_BLU_alt_F {};
@@ -103,13 +103,13 @@ class cvo_arsenal_kits
     };
 
     // RADIOS
-    class Radios_Base: Base {
+    class Radios_Base: base_kit {
         class items {
             class ACRE_PRC343 {};
         };
     };
 
-    class Radios_Leadership: Base {
+    class Radios_Leadership: base_kit {
         role = "Leadership";
         class items {
             class ACRE_PRC148 {};
@@ -117,7 +117,7 @@ class cvo_arsenal_kits
     };
 
     // Wearables / Gear
-    class Base_Uniforms: Base {
+    class Base_Uniforms: base_kit {
         class items {
             //Aegis/Atlas Contractor Uniforms
             // class Aegis_U_lxWS_ION_Flanneltna_F {};
@@ -148,7 +148,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Base_Vests: Base {
+    class Base_Vests: base_kit {
         class items {
             class V_PlateCarrier1_blk {};
             class V_PlateCarrier1_cbr {};
@@ -175,7 +175,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Base_Backpacks: Base {
+    class Base_Backpacks: base_kit {
         class items {
 			class cvo_Kitbag_blk {};
         	class cvo_LegStrapBag_black {};
@@ -196,7 +196,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Base_Headgear: Base {
+    class Base_Headgear: base_kit {
         class items {
             class H_Cap_headphones_ion_lxws {};
             class lxWS_H_CapB_rvs_blk_ION {};
@@ -238,7 +238,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Base_Facewear: Base {
+    class Base_Facewear: base_kit {
         class items {
             //vanilla+ glasses
             class G_Aviator {};
@@ -313,7 +313,7 @@ class cvo_arsenal_kits
     };
 
     // Weapons
-    class Weapons_Primary_SMGs: Base {
+    class Weapons_Primary_SMGs: base_kit {
         class items {
             // SMGs
             class JCA_smg_UMP_black_F {};
@@ -333,7 +333,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Weapons_Primary_AKs: Base {
+    class Weapons_Primary_AKs: base_kit {
         class items {
             // AK74s
 			class Aegis_arifle_AK74_F {};
@@ -359,7 +359,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Weapons_Primary_Shotty: Base {
+    class Weapons_Primary_Shotty: base_kit {
         class items {
 	        class sgun_Mp153_black_F {};
 	        class 4Rnd_12Gauge_Pellets {};
@@ -367,7 +367,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Weapons_Sidearms_Pistols: Base {
+    class Weapons_Sidearms_Pistols: base_kit {
         class items {
 
 	        class acc_flashlight_pistol {};
@@ -386,7 +386,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Weapons_Accessories: Base {
+    class Weapons_Accessories: base_kit {
         class items {
             //flashlight 
             class acc_flashlight {};
@@ -418,7 +418,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Weapons_Throwables: Base {
+    class Weapons_Throwables: base_kit {
         class items {
             class ACE_CTS9 {};
             class HandGrenade {};
@@ -448,7 +448,7 @@ class cvo_arsenal_kits
     };
 
     // ROLE KITS
-    class EOD: Base {
+    class EOD: base_kit {
         role = "ExplosiveSpecialist";
         class items {
             class ACE_Clacker {};
@@ -469,7 +469,7 @@ class cvo_arsenal_kits
 			//class ACE_Fortify
         };
     };
-    class MG: Base {
+    class MG: base_kit {
         role = "Machinegunner";
         class items {
             //RPK
@@ -481,7 +481,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class AntiTank: Base {
+    class AntiTank: base_kit {
         role = "Anti-Tank";
         class items {
             //RPG7
@@ -502,7 +502,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Marksman: Base {
+    class Marksman: base_kit {
         role = "Marksman";
         class items {
             // SVD
@@ -529,7 +529,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class UAV: Base {
+    class UAV: base_kit {
         role = "UAV";
         class items {
  
@@ -569,7 +569,7 @@ class cvo_arsenal_kits
         };
     };
 
-    class Leadership: Base {
+    class Leadership: base_kit {
         role = "Leadership";
         class items {
             class optic_VRCO_RF {};
