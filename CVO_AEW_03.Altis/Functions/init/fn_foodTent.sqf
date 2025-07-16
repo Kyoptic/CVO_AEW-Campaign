@@ -96,7 +96,22 @@ private _state = {
                             "*smacks lips*",
                             "*snarf snarf*",
                             "*gulp*",
-                            "*aggressively chewing military-grade stew*"
+                            "*aggressively chewing military-grade stew*",
+                            "*chewing with tactical precision*",
+                            "*battle-tested bite execution*",
+                            "*devours like it's his last meal*",
+                            "*slow, suspicious chewing*",
+                            "*evaluates flavor profile with disappointment*",
+                            "*chews like the food insulted his unit*",
+                            "*mouthful mumbling about how it's 'not the worst today'*",
+                            "*veteran-level fork control*",
+                            "*slurping like it's an MRE smoothie*",
+                            "*snacking with visible regret*",
+                            "*chews, accepting his fate*",
+                            "*methodical bites in complete silence*",
+                            "*forced chewing continues*",
+                            "*mentally detaches while eating*",
+                            "*calculating how many meals until discharge*"
                         ]
                     ] call cvo_common_fnc_subtitles;
 
