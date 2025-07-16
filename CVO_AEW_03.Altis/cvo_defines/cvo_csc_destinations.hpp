@@ -21,8 +21,4 @@ class cvo_csc_destinations {
             reference = "cvo_csc_tarp"; // TARGET, PLAYER or missionNamespace variablename
         };
     };
-
-    class AEW_mapClick: base_mapClick {
-        scope = 2;
-    };
 };

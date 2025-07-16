@@ -34,7 +34,7 @@ class cvo_csc_crates {
 
     class AEW_AntiTank: baseCrate {
 
-        name = "Anti Tank Ammunation Crate";
+        displayName = "Anti Tank Ammunation Crate";
         scope = 2;
 
         box_class = "Box_RUS_WpsSpecial_arid_F";
@@ -51,7 +51,7 @@ class cvo_csc_crates {
 
     class AEW_BasicAmmunation: baseCrate {
 
-        name = "General Ammunation Crate";
+        displayName = "General Ammunation Crate";
         scope = 2;
 
         box_class = "Box_RUS_Support_arid_F";
@@ -83,7 +83,7 @@ class cvo_csc_crates {
 
     class AEW_IEDD_Crate: baseCrate {
 
-        name = "Explosive Ordenance Disposal Kit";
+        displayName = "Explosive Ordenance Disposal Kit";
         scope = 2;
 
         box_class = "Box_RUS_Equip_arid_F";

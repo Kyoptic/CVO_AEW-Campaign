@@ -19,7 +19,7 @@ class cvo_csc_delivery_modes {
 
     import base_airdrop from cvo_csc_delivery_modes;
     class AEW_Airdrop_Myrmidon: base_airdrop {
-        displayName = "Airdrop by Myrmidon Helicopter";
+        displayName = "Airdrop: Myrmidon Helicopter";
         description = "A Myrmidon Helicopter will airdrop the desired crates.";
 
         maxCrates = 3;
@@ -31,7 +31,7 @@ class cvo_csc_delivery_modes {
             airframe_protected = "true";
             airframe_class = "MYR_B_ORCA_F";
 
-            pos_start[] = { 15000, 14000, 0 };    // Gulf of Pyrgos
+            pos_start[] = { 15000, 14000, 150 };    // Gulf of Pyrgos
             pos_end = "RETURN";
 
             airdrop_alt = 150;
@@ -52,7 +52,7 @@ class cvo_csc_delivery_modes {
 
 
     class AEW_Airdrop_IDAP: base_airdrop {
-        displayName = "Airdrop by IDAP Helicopter @ 250";
+        displayName = "Airdrop: IDAP Helicopter";
         description = "A IDAP Helicopter will airdrop the desired crates.";
 
         maxCrates = 5;
@@ -64,7 +64,7 @@ class cvo_csc_delivery_modes {
             airframe_protected = "true";
             airframe_class = "C_IDAP_Heli_Transport_02_F";
 
-            pos_start[] = { 0, 30000, 0 };    // Top Left Corner
+            pos_start[] = { 0, 30000, 250 };    // Top Left Corner
             pos_end = "RETURN";
 
             airdrop_alt = 250;
@@ -82,7 +82,7 @@ class cvo_csc_delivery_modes {
     };
 
     class AEW_Airdrop_IDAP_plane: base_airdrop {
-        displayName = "Airdrop by IDAP Plane @ 250";
+        displayName = "Airdrop: IDAP Plane";
         description = "A IDAP Cargoplane will airdrop the desired crates.";
 
         maxCrates = 10;
@@ -94,13 +94,12 @@ class cvo_csc_delivery_modes {
             airframe_protected = "true";
             airframe_class = "Aegis_C_IDAP_Plane_Transport_01_civil_F";
 
-            pos_start[] = { 0, 30000, 0 };    // Top Left Corner
+            pos_start[] = { 0, 30000, 500 };    // Top Left Corner
             pos_end = "RETURN";
 
             airdrop_alt = 500;
             airdrop_alt_forced = "true";
             airdrop_speedLimit = 150;
-
 
             parachute_class = "B_Parachute_02_F";
 
