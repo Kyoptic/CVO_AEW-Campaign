@@ -16,7 +16,8 @@ class CfgFunctions {
             class cvo_deploy { postInit = 1; };
             class disableMineDetectorRadar { postInit = 1; };
 
-            class foodTent { postInit = 1; };
+            class fieldRations { postInit = 1; };
+            class foodTent {};
 		};
     };
 

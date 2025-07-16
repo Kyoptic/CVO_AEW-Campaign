@@ -194,3 +194,5 @@ private _aceAction = [
         ,_aceAction    	         			// * 3: Action <ARRAY>    
     ] call ace_interact_menu_fnc_addActionToObject;
 } forEach _foodTraySources;
+
+diag_log format ['[CVO](debug)(fn_foodTent) End of File: %1', ""];
