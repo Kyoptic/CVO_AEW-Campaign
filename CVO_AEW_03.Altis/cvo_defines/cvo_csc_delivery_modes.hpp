@@ -69,7 +69,7 @@ class cvo_csc_delivery_modes {
 
             airdrop_alt = 250;
             airdrop_alt_forced = "true";
-            airdrop_speedLimit = 150;
+            airdrop_speedLimit = "LIMITED";
 
 
             parachute_class = "B_Parachute_02_F";
@@ -99,7 +99,7 @@ class cvo_csc_delivery_modes {
 
             airdrop_alt = 500;
             airdrop_alt_forced = "true";
-            airdrop_speedLimit = 150;
+            airdrop_speedLimit = "LIMITED";
 
             parachute_class = "B_Parachute_02_F";
 
