@@ -1,6 +1,12 @@
 if (!hasInterface) exitWith {};
 
-#define SAVE_INTERVAL 60
+// Define Interval to Store current Hunger/Thirst to ProfileNamespace.
+#define SAVE_INTERVAL 600
+// Will only restore upto RESTORED_THRESHOLD to avoid someone stuck in an deathloop.
+#define RESTORED_THRESHOLD 70
+// Define "Campaign-Tag" to avoid cross-contamination of stored data
+#define CAMPAIGN "AEW"
+
 
 diag_log format ['[CVO](debug)(fn_fieldRations) _this: %1', _this];
 
@@ -8,40 +14,32 @@ persistance_fnc_saveToProfile = {
     private _hunger = player getVariable ["acex_field_rations_hunger", 0];
     private _thirst = player getVariable ["acex_field_rations_thirst", 0];
 
-    profileNamespace setVariable ["cvo_aew_food_persistance_hunger", _hunger];
-    profileNamespace setVariable ["cvo_aew_food_persistance_thirst", _thirst];
+    profileNamespace setVariable [format ["cvo_%1_food_persistance_hunger", CAMPAIGN], _hunger];
+    profileNamespace setVariable [format ["cvo_%1_food_persistance_thirst", CAMPAIGN], _thirst];
     saveProfileNamespace;
-    diag_log format ['[CVO](debug)(Save-to-profile) _hunger: %1 - _thirst: %2', _hunger , _thirst];
 };
 
 persistance_fnc_loadFromProfile = {
-    private _hunger = profileNamespace getVariable "cvo_aew_food_persistance_hunger";
-    private _thirst = profileNamespace getVariable "cvo_aew_food_persistance_thirst";
+    private _hunger = profileNamespace getVariable format ["cvo_%1_food_persistance_hunger", CAMPAIGN];
+    private _thirst = profileNamespace getVariable format ["cvo_%1_food_persistance_thirst", CAMPAIGN];
 
-    if (!isNil "_hunger") then { player setVariable ["acex_field_rations_hunger", _hunger]; };
-    if (!isNil "_thirst") then { player setVariable ["acex_field_rations_thirst", _thirst]; };
-
-    diag_log format ['[CVO](debug)(Load-from-profile) _hunger: %1 - _thirst: %2', _hunger , _thirst];
+    if (!isNil "_hunger") then { player setVariable ["acex_field_rations_hunger", _hunger min RESTORED_THRESHOLD]; };
+    if (!isNil "_thirst") then { player setVariable ["acex_field_rations_thirst", _thirst min RESTORED_THRESHOLD]; };
 };
 
 persistance_fnc_saveToGVAR = {
     private _hunger = player getVariable ["acex_field_rations_hunger", nil];
     private _thirst = player getVariable ["acex_field_rations_thirst", nil];
 
-    missionNamespace setVariable ["player_hunger", _hunger];
-    missionNamespace setVariable ["player_thrist", _thirst];
-
-    diag_log format ['[CVO](debug)(save-to-GVAR) _hunger: %1 - _thirst: %2', _hunger , _thirst];
+    missionNamespace setVariable ["cvo_player_hunger", _hunger];
+    missionNamespace setVariable ["cvo_player_thrist", _thirst];
 };
 
 persistance_fnc_loadFromGVAR = {
-
-    private _hunger = missionNamespace getVariable ["player_hunger", nil];
-    private _thirst = missionNamespace getVariable ["player_thrist", nil];
-    if (!isNil "_hunger") then { player setVariable ["acex_field_rations_hunger", _hunger]; };
-    if (!isNil "_thirst") then { player setVariable ["acex_field_rations_thirst", _thirst]; };
-
-    diag_log format ['[CVO](debug)(load-from-GVAR) _hunger: %1 - _thirst: %2', _hunger , _thirst];
+    private _hunger = missionNamespace getVariable ["cvo_player_hunger", nil];
+    private _thirst = missionNamespace getVariable ["cvo_player_thrist", nil];
+    if (!isNil "_hunger") then { player setVariable ["acex_field_rations_hunger", _hunger min RESTORED_THRESHOLD]; };
+    if (!isNil "_thirst") then { player setVariable ["acex_field_rations_thirst", _thirst min RESTORED_THRESHOLD]; };
 };
 
 private _statement = {
@@ -66,7 +64,7 @@ private _statement = {
 
 
     
-    //// Save Hunger/Thirst every 10 minutes on Profile Namespace
+    //// Save Hunger/Thirst every Interval on Profile Namespace
     [
         {
             [
