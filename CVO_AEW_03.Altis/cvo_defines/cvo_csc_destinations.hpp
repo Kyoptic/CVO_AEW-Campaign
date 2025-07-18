@@ -17,8 +17,9 @@ class cvo_csc_destinations {
 
         class parameters {
             mode = "OFFSET"; // "BEHIND", "OFFSET"
-            offset[] = { 0, 0, 1.5 };   // only used by OFFSET
+            offset[] = { 0, 0, 0.5 };   // only used by OFFSET
             reference = "cvo_csc_tarp"; // TARGET, PLAYER or missionNamespace variablename
+            randomOffset = 2;           // Only be used on X and Y
         };
     };
 };

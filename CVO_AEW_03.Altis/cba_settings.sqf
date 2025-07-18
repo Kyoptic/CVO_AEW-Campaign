@@ -153,3 +153,6 @@ force iedd_ied_minRange = 5;
 // Diwako
 force diwako_dui_nametags_enabled = false;
 force diwako_dui_nametags_useSideIsFriendly = false;
+
+force diwako_dui_linecompass_enabled = false;
+force diwako_dui_enable_compass_dir = 1;

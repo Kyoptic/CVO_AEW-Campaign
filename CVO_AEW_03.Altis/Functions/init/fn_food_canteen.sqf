@@ -20,7 +20,7 @@ private _statement = {
     private _actionStatement = {
         params ["_target", "_player"];
         [
-            10                                      // * 0: Progressbar: Total Time (in game "time" seconds) <NUMBER>
+            7                                      // * 0: Progressbar: Total Time (in game "time" seconds) <NUMBER>
             ,[_target, _player]                     // * 1: Progressbar: Arguments, passed to condition, fail and finish <ARRAY>
             ,{                                      // * 2: Progressbar: On Finish: Code called or STRING raised as event. <CODE, STRING>
                 params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
@@ -156,7 +156,7 @@ private _statement = {
                         _parameters call _exitCode;
                     };
                 },
-                2.5,
+                7,
                 [_codeToRun, _parameters, _exitCode, _condition]
                 ] call CBA_fnc_addPerFrameHandler;
 
