@@ -22,7 +22,7 @@ class cvo_csc_delivery_modes {
         displayName = "Airdrop: Myrmidon Helicopter";
         description = "A Myrmidon Helicopter will airdrop the desired crates.";
 
-        maxCrates = 3;
+        maxCrates = 2;
 
         scope = 2;
 
@@ -55,7 +55,7 @@ class cvo_csc_delivery_modes {
         displayName = "Airdrop: IDAP Helicopter";
         description = "A IDAP Helicopter will airdrop the desired crates.";
 
-        maxCrates = 5;
+        maxCrates = 3;
 
         scope = 1;
 
@@ -77,7 +77,7 @@ class cvo_csc_delivery_modes {
             // CfgVehicles or CfgAmmo
             parachute_class_strobe = "ACE_IR_Strobe_Effect";
             parachute_class_chemlight = "Chemlight_yellow";
-            parachute_class_smoke = "SmokeShellOrange";
+            parachute_class_smoke = "JCA_GrenadeAmmo_HandFlare_Green";
         };
     };
 
@@ -85,7 +85,7 @@ class cvo_csc_delivery_modes {
         displayName = "Airdrop: IDAP Plane";
         description = "A IDAP Cargoplane will airdrop the desired crates.";
 
-        maxCrates = 10;
+        maxCrates = 5;
 
         scope = 1;
 
@@ -106,7 +106,7 @@ class cvo_csc_delivery_modes {
             // CfgVehicles or CfgAmmo
             parachute_class_strobe = "ACE_IR_Strobe_Effect";
             parachute_class_chemlight = "Chemlight_yellow";
-            parachute_class_smoke = "SmokeShellOrange";
+            parachute_class_smoke = "JCA_GrenadeAmmo_HandFlare_Green";
         };
     };
 };
