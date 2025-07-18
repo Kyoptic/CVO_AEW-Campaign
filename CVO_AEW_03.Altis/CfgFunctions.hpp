@@ -12,12 +12,14 @@ class CfgFunctions {
     class init {
 		class init {
 			class babel { postInit = 1; };
+
             class cvo_csc { postInit = 1; };
             class cvo_deploy { postInit = 1; };
+
             class disableMineDetectorRadar { postInit = 1; };
 
-            class fieldRations { postInit = 1; };
-            class foodTent {};
+            class food_canteen { postInit = 1; };
+            class food_persistence { postInit = 1; };
 		};
     };
 
