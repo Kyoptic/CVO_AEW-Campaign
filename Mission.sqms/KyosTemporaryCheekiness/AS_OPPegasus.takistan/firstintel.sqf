@@ -1,0 +1,5 @@
+titleText ["<t align = 'center' shadow = '2' color='#788DEB' size'2' font='RobotoCondensedBold' > SUNBURST: </t><t color='#ffffff' size='1.3' font='RobotoCondensed' > Pegasus, well done on finding the laptop in the building by the minaret. Looks like there's no intel on the weapons cache here, but there's some info on a soldier the enemy captured last week. Standby while we transfer the intel and analyze it. Hold this location. </t>", "PLAIN DOWN", 3, true, true];
+
+player createDiaryRecord ["Diary", ["ChatLog", "SUNBURST: Pegasus, well done on finding the laptop in the building by the minaret. Looks like there's no intel on the weapons cache here, but there's some info on a soldier the enemy captured last week. Standby while we transfer the intel and analyze it. Hold this location."]];
+
+"intelfound" setmarkeralpha 1;

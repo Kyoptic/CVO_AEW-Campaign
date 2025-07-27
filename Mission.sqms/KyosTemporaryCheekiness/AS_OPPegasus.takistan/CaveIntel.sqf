@@ -1,0 +1,5 @@
+titleText ["<t align = 'center' shadow = '2' color='#788DEB' size'2' font='RobotoCondensedBold' > SUNBURST: </t><t color='#ffffff' size='1.3' font='RobotoCondensed' > Shit. It's bad. Very bad. Looks like our boy has been smacked around some and... Christ there's some unpleasant stuff in here. We haven't yet found  our hostage's location, though. Looks like the enemy has retreated to a cave system to the west. Move out to investigate it and see if you can acquire more intel on our hostage and those weapons caches. </t>", "PLAIN DOWN", 3, true, true];
+
+player createDiaryRecord ["Diary", ["ChatLog", "SUNBURST: Shit. It's bad. Very bad. Looks like our boy has been smacked around some and... Christ there's some unpleasant stuff in here. We haven't yet found our hostage's location, though. Looks like the enemy has retreated to a cave system to the west. Move out to investigate it and see if you can acquire more intel on our hostage and those weapons caches."]];
+
+"Cave1" setmarkeralpha 1;

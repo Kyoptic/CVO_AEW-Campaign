@@ -1,0 +1,3 @@
+titleText ["<t align = 'center' shadow = '2' color='#788DEB' size'2' font='RobotoCondensedBold' > SUNBURST: </t><t color='#ffffff' size='1.3' font='RobotoCondensed' > Pegasus, this is Sunburst. The intel in that area looks like it contains the information we need. Secure the rest of the cave and RTB. </t>", "PLAIN DOWN", -1, true, true];
+
+player createDiaryRecord ["Diary", ["ChatLog", "SUNBURST: Pegasus, this is Sunburst. The intel in that area looks like it contains the information we need. Secure the rest of the cave and RTB."]];
