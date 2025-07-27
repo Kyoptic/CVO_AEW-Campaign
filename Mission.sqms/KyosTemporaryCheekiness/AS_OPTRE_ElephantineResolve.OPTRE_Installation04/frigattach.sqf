@@ -1,1 +1,0 @@
-[frigate, dummypeli] call BIS_fnc_attachToRelative;
