@@ -10,11 +10,11 @@ class Header
 
 // Section 1
 author= "Kyoptic [CVO]"; // Name of the creator(s)
-OnLoadName = "AEW03 - Second Patrol"; // Mission name in the loading screen, keep it short without operation
+OnLoadName = "AEW04 - Patrol"; // Mission name in the loading screen, keep it short without operation
 OnLoadMission = "Acta, non Verba"; // Bottom of the loading screen, don't change
 loadScreen = "data\loadscreen.jpg"; // The picture displayed during loading screen
 overviewPicture = "data\loadscreen.jpg"; // The picture displayed in the mission selection screen
-briefingName = "AEW03 - Second Patrol"; // The Mission name displayed in the mission selection menu
+briefingName = "AEW04 - Patrol"; // The Mission name displayed in the mission selection menu
 overviewText = "The 24th CVO is deployed to Altis as a subcontractor to Myrmidon Inc, in the aftermath of the East Wind Campaign."; // The text above the picture in the mission selection menu
 
 
