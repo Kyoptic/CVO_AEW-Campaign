@@ -29,7 +29,7 @@ Mobile Request Point - Maybe Comms Offroad?
 
 [
     missionNamespace getVariable ["cvo_deploy_commsOffroad", objNull],
-    "DEFAULT",           // Crates
+    "DEFAULT",                      // Crates
     ["AEW_Airdrop_Myrmidon"],       // Delivery Modes
     ["AEW_mapClick"]                // Destinations
 ] call cvo_csc_fnc_createAccessPoint;

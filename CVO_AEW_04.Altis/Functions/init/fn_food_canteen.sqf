@@ -20,7 +20,7 @@ private _statement = {
     private _actionStatement = {
         params ["_target", "_player"];
         [
-            7                                      // * 0: Progressbar: Total Time (in game "time" seconds) <NUMBER>
+            7                                       // * 0: Progressbar: Total Time (in game "time" seconds) <NUMBER>
             ,[_target, _player]                     // * 1: Progressbar: Arguments, passed to condition, fail and finish <ARRAY>
             ,{                                      // * 2: Progressbar: On Finish: Code called or STRING raised as event. <CODE, STRING>
                 params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
@@ -62,7 +62,7 @@ private _statement = {
                     _player setVariable ["acex_field_rations_hunger", _hunger];
 
 
-                    if isClass (configFile >> "CfgPatches" >> "cigs_core") then {
+                    if (isClass (configFile >> "CfgPatches" >> "cigs_core")) then {
                         [
                             _player,
                             selectRandom ["cigs_eat_bread_1", "cigs_eat_bread_2", "cigs_eat_bread_3", "cigs_eat_bread_4", "cigs_eat_bread_5"],
