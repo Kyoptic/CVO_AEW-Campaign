@@ -29,8 +29,8 @@
 [
     "Misc"
     ,"Credits"
-    ,"Thanks and credits goes to:"
     ,""
+    ,"Thanks and credits goes to:"
 ,"
 - Dmitry Yuri from the Zeus Community for his antiFlubber script - smoke GL sticks (to kids)!<br/>
 - All the creator's of the mods that were used in this mission.<br/>
